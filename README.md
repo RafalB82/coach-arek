@@ -4,7 +4,7 @@ Skill Codex do praktycznego nadzoru procesu treningowego, ze szczególnym nacisk
 
 ## Jak powstał
 
-Skill powstał na prośbę użytkownika jako źródło wiedzy dla agenta nadzorującego trening. Punktem wyjścia było sześć polskojęzycznych materiałów z Arkadiuszem Czerwem: pięć rozmów (z Pawłem Albrechtem lub Dawidem Olszewskim) oraz jeden materiał treningowy. Transkrypcje przygotowano wcześniej z nagrań za pomocą lokalnego workflow MLX Whisper, poprawiono redakcyjnie i uzupełniono o przypisanie mówców. Pełne transkrypcje nie są dołączone do tego publicznego repozytorium; repo zawiera syntezę tematyczną, identyfikatory źródeł, linki i timestampy.
+Skill powstał na prośbę użytkownika jako źródło wiedzy dla agenta nadzorującego trening. Punktem wyjścia było siedem polskojęzycznych materiałów z Arkadiuszem Czerwem: sześć rozmów (z Pawłem Albrechtem, Dawidem Olszewskim lub Robusiem Pasjonatem) oraz jeden materiał treningowy. Transkrypcje przygotowano wcześniej z nagrań za pomocą lokalnego workflow MLX Whisper, poprawiono redakcyjnie i uzupełniono o przypisanie mówców. Pełne transkrypcje nie są dołączone do tego publicznego repozytorium; repo zawiera syntezę tematyczną, identyfikatory źródeł, linki i timestampy.
 
 Na podstawie tych materiałów przygotowano:
 
@@ -16,7 +16,7 @@ Synteza kładzie nacisk na monitorowanie trendów i zachowanie ciągłości proc
 
 ## Podstawa źródłowa
 
-Linki prowadzą do materiałów pierwotnych. S1–S4 to rozmowy Pawła Albrechta z Arkadiuszem Czerwem, S5 to rozmowa Dawida Olszewskiego z Arkadiuszem, a S6 to materiał treningowy Arkadiusza. Pełne transkrypcje nie są publikowane w tym repozytorium.
+Linki prowadzą do materiałów pierwotnych. S1–S4 to rozmowy Pawła Albrechta z Arkadiuszem Czerwem, S5 to rozmowa Dawida Olszewskiego z Arkadiuszem, S6 to materiał treningowy Arkadiusza, a S7 to rozmowa Arkadiusza z Robusiem Pasjonatem. Pełne transkrypcje nie są publikowane w tym repozytorium.
 
 | ID | Temat | Nagranie |
 |---|---|---|
@@ -26,8 +26,11 @@ Linki prowadzą do materiałów pierwotnych. S1–S4 to rozmowy Pawła Albrechta
 | S4 | Dieta i kaloryczność | [YouTube](https://youtu.be/ySgq9XysjD0) |
 | S5 | Programowanie planu treningowego — Dawid Olszewski i Arkadiusz Czerw | [YouTube](https://youtu.be/h2Vj5ai9Ang) |
 | S6 | Praktyczny trening, progresja i objętość — Arkadiusz Czerw | [YouTube](https://youtu.be/blaB3aBrf1o) |
+| S7 | Programowanie treningu, wysiłek, przerwy, regeneracja i żywienie — Arkadiusz Czerw i Robuś Pasjonat | [YouTube](https://youtu.be/Xb2y18_B0QY) |
 
 Synteza wskazuje identyfikatory źródeł i znaczniki czasu, aby można było sprawdzić kontekst konkretnej wypowiedzi w nagraniu. Gdy potrzebny jest dokładny cytat, szerszy kontekst albo porównanie wypowiedzi, należy sprawdzić oryginalne nagranie.
+
+Uwaga redakcyjna do S7: oryginalna transkrypcja automatyczna miała globalnie zamienione etykiety mówców. Atrybucję w syntezie sprawdzono i poprawiono; pełna transkrypcja nie jest publikowana.
 
 ## Ważne ograniczenie
 

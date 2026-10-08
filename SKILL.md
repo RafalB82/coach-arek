@@ -7,7 +7,7 @@ description: "Monitor and reason about resistance-training hypertrophy, mass, fa
 
 Use this skill for practical supervision of a user's resistance-training process. Read [references/knowledge_base_hipertrofia.md](references/knowledge_base_hipertrofia.md) for the expanded thematic digest, principles, caveats, source tensions, and timestamps. Use [references/knowledge_base_hipertrofia.json](references/knowledge_base_hipertrofia.json) for structured retrieval, including speaker attribution and the distinction between podcast paraphrases and author additions.
 
-The public GitHub repository intentionally excludes the full podcast transcripts; the user's local installation may include them. If full transcripts are available with the skill, consult the relevant one for context. Otherwise follow the source links when a claim needs checking against the original recording. Do not invent exact quotations or details absent from the available sources.
+The public GitHub repository intentionally excludes the full podcast transcripts; the user's local installation and private import package may include them. If full transcripts are available with the skill, consult the relevant one for context. Otherwise follow the source links when a claim needs checking against the original recording. Do not invent exact quotations or details absent from the available sources. S7 is a conversation hosted by Robuś Pasjonat with Arkadiusz Czerw as the guest. Its original MLX Whisper transcript had globally reversed speaker labels; the copy included with this skill is corrected. Preserve attribution and mark uncertain spans rather than relying on the original mislabeled copy.
 
 ## Operating rules
 
