@@ -17,7 +17,7 @@ The public GitHub repository intentionally excludes the full podcast transcripts
 - Separate observations from interpretations and recommendations. State uncertainty when the available data are insufficient.
 - Attribute podcast claims to a named speaker only when the transcript supports it; otherwise mark attribution uncertain. Cite source IDs and timestamps, and do not use an adjacent, fragmentary segment as evidence for a claim.
 - Preserve disagreements between sources instead of merging them into a falsely consistent rule.
-- Distinguish source-derived claims from operational additions. Do not attribute weekly averaging, RIR/RPE terminology, a fixed reassessment window, or the one-session caution rule to the podcast guests.
+- Distinguish source-derived claims from operational additions. Weekly averaging, a fixed reassessment window, and the one-session caution rule are operational additions. RIR/RPE are discussed in S5; present them as one optional way to describe effort, not a required reporting system.
 - Never recommend doping, medication, or unsafe rapid weight loss.
 - Do not diagnose injury, disease, eating disorders, or neurological symptoms. Escalate pain, suspected injury, fainting, severe deterioration, or other red flags to an appropriate clinician.
 

@@ -4,7 +4,7 @@ Skill Codex do praktycznego nadzoru procesu treningowego, ze szczególnym nacisk
 
 ## Jak powstał
 
-Skill powstał na prośbę użytkownika jako źródło wiedzy dla agenta nadzorującego trening. Punktem wyjścia były cztery polskojęzyczne transkrypcje podcastów Pawła Albrechta z Arkadiuszem Czerwem. Transkrypcje przygotowano wcześniej z nagrań za pomocą lokalnego workflow MLX Whisper, poprawiono redakcyjnie i uzupełniono o przypisanie mówców. Pełne transkrypcje nie są dołączone do tego publicznego repozytorium; pozostają w lokalnej instalacji skilla. Repo zawiera ich syntezę tematyczną, identyfikatory źródeł, linki i timestampy.
+Skill powstał na prośbę użytkownika jako źródło wiedzy dla agenta nadzorującego trening. Punktem wyjścia było sześć polskojęzycznych materiałów z Arkadiuszem Czerwem: pięć rozmów (z Pawłem Albrechtem lub Dawidem Olszewskim) oraz jeden materiał treningowy. Transkrypcje przygotowano wcześniej z nagrań za pomocą lokalnego workflow MLX Whisper, poprawiono redakcyjnie i uzupełniono o przypisanie mówców. Pełne transkrypcje nie są dołączone do tego publicznego repozytorium; repo zawiera syntezę tematyczną, identyfikatory źródeł, linki i timestampy.
 
 Na podstawie tych materiałów przygotowano:
 
@@ -16,7 +16,7 @@ Synteza kładzie nacisk na monitorowanie trendów i zachowanie ciągłości proc
 
 ## Podstawa źródłowa
 
-Wszystkie cztery nagrania mają dwóch rozmówców: Pawła Albrechta i Arkadiusza Czerwa. Linki prowadzą do materiałów pierwotnych. Pełne transkrypcje nie są publikowane w tym repozytorium.
+Linki prowadzą do materiałów pierwotnych. S1–S4 to rozmowy Pawła Albrechta z Arkadiuszem Czerwem, S5 to rozmowa Dawida Olszewskiego z Arkadiuszem, a S6 to materiał treningowy Arkadiusza. Pełne transkrypcje nie są publikowane w tym repozytorium.
 
 | ID | Temat | Nagranie |
 |---|---|---|
@@ -24,6 +24,8 @@ Wszystkie cztery nagrania mają dwóch rozmówców: Pawła Albrechta i Arkadiusz
 | S2 | Budowanie masy mięśniowej i hipertrofia | [YouTube](https://youtu.be/XLTbnKL_fwk) |
 | S3 | Układanie planu treningowego | [YouTube](https://youtu.be/IIi8e4i6pZE) |
 | S4 | Dieta i kaloryczność | [YouTube](https://youtu.be/ySgq9XysjD0) |
+| S5 | Programowanie planu treningowego — Dawid Olszewski i Arkadiusz Czerw | [YouTube](https://youtu.be/h2Vj5ai9Ang) |
+| S6 | Praktyczny trening, progresja i objętość — Arkadiusz Czerw | [YouTube](https://youtu.be/blaB3aBrf1o) |
 
 Synteza wskazuje identyfikatory źródeł i znaczniki czasu, aby można było sprawdzić kontekst konkretnej wypowiedzi w nagraniu. Gdy potrzebny jest dokładny cytat, szerszy kontekst albo porównanie wypowiedzi, należy sprawdzić oryginalne nagranie.
 
