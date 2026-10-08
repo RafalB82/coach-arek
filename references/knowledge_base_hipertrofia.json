@@ -1,0 +1,50 @@
+{
+  "version": "1.1",
+  "language": "pl",
+  "purpose": "Nadzór procesu treningu hipertroficznego i redukcji bez automatycznego przepisywania całego planu.",
+  "sources": [
+    {"id": "S1", "topic": "redukcja", "url": "https://youtu.be/bpSubkCA168"},
+    {"id": "S2", "topic": "masa mięśniowa", "url": "https://youtu.be/XLTbnKL_fwk"},
+    {"id": "S3", "topic": "plan treningowy", "url": "https://youtu.be/IIi8e4i6pZE"},
+    {"id": "S4", "topic": "dieta i kaloryczność", "url": "https://youtu.be/ySgq9XysjD0"}
+  ],
+  "principles": [
+    {"id": "P01", "rule": "Oceniaj poprzedni plan i zachowuj ciągłość, aby móc porównać progres.", "source": "S3", "timestamp": "01:04", "confidence": "operational"},
+    {"id": "P02", "rule": "Monitoruj objętość głównie jako trudne serie robocze w tygodniu.", "source": "S3", "timestamp": "03:00", "confidence": "operational"},
+    {"id": "P03", "rule": "Przy braku progresu najpierw rozważ małą zmianę, np. jedną serię roboczą, zamiast całego treningu.", "source": "S3", "timestamp": "38:33", "confidence": "operational"},
+    {"id": "P04", "rule": "Zostawiaj zapas we wcześniejszych seriach, aby utrzymać jakość kolejnych serii.", "source": "S3", "timestamp": "51:46", "confidence": "operational"},
+    {"id": "P05", "rule": "Wzór kalorii jest punktem startowym; kaloryczność kalibruj na podstawie trendu masy ciała.", "source": "S4", "timestamp": "01:01", "confidence": "operational"},
+    {"id": "P06", "rule": "Podczas redukcji utrzymuj trening siłowy i odpowiednią podaż białka.", "source": "S1", "timestamp": "01:58", "confidence": "operational"},
+    {"id": "P07", "rule": "Zakres 0,5–1% masy ciała tygodniowo traktuj jako punkt odniesienia do monitorowania redukcji, nie jako nakaz.", "source": "S1", "timestamp": "06:14", "confidence": "podcast_claim_verify"},
+    {"id": "P08", "rule": "Zakres nadwyżki 250–300 kcal jest hipotezą praktyczną z rozmowy i wymaga indywidualnej obserwacji.", "source": "S2", "timestamp": "01:08", "confidence": "podcast_claim_verify"},
+    {"id": "P09", "rule": "Przed zmianą planu zbierz poprzedni plan, wykonanie, progres i powód zmiany.", "source": "S3", "timestamp": "01:04", "confidence": "operational"},
+    {"id": "P10", "rule": "Plan ma uwzględniać preferencje, wykonalność i elastyczność; wybór splitu zależy od użytkownika.", "source": "S2", "timestamp": "19:09", "confidence": "operational"},
+    {"id": "P11", "rule": "Częstotliwość około 2 razy na grupę tygodniowo to preferencja rozmówcy, nie warunek konieczny; dostosuj plan do wykonalności.", "source": "S3", "timestamp": "07:20", "confidence": "podcast_claim_contextual"},
+    {"id": "P12", "rule": "Utrzymuj ćwiczenie kontrolne i porównywalne warunki; nie zmieniaj często całego zestawu ćwiczeń.", "source": "S2", "timestamp": "21:14", "confidence": "operational"},
+    {"id": "P13", "rule": "Zakres ruchu powinien być możliwie duży w granicach kontroli i komfortu; nie forsuj bólu ani kompensacji.", "source": "S3", "timestamp": "23:37", "confidence": "operational"},
+    {"id": "P14", "rule": "Kolejność ćwiczeń może zaczynać się od ruchów bardziej złożonych i wymagających skupienia.", "source": "S3", "timestamp": "28:14", "confidence": "podcast_claim_contextual"},
+    {"id": "P15", "rule": "Przerwy dobieraj do ćwiczenia i gotowości; w rozmowie podano co najmniej 2 minuty jako punkt odniesienia.", "source": "S3", "timestamp": "30:52", "confidence": "podcast_claim_verify"},
+    {"id": "P16", "rule": "Szukaj najmniejszej objętości, która daje progres; przykład 10 serii tygodniowo to punkt rozmówcy, nie norma.", "source": "S2", "timestamp": "06:46", "confidence": "podcast_claim_verify"},
+    {"id": "P17", "rule": "Nie doprowadzaj automatycznie każdej serii do upadku; zachowuj zapas we wcześniejszych seriach i oceniaj bezpieczeństwo ćwiczenia.", "source": "S3", "timestamp": "47:43", "confidence": "operational"},
+    {"id": "P18", "rule": "Oceniaj progres przy porównywalnej technice, zakresie ruchu i wysiłku; sam większy ciężar nie wystarcza.", "source": "S2", "timestamp": "36:26", "confidence": "operational"},
+    {"id": "P19", "rule": "Szybki spadek masy po ograniczeniu węglowodanów może obejmować wodę, glikogen i treść pokarmową, a nie sam tłuszcz.", "source": "S4", "timestamp": "14:35", "confidence": "podcast_claim_contextual"},
+    {"id": "P20", "rule": "Trening siłowy podczas redukcji ma wspierać zachowanie mięśni; nie traktuj kalorii z zegarka jako dokładnej miary wydatku.", "source": "S1", "timestamp": "17:36", "confidence": "operational"},
+    {"id": "P21", "rule": "Hierarchia rozmówców: całkowita kaloryczność, białko, proporcje tłuszczów i węglowodanów, potem timing posiłków.", "source": "S4", "timestamp": "32:56", "confidence": "podcast_claim_contextual"},
+    {"id": "P22", "rule": "Podane 2–3 g białka/kg to zakres z podcastu; przed użyciem sprawdź aktualne wytyczne i kontekst użytkownika.", "source": "S4", "timestamp": "19:22", "confidence": "podcast_claim_verify"},
+    {"id": "P23", "rule": "Dopasuj liczbę posiłków do kalorii, apetytu, grafiku i wygody; nie narzucaj jedzenia co 2,5–3 godziny.", "source": "S4", "timestamp": "29:13", "confidence": "operational"},
+    {"id": "P24", "rule": "Przy rozbieżności między deklarowanym jedzeniem a trendem masy sprawdź pomiar i kompletność zapisu bez oskarżania użytkownika.", "source": "S4", "timestamp": "51:45", "confidence": "operational"},
+    {"id": "P25", "rule": "Nie zamieniaj szacunku kcal/kg ani stwierdzeń o braku górnej granicy redukcji w gwarancje lub zalecenia.", "source": "S1", "timestamp": "00:57", "confidence": "podcast_claim_verify"}
+  ],
+  "workflow": {
+    "daily": ["log_exercises", "log_sets_reps_load", "log_RIR_or_RPE", "log_pain_fatigue"],
+    "weekly": ["calculate_body_mass_average", "review_training_completion", "review_progression", "review_recovery", "make_at_most_one_major_change"],
+    "reassessment": "after 2-4 weeks unless safety issue occurs"
+  },
+  "response_template": ["observation", "interpretation", "recommendation", "monitor", "reassessment", "source"],
+  "safety": [
+    "Do not diagnose injury or disease.",
+    "Do not recommend doping or medication.",
+    "Escalate pain, neurological symptoms, fainting, suspected injury, or severe deterioration to an appropriate professional.",
+    "Treat podcast claims as source material, not as independently validated medical or scientific guidance."
+  ]
+}
