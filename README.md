@@ -31,9 +31,9 @@ Linki prowadzą do materiałów pierwotnych. S1–S4 to rozmowy Pawła Albrechta
 
 Synteza wskazuje identyfikatory źródeł i znaczniki czasu, aby można było sprawdzić kontekst konkretnej wypowiedzi w nagraniu. Gdy potrzebny jest dokładny cytat, szerszy kontekst albo porównanie wypowiedzi, należy sprawdzić oryginalne nagranie.
 
-Uwaga redakcyjna do S7: oryginalna transkrypcja automatyczna miała globalnie zamienione etykiety mówców. Atrybucję w syntezie sprawdzono i poprawiono; pełna transkrypcja nie jest publikowana.
+Uwaga redakcyjna do S7: nagranie z kanału KFD.pl, gospodarz to Robuś Pasjonat. W kopii transkrypcji dołączonej do skilla etykiety mówców są poprawne (oryginał z globalnie zamienionymi etykietami nie jest w pakiecie). Z nagrania usunięto klauzulę kanałową, reklamę w intro i promocyjną przyśpiewkę na outro.
 
-Uwaga redakcyjna do S8: oryginalna transkrypcja automatyczna miała globalnie zamienione etykiety mówców. Atrybucję w syntezie sprawdzono i poprawiono; pełna transkrypcja nie jest publikowana.
+Uwaga redakcyjna do S8: nagranie z kanału KFD.pl, gospodarz to Robuś Pasjonat. W kopii transkrypcji dołączonej do skilla etykiety mówców są poprawne; montaż i reklama w pierwszej minucie pozostają w pliku.
 
 ## Ważne ograniczenie
 
@@ -45,12 +45,33 @@ Repozytorium dokumentuje wiedzę przekazaną w wymienionych rozmowach. Umieszcze
 coach-arek/
 ├── SKILL.md
 ├── README.md
+├── .gitignore
 ├── agents/
 │   └── openai.yaml
 └── references/
     ├── knowledge_base_hipertrofia.json
     └── knowledge_base_hipertrofia.md
 ```
+
+Publiczna paczka to wyłącznie pliki powyżej. Nagrania źródłowe, wygenerowane transkrypcje i skrypty pipeline trzymane są lokalnie w katalogu `mlx_whisper/`, który jest świadomie pomijany przez git (`.gitignore`) — nie są potrzebne do użycia skilla.
+
+## Poza repozytorium: lokalne źródła i pipeline
+
+Poniżej opisany katalog `mlx_whisper/` nie jest częścią repozytorium (patrz `.gitignore`) — to lokalne źródła, pipeline i transkrypcje. Opisuję go, bo transkrypcje są źródłem cytowań w `references/`: każdy plik `.md` ma w nagłówku linię `Pipeline:` z użytymi ustawieniami (źródło etykiet, cięcia redakcyjne, podział bloków), więc plik opisuje sam siebie.
+
+- **Przebudowa bez modelu** (deterministyczna, ~2 s dla ośmiu nagrań): `cd mlx_whisper && ./transkrypcja.sh --rebuild` — bierze czasy słów z gotowego JSON-a, a etykiety mówców z istniejącego Markdowna, i odtwarza pliki `.md` (dla S5–S8 bajt w bajt; S1–S4 różnią się drobną redakcją ASR i kolejnością mówców w nagłówku, bo ich pliki `.md` powstały z wcześniejszej wersji JSON-a).
+- **Pełny przebieg** wymaga `yt-dlp`, `mlx_whisper` i środowiska z `pyannote.audio` (`DIAR_PY`, domyślnie `~/diar311/bin/python`): `cd mlx_whisper && ./transkrypcja.sh`.
+- Ustawienia per nagranie (mapa nazw mówców, liczba mówców, cięcia, podział bloków) są w skrypcie i można je nadpisać zmiennymi `NAMES_<id>`, `SPEAKERS_<id>`, `DROP_WORDS_<id>`, `MAX_BLOCK_<id>`, `SOURCE_URL_<id>`, `RENAME_<id>`.
+
+### Kontrola jakości bazy wiedzy
+
+Lokalny skrypt `mlx_whisper/check_citations.py` (poza repozytorium, razem z transkrypcjami) sprawdza, czy baza nadal jest spójna z transkrypcjami: każde cytowanie musi trafiać w blok transkrypcji i w odległości, którą da się odnaleźć w pliku, atrybucja mówcy w zasadach JSON musi zgadzać się z etykietą w transkrypcji, linki `?t=` muszą odpowiadać etykiecie czasu, pliki md i json muszą się zgadzać w zakresie cytowań, a tabela liczb, tabela osób i granice wiedzy muszą istnieć w obu formatach. Skrypt zwraca kod 1, gdy znajdzie niezgodność — warto uruchamiać go po każdej zmianie `references/`.
+
+Uwagi do konkretnych plików:
+
+- **S5** (`h2Vj5ai9Ang`) to nagranie z kanału HSS (`@dawidolszewski`); gospodarz to **Dawid Olszewski** — ta sama osoba, której Arkadiusz w rozmowie nazywa „Dawid". To nie jest gospodarz z S7/S8.
+- **S6** (`blaB3aBrf1o`) to monolog Arkadiusza; plik `.md` dzieli go na bloki ~25 s na granicach segmentów Whispera, bo model diarization nie dzieli nagrania jednogłosowego.
+- **S7** (`Xb2y18_B0QY`) pozbawiono klauzuli kanałowej (0:00–0:25), reklamy w intro (1:05–1:19) i promocyjnej przyśpiewki na outro (1:08:39–1:08:59) — te fragmenty nie są ani wypowiedzią gospodarza, ani gościa. Zakresy cięć zapisuje linia `Pipeline:` w nagłówku pliku.
 
 ## Korzystanie ze skilla
 
