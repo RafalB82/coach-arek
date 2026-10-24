@@ -20,8 +20,8 @@ To redakcyjna zasada pracy agenta, a nie dosłowny wniosek z podcastu: monitoruj
 
 | Osoba | Rola | Źródła | Kanał / nagranie | Jak się o nim mówi w nagraniach |
 |---|---|---|---|---|
-| Arkadiusz Czerw | trener i zawodnik kulturystyki, gość | S1–S8 | wszystkie | „Arek", „Arku" |
-| Paweł Albrecht | gospodarz rozmów z Arkadiuszem | S1–S4 | własne nagrania („trenerów kopiuj w klej") | „Paweł" |
+| Arkadiusz Czerw | trener i zawodnik kulturystyki, gość | S1–S9 | wszystkie | „Arek", „Arku" |
+| Paweł Albrecht | gospodarz rozmów z Arkadiuszem | S1–S4, S9 | własne nagrania („trenerów kopiuj w klej") | „Paweł" |
 | Dawid Olszewski | gospodarz rozmowy o programowaniu planu | S5 | HSS Podcast, kanał `@dawidolszewski` | „Dawid" |
 | Robuś Pasjonat | gospodarz rozmów dla portalu treningowego | S7, S8 | KFD.pl | „Robert", „Robuś" |
 
@@ -39,12 +39,15 @@ Uwaga: **S5, S7 i S8 to trzy różne nagrania, ale tylko dwaj gospodarze** — S
 | `S6` | praktyczny trening, progresja i liczenie objętości — materiał Arkadiusza Czerwa | https://youtu.be/blaB3aBrf1o |
 | `S7` | programowanie treningu, wysiłek, przerwy, regeneracja i żywienie — rozmowa Arkadiusza Czerwa z Robusiem Pasjonatem | https://youtu.be/Xb2y18_B0QY |
 | `S8` | trening siłowy, redukcja tkanki tłuszczowej, cardio i autoregulacja — rozmowa Arkadiusza Czerwa z Robusiem Pasjonatem | https://youtu.be/54BCbUZaHo0 |
+| `S9` | stara i nowa szkoła kulturystyki, hipertrofia, pompa, przerwy i superserie — rozmowa Pawła Albrechta z Arkadiuszem Czerwem | https://youtu.be/U_shUYXSiHM |
 
 Uwaga do `S5`: nagranie z kanału HSS (@dawidolszewski), gospodarz to Dawid Olszewski — to ta sama osoba, której Arkadiusz w rozmowie nazywa „Dawid”. W dołączonej transkrypcji etykiety mówców są poprawne.
 
 Uwaga do `S7`: nagranie z kanału KFD.pl, gospodarz to Robuś Pasjonat. W dołączonej transkrypcji etykiety mówców są poprawne (oryginał z globalnie zamienionymi etykietami nie jest w repozytorium, więc nie da się go tu sprawdzić). Z nagrania usunięto klauzulę kanałową (0:00–0:25), reklamę w intro (1:05–1:19) i promocyjną przyśpiewkę na outro (1:08:39–1:08:59); cięcia odtwarza `transkrypcja.sh --rebuild`. Automatyczne rozpoznawanie miejscami skleja fragmenty montażu, dlatego te fragmenty i dokładną atrybucję w razie potrzeby weryfikuj z nagraniem.
 
 Uwaga do `S8`: nagranie z kanału KFD.pl, gospodarz to Robuś Pasjonat. Pierwsza minuta zawiera montaż zapowiedzi i reklamę — w dołączonej transkrypcji pozostawiony w całości, z poprawnymi etykietami (oryginał z globalnie zamienionymi etykietami nie jest w repozytorium). ASR miejscami skleja lub zniekształca wypowiedzi, więc liczby i szczegóły zdrowotne weryfikuj w nagraniu, a nieczytelnych fragmentów nie cytuj.
+
+Uwaga do `S9`: prowadzącym jest Paweł Albrecht, gościem Arkadiusz Czerw. Diarization skleił krótką odpowiedź Arkadiusza przy 00:53 z wypowiedzią Pawła; rozdzielono ją ręcznie w dołączonej transkrypcji. ASR może zniekształcać wypowiedzi, a twierdzenia rozmówców o literaturze nie zostały tu niezależnie zweryfikowane.
 
 ## Zasady operacyjne agenta
 
@@ -112,6 +115,7 @@ Poniższe punkty opisują treść rozmów. Liczby i uogólnienia rozmówców nie
 
 ### 2. Ćwiczenia, kolejność, technika i odpoczynek
 
+- Superserie antagonistyczne (np. wyciskanie z wiosłowaniem) mogą według Arkadiusza oszczędzać czas i pozwalać utrzymać objętość; superserie na tę samą grupę woli rozdzielać, by zachować odpoczynek. To jego praktyczna preferencja, nie gwarancja ani obowiązkowy układ. (`S9` [28:34](https://youtu.be/U_shUYXSiHM?t=1714), [30:33](https://youtu.be/U_shUYXSiHM?t=1833))
 - Dobór ćwiczeń ma uwzględniać preferencje, możliwość konsekwentnego wykonywania i pokrycie funkcji/obszarów danej grupy mięśniowej. Pojedyncze ćwiczenie może nie obejmować całej grupy; w rozmowie podano przykłady czworogłowych i dwugłowych uda. (`S3` [09:42](https://youtu.be/IIi8e4i6pZE?t=582), [12:01](https://youtu.be/IIi8e4i6pZE?t=721))
 - Nie przedstawiaj ćwiczeń wielostawowych jako zawsze lepszych od izolowanych. Mogą pełnić różne role i być dobierane do celu oraz tolerancji ćwiczącego. (`S3` [13:25](https://youtu.be/IIi8e4i6pZE?t=805), [58:12](https://youtu.be/IIi8e4i6pZE?t=3492))
 - Rozmówca proponuje zaczynać od ruchów bardziej złożonych i wymagających skupienia, a następnie wykonywać ćwiczenia izolowane. To praktyczna konwencja, nie bezwzględne prawo. (`S3` [28:14](https://youtu.be/IIi8e4i6pZE?t=1694))
@@ -122,6 +126,13 @@ Poniższe punkty opisują treść rozmów. Liczby i uogólnienia rozmówców nie
 - Arkadiusz opisuje technikę i dobór ćwiczenia z uwzględnieniem ograniczeń własnego ciała; w jego przykładzie ustawienie nóg na ławce ograniczało pogłębianie lordozy i możliwy dyskomfort. To modyfikacja konkretnej osoby, nie standardowa technika wyciskania. Przy bólu lub urazie nie kopiuj jej bez oceny specjalisty. (`S6` [04:05](https://youtu.be/blaB3aBrf1o?t=245))
 
 ### 3. Objętość, wysiłek i progresja
+
+- S9 odrzuca celowe wywoływanie dużych uszkodzeń mięśni i DOMS jako celu treningu. Przy nowym ćwiczeniu lub planie Arkadiusz opisuje rozpoczęcie od mniejszego wysiłku i stopniowe zwiększanie parametrów; nie podaje precyzyjnego protokołu rampowania. Jego twierdzenia o mechanizmach hipertrofii są wypowiedziami rozmówcy, nie niezależną walidacją naukową. (`S9` [08:08](https://youtu.be/U_shUYXSiHM?t=488), [09:49](https://youtu.be/U_shUYXSiHM?t=589), [10:08](https://youtu.be/U_shUYXSiHM?t=608), [10:25](https://youtu.be/U_shUYXSiHM?t=625), [16:23](https://youtu.be/U_shUYXSiHM?t=983))
+- S9 rozwija spowolnienie koncentryki jako praktyczny sygnał dużego wysiłku. Nie traktuj go jako dokładnego pomiaru RIR ani gwarancji hipertrofii. (`S9` [16:39](https://youtu.be/U_shUYXSiHM?t=999), [17:43](https://youtu.be/U_shUYXSiHM?t=1063), [18:04](https://youtu.be/U_shUYXSiHM?t=1084))
+- S9 przedstawia pompę jako niepewny wskaźnik skuteczności, który może przeszkadzać, jeżeli dyskomfort kończy serię przed osiągnięciem zaplanowanego wysiłku. Oceniaj postęp na podstawie wykonania i porównywalnych wyników, nie samego odczucia „napompowania”; to stanowisko rozmówcy. (`S9` [23:26](https://youtu.be/U_shUYXSiHM?t=1406), [24:36](https://youtu.be/U_shUYXSiHM?t=1476), [25:12](https://youtu.be/U_shUYXSiHM?t=1512))
+- S9 ponownie uznaje szeroki zakres powtórzeń za możliwy przy zbliżeniu do upadku, ale Arkadiusz osobiście preferuje umiarkowane/niższe zakresy ze względu na koszt zmęczenia i pompy; wysokie dopuszcza m.in. gdy cięższe obciążenie jest niewygodne. To preferencja, nie limit hipertrofii ani uniwersalna ocena ryzyka kontuzji. (`S9` [20:08](https://youtu.be/U_shUYXSiHM?t=1208), [21:44](https://youtu.be/U_shUYXSiHM?t=1304), [22:28](https://youtu.be/U_shUYXSiHM?t=1348), [22:42](https://youtu.be/U_shUYXSiHM?t=1362))
+- S9 podaje około 2 sekund jako wystarczające, kontrolowane opuszczanie ciężaru i odradza celowe bardzo długie ekscentryki. To punkt widzenia rozmówcy, nie obowiązkowe tempo ani protokół rehabilitacyjny. (`S9` [14:51](https://youtu.be/U_shUYXSiHM?t=891))
+- W S9 Arkadiusz podkreśla objętość, wysiłek blisko niepowodzenia i progresywne przeciążenie jako ważne zmienne treningowe; w żywieniu wyróżnia kaloryczność i białko. To hierarchia z rozmowy, nie pełny ani niezależnie zweryfikowany model żywienia. (`S9` [39:46](https://youtu.be/U_shUYXSiHM?t=2386))
 
 - Objętość można opisywać na różne sposoby; dla praktycznego monitorowania rozmówca wskazuje tygodniowe serie robocze, a nie sam tonaż. Zapisuj serie osobno dla grup mięśniowych; o ćwiczeniach wielostawowych mówi Arkadiusz w `S6` [08:52](https://youtu.be/blaB3aBrf1o?t=532) — triceps i przednia część deltoidów pracują razem z klatką, ale to klatka jest czynnikiem limitującym. (`S3` [03:00](https://youtu.be/IIi8e4i6pZE?t=180))
 - W S6 Arkadiusz opisuje własną metodę przypisywania serii wielostawowych: za główną serię dla danej partii uznaje ją wtedy, gdy ta partia jest czynnikiem limitującym; samo współuczestnictwo mięśnia pomocniczego nie oznacza równoważnej serii bezpośredniej. To praktyczny model liczenia, nie uniwersalny sposób wyceny każdej serii. (`S6` [08:10](https://youtu.be/blaB3aBrf1o?t=490), [08:52](https://youtu.be/blaB3aBrf1o?t=532))
@@ -184,6 +195,8 @@ Poniższe punkty opisują treść rozmów. Liczby i uogólnienia rozmówców nie
 - Przelicznik kilokalorii na kilogram tłuszczu jest przybliżeniem; nie przeliczaj go wprost na gwarantowane tempo zmiany wagi. (`S1` [00:57](https://youtu.be/bpSubkCA168?t=57), `S4` [10:14](https://youtu.be/ySgq9XysjD0?t=614))
 - Wypowiedzi o braku górnej granicy tempa redukcji są kontrowersyjne i nie powinny być używane jako zalecenie. Bezpieczeństwo i możliwość utrzymania tempa są ważniejsze. (`S1` [00:57](https://youtu.be/bpSubkCA168?t=57))
 - W rozmowach pojawia się doping i środki farmakologiczne. Agent nie ma przekładać tych fragmentów na rekomendacje, dawkowanie ani optymalizację użycia. Kieruje pytania o leki do lekarza.
+- S9 zawiera twierdzenia o uszkodzeniach mięśni, stresie metabolicznym, pompie, mleczanie i badaniach nad superseriami. Przedstawiaj je jako wypowiedzi Arkadiusza, a nie wynik niezależnego przeglądu literatury; nie używaj ich do diagnozy ani protokołu rehabilitacji. (`S9` [08:08](https://youtu.be/U_shUYXSiHM?t=488), [23:26](https://youtu.be/U_shUYXSiHM?t=1406), [26:19](https://youtu.be/U_shUYXSiHM?t=1579), [29:27](https://youtu.be/U_shUYXSiHM?t=1767))
+- S9 omawia wybór trenera i krytykę cherry-pickingu. Przyjmij to jako wskazówkę do krytycznej oceny źródeł, ale nie powtarzaj uogólnień o wiedzy konkretnych trenerów na podstawie samego wyglądu. (`S9` [38:36](https://youtu.be/U_shUYXSiHM?t=2316), [39:46](https://youtu.be/U_shUYXSiHM?t=2386))
 
 ## Wszystkie liczby w bazie
 
@@ -213,7 +226,10 @@ Każda liczba występująca w tej bazie, z kontekstem i ryzykiem nadużycia. Pod
 | 6–8 / ~10 / 12 powtórzeń | punkty startowe zależnie od złożoności ćwiczenia | złożone z wolnym ciężarem / maszyny / izolacje | `S3` [43:32](https://youtu.be/IIi8e4i6pZE?t=2612) | traktowanie jako sztywnych limitów |
 | 6 powtórzeń | może wystarczyć do uznania serii za efektywną | wypowiedź S2 o innej ramie niż S3 | `S2` [29:30](https://youtu.be/XLTbnKL_fwk?t=1770) | wyprowadzanie limitu z krótkiego fragmentu |
 | do 10 powtórzeń | osobista preferencja Arkadiusza w S7 | dostosowywana do przypadku (klient po urazie tylnej części uda) | `S7` [31:27](https://youtu.be/Xb2y18_B0QY?t=1887), [32:14](https://youtu.be/Xb2y18_B0QY?t=1934) | ogłaszanie górnego limitu hipertrofii |
-| do 12 powtórzeń | osobista preferencja Arkadiusza w S5 | wynika z koncentracji i zmęczenia metabolicznego | `S5` [1:06:45](https://youtu.be/h2Vj5ai9Ang?t=4005) | jak wyżej |
+| do 12 powtórzeń | osobista preferencja Arkadiusza w S5; w S9 także punkt startowy ograniczający pompę | wynika z jego odczuwanego kosztu zmęczenia, nie jest granicą hipertrofii | `S5` [1:06:45](https://youtu.be/h2Vj5ai9Ang?t=4005), `S9` [25:35](https://youtu.be/U_shUYXSiHM?t=1535) | ogłaszanie górnego limitu hipertrofii |
+| 1–6 / 8–12 powtórzeń | historyczne uproszczenie „siła” vs „masa”, krytykowane w S9 | nie jest aktualną rekomendacją źródeł | `S9` [21:18](https://youtu.be/U_shUYXSiHM?t=1278) | powtarzanie jako zasady doboru zakresu |
+| około 2 s | kontrolowane opuszczanie ciężaru w przykładzie Arkadiusza | jego praktyczna sugestia, nie uniwersalne tempo | `S9` [14:51](https://youtu.be/U_shUYXSiHM?t=891) | narzucanie dokładnego tempa |
+| 60 s vs 2 min | twierdzenie o podobnej akumulacji mleczanu; rozmówca łączy dłuższą przerwę z większą objętością | wypowiedź z podcastu, niezweryfikowana tu niezależnie | `S9` [26:19](https://youtu.be/U_shUYXSiHM?t=1579) | traktowanie jako pewnego wyniku naukowego |
 | 0,25 kg | mikroobciążenie | ułatwia stopniowe zwiększanie ciężaru | `S3` [58:12](https://youtu.be/IIi8e4i6pZE?t=3492) | — |
 | 4–6 tygodni | horyzont bez postępu, po którym S2 proponuje dołożyć serię | sam rozmówca prosi, by nie przywiązywać wagi do tego czasu | `S2` [24:58](https://youtu.be/XLTbnKL_fwk?t=1498) | sztywny próg zastoju |
 | 2–4 tygodnie | okno ponownej oceny | **dodatek autora skilla, nie wypowiedź rozmówcy** | — | traktowanie jako reguły źródeł |
@@ -233,7 +249,7 @@ Każda liczba występująca w tej bazie, z kontekstem i ryzykiem nadużycia. Pod
 
 | Wartość | Co oznacza | Warunki | Źródło | Ryzyko nadużycia |
 |---|---|---|---|---|
-| ≥2 min | punkt odniesienia dla przerwy | zależna od ćwiczenia i gotowości do kolejnej serii; w S7 także przy izolacjach | `S3` [30:52](https://youtu.be/IIi8e4i6pZE?t=1852), `S7` [46:19](https://youtu.be/Xb2y18_B0QY?t=2779), [46:27](https://youtu.be/Xb2y18_B0QY?t=2787) | skracanie kosztem jakości serii |
+| ≥2 min | punkt odniesienia dla przerwy | zależna od ćwiczenia i jakości kolejnej serii; S9 podaje ją też w kontekście ograniczania pompy | `S3` [30:52](https://youtu.be/IIi8e4i6pZE?t=1852), `S7` [46:19](https://youtu.be/Xb2y18_B0QY?t=2779), `S9` [25:35](https://youtu.be/U_shUYXSiHM?t=1535) | traktowanie jako sztywnego minimum dla każdego |
 | 6–12 miesięcy | niezmienianie ćwiczenia kontrolnego | w S5; w S2 mówi „w skali całego roku" | `S5` [43:42](https://youtu.be/h2Vj5ai9Ang?t=2622), `S2` [21:14](https://youtu.be/XLTbnKL_fwk?t=1274) | nakładanie sztywnego cyklu |
 | 9 lat | jak długo Arkadiusz sam nie zmienia ćwiczeń bazowych | opis jego praktyki, nie zalecenie | `S5` [40:39](https://youtu.be/h2Vj5ai9Ang?t=2439) | jak wyżej |
 | 4, 6, 12 tygodni | okresy, po których zmiana ćwiczenia znosi punkt odniesienia | kontekst rozmowy o utrzymaniu ćwiczenia kontrolnego | `S7` [33:50](https://youtu.be/Xb2y18_B0QY?t=2030) | — |
@@ -310,7 +326,7 @@ Ponowna ocena: konkretny termin lub liczba treningów.
 
 ### Granice wiedzy (czego źródła nie poruszają)
 
-Poniższych obszarów **nie ma** w ośmiu nagraniach. Nie uzupełniaj ich własnymi wnioskami ani nie przedstawiaj ich jako ustaleń rozmówców — odpowiedz wprost, że źródła tego nie mówią, i odsyłaj do aktualnej wiedzy klinicznej lub specjalisty.
+Poniższych obszarów **nie ma** w dziewięciu nagraniach. Nie uzupełniaj ich własnymi wnioskami ani nie przedstawiaj ich jako ustaleń rozmówców — odpowiedz wprost, że źródła tego nie mówią, i odsyłaj do aktualnej wiedzy klinicznej lub specjalisty.
 
 - dawki i skuteczność suplementów poza białkiem (kreatyna, BCAA, przedtreningówki) — jedyne wzmianki to oznaczenia produktów w reklamach;
 - protokoły rehabilitacji, zakres ruchu w rehabilitacji, powrót po operacjach — S6 to opis indywidualnego przypadku Arkadiusza, nie protokół;
