@@ -10,9 +10,180 @@ Skill jest **tylko instrukcjami** — nie uruchamia skryptów, nie instaluje zal
 - `git` (zalecane) lub możliwość skopiowania katalogu,
 - nic więcej — Python, Node i MCP nie są potrzebne.
 
-## Wariant A: prosta instalacja (osobno dla każdego narzędzia)
+---
 
-### Claude Code
+## Wariant GUI (bez terminala) — Windows i Mac
+
+Dla osoby, która nie chce otwierać terminala. Wystarczy przeglądarka i Eksplorator/Finder. Skill to folder z plikami — nie instaluje programów ani nie wymaga kluczy API.
+
+### Najpierw pobierz skill (Windows i Mac)
+
+1. Wejdź na `https://github.com/RafalB82/coach-arek`.
+2. Kliknij zielony przycisk **Code** → **Download ZIP**.
+3. Plik `coach-arek-main.zip` trafi do **Pobranych**.
+4. Rozpakuj archiwum — powstanie folder `coach-arek-main`.
+5. Zmień nazwę folderu na dokładnie **`coach-arek`**: kliknij nazwę, wpisz nową, naciśnij Enter.
+
+Nazwa folderu musi odpowiadać nazwie skilla z frontmattera. Dlatego nie zostawiaj `coach-arek-main`.
+
+---
+
+### Windows
+
+#### Claude: instalacja przez stronę
+
+To najprostsza droga, bo nie trzeba dotykać folderów systemowych.
+
+1. Zaloguj się na `claude.ai`.
+2. Otwórz **Settings → Capabilities**.
+3. Włącz **Code execution and file creation** (w nowszym układzie: **Create and edit files**). Bez tego skill się nie uruchomi.
+4. W Eksploratorze kliknij prawym przyciskiem na folder **`coach-arek`** → **Wyślij do → Folder skompresowany (ZIP)**. Powstanie `coach-arek.zip`.
+5. Na `claude.ai` kliknij **Customize** w lewym panelu, potem **Skills**.
+6. Kliknij **+** → **Create skill** → **Upload a skill**.
+7. Wskaż **`coach-arek.zip`** i poczekaj na przeskanowanie.
+8. Włącz przełącznik przy **coach-arek**.
+
+Skill będzie dostępny w czacie Claude’a, a po zalogowaniu tym samym kontem — także w Claude Code (wymagane Claude Code 2.1.273+).
+
+#### Claude Code: sprawdzenie
+
+1. Otwórz Claude Desktop i zakładkę **Code**.
+2. Zaloguj się tym samym kontem co na `claude.ai`.
+3. W polu wpisz `/skills`.
+4. Skill powinien być na liście pod **claude.ai sync**.
+5. Wywołaj go: `/coach-arek`.
+
+Jeśli go nie ma: zaktualizuj aplikację i zrestartuj. Jeśli nadal nie ma, sprawdź, czy skill jest włączony w **Customize → Skills** na `claude.ai`.
+
+#### Codex: poproś agenta
+
+Jeśli masz aplikację ChatGPT z zakładką **Codex**, nie musisz szukać folderów.
+
+1. Otwórz nowy wątek w **Codex**.
+2. Wklej:
+
+   ```text
+   Zainstaluj skill coach-arek z https://github.com/RafalB82/coach-arek
+   do folderu ~/.agents/skills/coach-arek.
+   Upewnij się, że SKILL.md jest bezpośrednio w tym folderze.
+   Nie zmieniaj innych plików. Potwierdź ścieżkę.
+   ```
+
+3. Zatwierdź operacje na plikach, o które poprosi.
+4. Zamknij i otwórz Codex ponownie.
+5. Wpisz `/skills` albo `$coach-arek`.
+
+#### Codex: ręcznie w Eksploratorze
+
+1. Rozpakuj ZIP i zmień nazwę folderu na **`coach-arek`**.
+2. Otwórz folder domowy użytkownika (`C:\Users\<TwojaNazwa>`).
+3. Włącz pokazywanie ukrytych elementów: **Widok → Pokaż → Ukryte elementy** (Windows 11) lub **Widok → Opcje → Zmień ustawienia folderów i wyszukiwania → Widok → Pokaż ukryte pliki, foldery i dyski** (Windows 10).
+4. Jeśli nie istnieje folder `.agents`, utwórz go, a w nim folder `skills`. Docelowa ścieżka: `C:\Users\<TwojaNazwa>\.agents\skills`.
+5. Przeciągnij folder **`coach-arek`** do `skills`. Docelowa ścieżka to `~\.agents\skills\coach-arek\SKILL.md`.
+6. Zamknij i otwórz Codex.
+7. Wpisz `$coach-arek`.
+
+Starsze buildy Codexa czytają `~\.codex\skills`. Jeśli skill się nie pojawia, powtórz kroki, tworząc w punkcie 4 folder `.codex` zamiast `.agents`, albo poproś Codex o skopiowanie folderu także tam.
+
+---
+
+### Mac
+
+#### Claude: instalacja przez stronę
+
+To najprostsza droga, bo nie trzeba dotykać folderów systemowych.
+
+1. Zaloguj się na `claude.ai`.
+2. Otwórz **Settings → Capabilities**.
+3. Włącz **Code execution and file creation** (w nowszym układzie: **Create and edit files**). Bez tego skill się nie uruchomi.
+4. W Finderze kliknij prawym przyciskiem na folder **`coach-arek`** → **Compress**. Powstanie `coach-arek.zip`.
+5. Na `claude.ai` kliknij **Customize** w lewym panelu, potem **Skills**.
+6. Kliknij **+** → **Create skill** → **Upload a skill**.
+7. Wskaż **`coach-arek.zip`** i poczekaj na przeskanowanie.
+8. Włącz przełącznik przy **coach-arek**.
+
+Skill będzie dostępny w czacie Claude’a, a po zalogowaniu tym samym kontem — także w Claude Code (wymagane Claude Code 2.1.273+).
+
+#### Claude Code: sprawdzenie
+
+1. Otwórz Claude Desktop i zakładkę **Code**.
+2. Zaloguj się tym samym kontem co na `claude.ai`.
+3. W polu wpisz `/skills`.
+4. Skill powinien być na liście pod **claude.ai sync**.
+5. Wywołaj go: `/coach-arek`.
+
+Jeśli go nie ma: zaktualizuj aplikację i zrestartuj. Jeśli nadal nie ma, sprawdź, czy skill jest włączony w **Customize → Skills** na `claude.ai`.
+
+#### Codex: poproś agenta
+
+Jeśli masz aplikację ChatGPT z zakładką **Codex**, nie musisz szukać folderów.
+
+1. Otwórz nowy wątek w **Codex**.
+2. Wklej:
+
+   ```text
+   Zainstaluj skill coach-arek z https://github.com/RafalB82/coach-arek
+   do folderu ~/.agents/skills/coach-arek.
+   Upewnij się, że SKILL.md jest bezpośrednio w tym folderze.
+   Nie zmieniaj innych plików. Potwierdź ścieżkę.
+   ```
+
+3. Zatwierdź operacje na plikach, o które poprosi.
+4. Zamknij i otwórz Codex ponownie.
+5. Wpisz `/skills` albo `$coach-arek`.
+
+#### Codex: ręcznie w Finderze
+
+1. Rozpakuj ZIP i zmień nazwę folderu na **`coach-arek`**.
+2. W Finderze naciśnij **Shift + Command + G**.
+3. Wpisz `~/.agents/skills` i naciśnij Enter. Jeśli folder nie istnieje, wykonaj kroki 4–8; jeśli istnieje, przejdź do kroku 8.
+4. Naciśnij **Shift + Command + H** (katalog domowy).
+5. Naciśnij **Command + Shift + .** (kropka), żeby pokazać ukryte foldery.
+6. Kliknij prawym → **New Folder**, wpisz `.agents`, potwierdź **Use .**.
+7. Wejdź do `.agents`, utwórz folder `skills`.
+8. Przeciągnij folder **`coach-arek`** do `skills`. Docelowa ścieżka to `~/.agents/skills/coach-arek/SKILL.md`.
+9. Zamknij i otwórz Codex.
+10. Wpisz `$coach-arek`.
+
+Starsze buildy Codexa czytają `~/.codex/skills`. Jeśli skill się nie pojawia, powtórz kroki, wpisując w punkcie 3 `~/.codex/skills`, albo poproś Codex o skopiowanie folderu także tam.
+
+---
+
+### Jak sprawdzić, że działa (GUI)
+
+Zadaj pytanie kontrolne:
+
+> Jakie masz źródła i jak rozróżniasz praktykę Arka od tego, co potwierdzają badania?
+
+Dobra odpowiedź powinna wspomnieć o źródłach `S1`–`S10`, Arkadiuszu Czerwem i warstwie weryfikacji naukowej oraz rozróżnić praktykę źródłową od twierdzeń popartych. Jeśli odpowiedź jest ogólna, napisz wprost: **„Użyj skilla coach-arek”**.
+
+### Jak z nim rozmawiać
+
+Podaj dane, o które skill i tak zapyta: cel, staż, plan i ostatnie treningi, trend masy ciała, kalorie i białko, sen, ból oraz to, co się nie zgadza.
+
+```text
+Użyj coach-arek. Redukcja stoi od 3 tygodni. Waga 82 kg, kalorie 2300,
+białko 160 g, kroki 8 tys., 4 treningi siłowe. Co sprawdzić najpierw?
+```
+
+```text
+Użyj coach-arek. Czy 10 serii na grupę tygodniowo wystarczy przy 2 latach stażu?
+```
+
+### Aktualizacja i usunięcie (GUI)
+
+- **Claude:** pobierz nowy ZIP, popraw nazwę folderu, spakuj, usuń starą wersję w **Customize → Skills** (menu „...” → **Delete**) i wgraj nową.
+- **Codex:** poproś agenta o aktualizację z GitHuba albo zamień folder ręcznie.
+- **Usunięcie w Claude:** **Customize → Skills → coach-arek** → wyłącz przełącznik → „...” → **Delete**.
+- **Usunięcie w Codex:** usuń skill w aplikacji albo przeciągnij `~/.agents/skills/coach-arek` (Windows: `%USERPROFILE%\.agents\skills\coach-arek`) do kosza.
+
+---
+
+## Wariant terminalowy (Claude Code / Codex) — na końcu
+
+### Wariant A: prosta instalacja (osobno dla każdego narzędzia)
+
+#### Claude Code
 
 Skill osobisty, dostępny we wszystkich projektach na tej maszynie:
 
@@ -41,7 +212,7 @@ albo pozwolić Claude’owi wybrać skill po opisie, np.:
 Mam zastój w redukcji od trzech tygodni. Co sprawdzić najpierw?
 ```
 
-### Codex
+#### Codex
 
 Aktualna dokumentacja OpenAI wskazuje katalog użytkownika `~/.agents/skills`:
 
@@ -77,7 +248,7 @@ albo z opcjonalnym pytaniem:
 $coach-arek Oceń mój plan pod kątem objętości tygodniowej.
 ```
 
-## Wariant B: jedno źródło i symlinki (Codex + Claude Code)
+### Wariant B: jedno źródło i symlinki (Codex + Claude Code)
 
 Jeżeli używasz obu narzędzi, trzymaj jeden checkout i podlinkuj go w oba miejsca. Aktualizacja to wtedy jedno `git pull`.
 
@@ -98,109 +269,7 @@ ln -s ~/.local/share/coach-arek ~/.codex/skills/coach-arek
 
 Claude Code obsługuje symlinki katalogów skilli; Codex również podąża za symlinkiem. Nie kopiuj tego samego skilla pod dwiema różnymi nazwami — to tworzy duplikaty na liście.
 
-## Wariant C: tylko GUI (bez terminala)
-
-Dla osoby, która nie chce otwierać terminala. Wystarczy przeglądarka i Finder. Skill to folder z plikami — nie instaluje programów ani nie wymaga kluczy API.
-
-### Najpierw pobierz skill
-
-1. Wejdź na `https://github.com/RafalB82/coach-arek`.
-2. Kliknij zielony przycisk **Code** → **Download ZIP**.
-3. Plik `coach-arek-main.zip` trafi do **Pobranych**.
-4. Kliknij go dwukrotnie — powstanie folder `coach-arek-main`.
-5. Zmień nazwę folderu na dokładnie **`coach-arek`**: kliknij nazwę, wpisz nową, naciśnij Enter.
-
-Nazwa folderu musi odpowiadać nazwie skilla z frontmattera. Dlatego nie zostawiaj `coach-arek-main`.
-
-### Claude: instalacja przez stronę
-
-To najprostsza droga, bo nie trzeba dotykać folderów systemowych.
-
-1. Zaloguj się na `claude.ai`.
-2. Otwórz **Settings → Capabilities**.
-3. Włącz **Code execution and file creation** (w nowszym układzie: **Create and edit files**). Bez tego skill się nie uruchomi.
-4. W Finderze kliknij prawym przyciskiem na folder **`coach-arek`** → **Compress**. Powstanie `coach-arek.zip`.
-5. Na `claude.ai` kliknij **Customize** w lewym panelu, potem **Skills**.
-6. Kliknij **+** → **Create skill** → **Upload a skill**.
-7. Wskaż **`coach-arek.zip`** i poczekaj na przeskanowanie.
-8. Włącz przełącznik przy **coach-arek**.
-
-Skill będzie dostępny w czacie Claude’a, a po zalogowaniu tym samym kontem — także w Claude Code (wymagane Claude Code 2.1.273+).
-
-### Claude Code: sprawdzenie
-
-1. Otwórz Claude Desktop i zakładkę **Code**.
-2. Zaloguj się tym samym kontem co na `claude.ai`.
-3. W polu wpisz `/skills`.
-4. Skill powinien być na liście pod **claude.ai sync**.
-5. Wywołaj go: `/coach-arek`.
-
-Jeśli go nie ma: zaktualizuj aplikację i zrestartuj. Jeśli nadal nie ma, sprawdź, czy skill jest włączony w **Customize → Skills** na `claude.ai`.
-
-### Codex: poproś agenta
-
-Jeśli masz aplikację ChatGPT z zakładką **Codex**, nie musisz szukać folderów.
-
-1. Otwórz nowy wątek w **Codex**.
-2. Wklej:
-
-   ```text
-   Zainstaluj skill coach-arek z https://github.com/RafalB82/coach-arek
-   do folderu ~/.agents/skills/coach-arek.
-   Upewnij się, że SKILL.md jest bezpośrednio w tym folderze.
-   Nie zmieniaj innych plików. Potwierdź ścieżkę.
-   ```
-
-3. Zatwierdź operacje na plikach, o które poprosi.
-4. Zamknij i otwórz Codex ponownie.
-5. Wpisz `/skills` albo `$coach-arek`.
-
-### Codex: ręcznie w Finderze
-
-1. Rozpakuj ZIP i zmień nazwę folderu na **`coach-arek`**.
-2. W Finderze naciśnij **Shift + Command + G**.
-3. Wpisz `~/.agents/skills` i naciśnij Enter. Jeśli folder nie istnieje, wykonaj kroki 4–8; jeśli istnieje, przejdź do kroku 8.
-4. Naciśnij **Shift + Command + H** (katalog domowy).
-5. Naciśnij **Command + Shift + .** (kropka), żeby pokazać ukryte foldery.
-6. Kliknij prawym → **New Folder**, wpisz `.agents`, potwierdź **Use .**.
-7. Wejdź do `.agents`, utwórz folder `skills`.
-8. Przeciągnij folder **`coach-arek`** do `skills`. Docelowa ścieżka to `~/.agents/skills/coach-arek/SKILL.md`.
-9. Zamknij i otwórz Codex.
-10. Wpisz `$coach-arek`.
-
-Starsze buildy Codexa czytają `~/.codex/skills`. Jeśli skill się nie pojawia, powtórz kroki, wpisując w punkcie 3 `~/.codex/skills`, albo poproś Codex o skopiowanie folderu także tam.
-
-### Jak sprawdzić, że działa
-
-Zadaj pytanie kontrolne:
-
-> Jakie masz źródła i jak rozróżniasz praktykę Arka od tego, co potwierdzają badania?
-
-Dobra odpowiedź powinna wspomnieć o źródłach `S1`–`S10`, Arkadiuszu Czerwem i warstwie weryfikacji naukowej oraz rozróżnić praktykę źródłową od twierdzeń popartych. Jeśli odpowiedź jest ogólna, napisz wprost: **„Użyj skilla coach-arek”**.
-
-### Jak z nim rozmawiać
-
-Podaj dane, o które skill i tak zapyta: cel, staż, plan i ostatnie treningi, trend masy ciała, kalorie i białko, sen, ból oraz to, co się nie zgadza.
-
-```text
-Użyj coach-arek. Redukcja stoi od 3 tygodni. Waga 82 kg, kalorie 2300,
-białko 160 g, kroki 8 tys., 4 treningi siłowe. Co sprawdzić najpierw?
-```
-
-```text
-Użyj coach-arek. Czy 10 serii na grupę tygodniowo wystarczy przy 2 latach stażu?
-```
-
-### Aktualizacja i usunięcie
-
-- **Claude:** pobierz nowy ZIP, popraw nazwę folderu, spakuj, usuń starą wersję w **Customize → Skills** (menu „...” → **Delete**) i wgraj nową.
-- **Codex:** poproś agenta o aktualizację z GitHuba albo zamień folder ręcznie.
-- **Usunięcie w Claude:** **Customize → Skills → coach-arek** → wyłącz przełącznik → „...” → **Delete**.
-- **Usunięcie w Codex:** usuń skill w aplikacji albo przeciągnij `~/.agents/skills/coach-arek` do kosza.
-
-### Bezpieczeństwo
-
-To nie jest porada medyczna. Przy bólu, urazie, chorobie lub zaburzeniach odżywiania skieruj sprawę do specjalisty. Nie wklejaj danych, których nie chcesz przekazywać dostawcy modelu. Skill nie uruchamia skryptów; plik `scripts/set_repo_about.py` służy wyłącznie do metadanych repozytorium i nie jest częścią działania skilla.
+---
 
 ## Weryfikacja instalacji
 
@@ -283,3 +352,5 @@ rm -rf ~/.local/share/coach-arek
 ## Bezpieczeństwo
 
 Skill nie zawiera porad medycznych, nie diagnozuje i nie zaleca dopingu ani leków. Przy bólu, urazie, zaburzeniach odżywiania lub chorobie kieruje do specjalisty. Weryfikacja naukowa jest celowa, nie systematyczna — nie zastępuje indywidualnej konsultacji.
+
+To nie jest porada medyczna. Przy bólu, urazie, chorobie lub zaburzeniach odżywiania skieruj sprawę do specjalisty. Nie wklejaj danych, których nie chcesz przekazywać dostawcy modelu. Skill nie uruchamia skryptów; plik `scripts/set_repo_about.py` służy wyłącznie do metadanych repozytorium i nie jest częścią działania skilla.
