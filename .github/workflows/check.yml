@@ -1,0 +1,39 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  consistency:
+    name: Spójność bazy wiedzy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Kontrola spójności (md <-> json, taksonomia, tabela liczb)
+        run: python scripts/check_consistency.py
+
+  json:
+    name: Poprawność JSON
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Parsowanie plików JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path(".").rglob("*.json"):
+              if ".git" in path.parts:
+                  continue
+              json.loads(path.read_text(encoding="utf-8"))
+              print(f"OK: {path}")
+          PY
