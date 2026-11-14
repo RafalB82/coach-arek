@@ -1,5 +1,5 @@
 {
-  "version": "1.8",
+  "version": "1.9",
   "language": "pl",
   "purpose": "Nadzór procesu treningu hipertroficznego i redukcji bez automatycznego przepisywania całego planu.",
   "sources": [
@@ -144,10 +144,10 @@
     {"id": "P56", "rule": "W S9 Arkadiusz hierarchizuje praktyczne zmienne treningowe jako objętość, wysiłek blisko niepowodzenia i progresywne przeciążenie, a w diecie kaloryczność i białko. To jego skrót, nie kompletne ani niezależnie zweryfikowane zalecenie żywieniowe.", "source": "S9", "timestamp": "39:46", "speaker": "Arkadiusz Czerw", "kind": "speaker_framework", "confidence": "speaker_statement_contextual"},
     {"id": "P57", "rule": "S9 przestrzega przed oceną trenera wyłącznie po sylwetce, popularności lub pojedynczym cytowanym badaniu i zwraca uwagę na cherry-picking. Są to kryteria krytycznego odbioru przedstawione przez rozmówcę, nie samodzielna weryfikacja jego ocen konkretnych osób.", "source": "S9", "timestamp": "38:36", "speaker": "Arkadiusz Czerw", "kind": "podcast_paraphrase", "confidence": "speaker_statement_contextual", "additional_sources": ["S9@39:46"]},
     {"id": "P58", "applies_when": "oceniasz, czy w redukcji rzeczywiście nastąpił zastój", "not_for": "nie traktuj pojedynczego pomiaru ani tygodnia jako dowodu stagnacji; nie zastępuj tego diagnozą medyczną", "rule": "S10: Arkadiusz zaleca codzienne ważenie rano na czczo, średnią tygodniową i porównywanie trendu w skali tygodni do miesiąca; przy wyższym stażu i dłuższym deficycie wydłuż skalę. Wahania wody, glikogenu, sodu i treści pokarmowej mogą maskować utratę tłuszczu, więc brak zmiany wagi nie dowodzi, że redukcja stanęła. To jego praktyka monitorowania, nie gwarancja, że każda zmiana masy odzwierciedla tłuszcz.", "source": "S10", "timestamp": "01:14", "speaker": "Arkadiusz Czerw", "kind": "speaker_method_contextual", "confidence": "speaker_statement_contextual", "additional_sources": ["S10@03:33", "S10@04:09"]},
-    {"id": "P59", "applies_when": "redukcja stoi mimo deklarowanego deficytu", "not_for": "nie oskarżaj użytkownika o oszukiwanie; najpierw sprawdź pomiar, kompletność zapisu i kontekst", "rule": "S10: przed pogłębieniem deficytu sprawdź nieświadome przyswajanie kalorii (weekendy, warzywa, porcje), spadek spontanicznej aktywności (NEAT) i aktualne zapotrzebowanie po utracie masy. Arkadiusz opisuje też zatrzymanie wody i efekt whoosh po zwiększeniu kalorii, ale sam zaznacza, że whoosh nie jest dobrze zdefiniowany.", "source": "S10", "timestamp": "08:32", "speaker": "Arkadiusz Czerw", "kind": "podcast_claim_contextual", "confidence": "speaker_statement_contextual", "additional_sources": ["S10@50:27", "S10@52:02"]},
+    {"id": "P59", "applies_when": "redukcja stoi mimo deklarowanego deficytu", "not_for": "nie oskarżaj użytkownika o oszukiwanie; najpierw sprawdź pomiar, kompletność zapisu i kontekst", "rule": "S10: przed pogłębieniem deficytu sprawdź nieświadome przyswajanie kalorii (weekendy, warzywa, porcje), spadek spontanicznej aktywności (NEAT) i aktualne zapotrzebowanie po utracie masy. Arkadiusz opisuje też zatrzymanie wody i efekt whoosh po zwiększeniu kalorii, ale sam zaznacza, że whoosh nie jest dobrze zdefiniowany. Mechanizm „adipocyty wymieniają tłuszcz na wodę” jest niepotwierdzony; realne jest maskowanie ubytku tłuszczu przez wodę i glikogen.", "source": "S10", "timestamp": "08:32", "speaker": "Arkadiusz Czerw", "kind": "podcast_claim_contextual", "confidence": "speaker_statement_contextual", "additional_sources": ["S10@50:27", "S10@52:02"]},
     {"id": "P60", "applies_when": "planujesz przerwę od deficytu lub zastój utrzymuje się mimo dobrej adherencji", "not_for": "nie traktuj diet breaku jako pretekstu do niekontrolowanego jedzenia; przy zaburzeniach odżywiania kieruj do specjalisty", "rule": "S10: diet break to wejście na zero kaloryczne, nie dowolne objadanie się. Arkadiusz stosuje je przy zastoju lub na życzenie klienta, zwykle od 2 dni do 2 tygodni, zależnie od osoby; celem jest świeżość i motywacja, a nie dodatkowa nadwyżka. Nadwyżka ponad zapotrzebowanie odkłada się w tkance tłuszczowej.", "source": "S10", "timestamp": "21:28", "speaker": "Arkadiusz Czerw", "kind": "speaker_method_contextual", "confidence": "speaker_statement_contextual", "additional_sources": ["S10@23:28", "S10@12:23"]},
     {"id": "P61", "rule": "S10: rekompozycja (utrata tłuszczu i przyrost beztłuszczowej masy jednocześnie) jest możliwa, ale zdaniem Arkadiusza nie warto w nią celować jako w główny cel, bo jest mniej efektywna czasowo. Jej skala zależy od stażu, procentu tłuszczu i głębokości deficytu, a głębszy deficyt obniża prawdopodobieństwo przyrostu mięśni; wybierz jeden priorytet.", "source": "S10", "timestamp": "05:19", "speaker": "Arkadiusz Czerw", "kind": "podcast_paraphrase", "confidence": "speaker_statement_contextual", "additional_sources": ["S10@15:10"]},
-    {"id": "P62", "applies_when": "układasz trening na redukcji", "not_for": "nie traktuj 1/3 objętości jako uniwersalnego targetu; źródło nie podaje protokołu ani dawkowania", "rule": "S10: na redukcji celem treningu jest utrzymanie mięśni, nie budowanie masy. Arkadiusz nie zaczyna od cięcia objętości: najpierw rozważa mniejszą złożoność ćwiczeń, niższy zakres powtórzeń, większy zapas (1–2 powtórzenia) i elastyczniejszą częstotliwość, a objętość zmniejsza dopiero przy utrzymującym się spadku wyników. Jego stwierdzenie, że do utrzymania może wystarczyć 1/3 objętości z masy, jest skrajną praktyką, nie uniwersalną receptą.", "source": "S10", "timestamp": "15:50", "speaker": "Arkadiusz Czerw", "kind": "speaker_method_contextual", "confidence": "speaker_method_not_universal", "additional_sources": ["S10@17:02", "S10@19:27"]},
+    {"id": "P62", "applies_when": "układasz trening na redukcji", "not_for": "nie traktuj 1/3 objętości jako uniwersalnego targetu; źródło nie podaje protokołu ani dawkowania", "rule": "S10: na redukcji celem treningu jest utrzymanie mięśni, nie budowanie masy. Arkadiusz nie zaczyna od cięcia objętości: najpierw rozważa mniejszą złożoność ćwiczeń, niższy zakres powtórzeń, większy zapas (1–2 powtórzenia) i elastyczniejszą częstotliwość, a objętość zmniejsza dopiero przy utrzymującym się spadku wyników. Jego stwierdzenie, że do utrzymania może wystarczyć 1/3 objętości z masy, jest częściowo poparte: w badaniu Bickela (2011) młodzi dorośli utrzymali masę na 1/3, a nawet 1/9 objętości przez 32 tygodnie, przy zachowanej intensywności i poza deficytem. To realistyczna dawka podtrzymująca, nie dawka na przyrost i nie uniwersalny target dla zaawansowanych w długim deficycie.", "source": "S10", "timestamp": "15:50", "speaker": "Arkadiusz Czerw", "kind": "speaker_method_contextual", "confidence": "speaker_method_not_universal", "additional_sources": ["S10@17:02", "S10@19:27"]},
     {"id": "P63", "applies_when": "wyniki spadają mimo sprawdzonej regeneracji i diety", "not_for": "nie planuj roztrenowania z góry i nie przenoś go na cały plan bez obserwacji", "rule": "S10: roztrenowanie nie powinno być planowane z wyprzedzeniem; Arkadiusz stosuje je reaktywnie, lokalnie dla ćwiczenia lub grupy, gdy wyniki spadają przez 3–4 tygodnie i nie poprzedza tego zwiększona objętość, po sprawdzeniu snu, kalorii i regeneracji. Redukuje wtedy objętość, intensywność albo oba.", "source": "S10", "timestamp": "36:49", "speaker": "Arkadiusz Czerw", "kind": "speaker_method_contextual", "confidence": "speaker_statement_contextual", "additional_sources": ["S10@40:18", "S10@42:40"]},
     {"id": "P64", "rule": "S10: progres siłowy jest praktycznym, ale niedoskonałym wskaźnikiem hipertrofii. Można być silniejszym bez przyrostu masy, a przyrost masy zwykle zwiększa siłę; na wyższym poziomie brak cotygodniowego wzrostu ciężaru nie dowodzi stagnacji. Używaj dziennika, czucia mięśniowego i techniki jako uzupełnienia.", "source": "S10", "timestamp": "24:34", "speaker": "Arkadiusz Czerw", "kind": "podcast_paraphrase", "confidence": "speaker_statement_contextual", "additional_sources": ["S10@25:38", "S10@28:11"]},
     {"id": "P65", "applies_when": "masa nie rośnie mimo treningu i deklarowanej nadwyżki", "not_for": "nie zwiększaj objętości bez sprawdzenia trendu masy i adherencji", "rule": "S10: przy zastoju masy upewnij się, że jest mała nadwyżka i trend masy rośnie w skali około 4 tygodni. Jeśli masa rośnie, a wyniki nie, to według Arkadiusza sygnał zbyt małej liczby serii roboczych; zwiększ serię dla zastoju grupy (np. 4→5) i oceniaj po około 4 tygodniach, nie po jednym treningu.", "source": "S10", "timestamp": "29:22", "speaker": "Arkadiusz Czerw", "kind": "speaker_method_contextual", "confidence": "speaker_statement_contextual", "additional_sources": ["S10@30:38", "S10@31:03"]},
@@ -155,8 +155,8 @@
     {"id": "P67", "rule": "S10: siła jest specyficzna. W treningu sylwetkowym jest skutkiem ubocznym; trening siłowy używa wyższego procentu 1RM i zwykle 3–5 powtórzeń. Hipertrofię można budować na niskim zakresie, ale zwykle wymaga to więcej serii niż 6–8. To rama Arkadiusza, nie uniwersalny plan.", "source": "S10", "timestamp": "43:51", "speaker": "Arkadiusz Czerw", "kind": "speaker_framework", "confidence": "speaker_framework", "additional_sources": ["S10@45:58", "S10@46:07"]},
     {"id": "P68", "applies_when": "szukasz przyczyn braku progresu lub oceniasz jakość serii", "not_for": "nie doprowadzaj do upadku na każdym treningu bez asekuracji i planu bezpieczeństwa", "rule": "S10: do najczęstszych błędów Arkadiusz zalicza błędną ocenę bliskości upadku (zwłaszcza w ćwiczeniach złożonych), zbyt częste zmiany planu i ćwiczeń, przedwczesne wnioski oraz trening bez zapisu. Sugeruje okresowe doprowadzenie serii do rzeczywistego upadku z asekuracją, aby skalibrować odczucie.", "source": "S10", "timestamp": "46:55", "speaker": "Arkadiusz Czerw", "kind": "podcast_paraphrase", "confidence": "speaker_statement_contextual", "additional_sources": ["S10@49:03", "S10@53:13"]},
     {"id": "P69", "rule": "S10: nie zakładaj, że produkty „zdrowe” lub warzywa są bezkaloryczne; weekendy, dodatki i porcje mogą znieść deficyt. Paweł Albrecht podkreśla, że bez znania wydatku i spożycia nie da się kontrolować progresu; Arkadiusz cytuje za anonimowym naukowcem: „Nie musisz liczyć kalorii, ale kalorie zawsze będą się liczyć”. To praktyczna uwaga, nie nakaz obsesyjnego liczenia.", "source": "S10", "timestamp": "50:58", "speaker": "Paweł Albrecht", "kind": "podcast_paraphrase", "confidence": "speaker_statement_contextual", "additional_sources": ["S10@51:51", "S10@52:02"]},
-    {"id": "P70", "rule": "S10: Arkadiusz nie śledzi bieżącej literatury o rozciąganiu; jest pewien, że statyczny stretching bezpośrednio przed treningiem siłowym obniża zdolności wysiłkowe. Nie przedstawiaj tego jako pełnej oceny rozciągania w hipertrofii ani jako protokołu; to wąska opinia rozmówcy.", "source": "S10", "timestamp": "41:48", "speaker": "Arkadiusz Czerw", "kind": "podcast_claim_contextual", "confidence": "requires_external_verification", "additional_sources": ["S10@42:03"]},
-    {"id": "P71", "rule": "S10: w tym fragmencie Arkadiusz odsuwa sen i regenerację na dalszy plan jako wyjaśnienie braku progresu, mówiąc, że syndrom przetrenowania jest bardzo trudny do uzyskania. To jego opinia; nie odrzucaj snu, bólu, chorób ani innych sygnałów bezpieczeństwa i nie traktuj braku progresu wyłącznie jako zbyt małej objętości.", "source": "S10", "timestamp": "32:32", "speaker": "Arkadiusz Czerw", "kind": "podcast_claim_contextual", "confidence": "speaker_statement_contextual"}
+    {"id": "P70", "rule": "S10: Arkadiusz nie śledzi bieżącej literatury o rozciąganiu; jest pewien, że statyczny stretching bezpośrednio przed treningiem siłowym obniża zdolności wysiłkowe. Badania potwierdzają to głównie dla długiego statycznego stretchingu (>60 s na grupę) przed maksymalnym wysiłkiem; krótszy stretching w rozgrzewce zwykle nie daje istotnego spadku. Nie przedstawiaj tego jako pełnej oceny rozciągania w hipertrofii ani jako protokołu.", "source": "S10", "timestamp": "41:48", "speaker": "Arkadiusz Czerw", "kind": "podcast_claim_contextual", "confidence": "requires_external_verification", "additional_sources": ["S10@42:03"]},
+    {"id": "P71", "rule": "S10: w tym fragmencie Arkadiusz odsuwa sen i regenerację na dalszy plan jako wyjaśnienie braku progresu, mówiąc, że syndrom przetrenowania jest bardzo trudny do uzyskania. Rozdziel te twierdzenia: prawdziwy OTS jest rzadki i trudny do zdiagnozowania, ale przewlekłe ograniczenie snu obniża syntezę białek miofibrylarnych, testosteron i siłę w ruchach złożonych, a przeciążenie funkcjonalne jest częste. Nie odrzucaj snu, bólu, chorób ani innych sygnałów bezpieczeństwa i nie traktuj braku progresu wyłącznie jako zbyt małej objętości.", "source": "S10", "timestamp": "32:32", "speaker": "Arkadiusz Czerw", "kind": "podcast_claim_contextual", "confidence": "speaker_statement_contextual"}
   ],
   "workflow": {
     "daily": ["log_exercises", "log_sets_reps_load", "optionally_log_perceived_effort_or_RIR_RPE_if_user_uses_it", "log_pain_fatigue"],
@@ -181,6 +181,171 @@
     {"topic": "periodization_and_progress", "sources": ["S5@02:46", "S7@47:14", "S7@55:31", "S10@24:34", "S10@32:58"], "note": "Arkadiusz in S5 distinguishes programming from periodization; in S7 he criticizes one particular hypertrophy-periodization model and offers a personal interpretation of strength plateaus. S10 treats strength as a practical proxy for hypertrophy but warns that strength can rise without mass and that weekly load increases are not required at advanced levels. Preserve the context; do not turn either into a universal rule."},
     {"topic": "rest_and_deload", "sources": ["S3@30:52", "S7@46:19", "S7@50:19", "S9@25:35", "S9@26:19", "S10@36:49", "S10@40:18"], "note": "S3 and S7 use at least two minutes as a practical rest reference; S7 extends this to isolation work. S9 connects rest to quality/volume and repeats a two-minute recommendation. Its claim about similar lactate after 60 seconds and two minutes is not independently verified here. S10 advises against pre-planning deloads: it prefers a local reactive deload after a 3-4 week trend, after checking sleep, calories and recovery. Arkadiusz describes a local reactive deload, considering lower volume or intensity and often reducing load; ASR does not clearly resolve whether set count remains unchanged."}
   ],
+  "evidence_review": {
+    "date": "2026-11",
+    "document": "references/weryfikacja_naukowa.md",
+    "scope": "S10 oraz najbardziej obciążające twierdzenia z S1-S9",
+    "method": "Przegląd syntez, metaanaliz i RCT; bez własnej metaanalizy; dobór celowy, nie systematyczny.",
+    "legend": {
+      "supported": "kierunek i skala zgodne z syntezami",
+      "partially_supported": "kierunek poprawny, wymaga warunku",
+      "overstated": "część prawdy, ale skala lub kategoryczność wprowadza w błąd",
+      "unsupported_mechanism": "brak podstaw lub mechanizm nie istnieje",
+      "contradicted_partially": "część twierdzenia sprzeczna z danymi"
+    },
+    "verdicts": [
+      {
+        "claim": "daily_fasted_weigh_ins_weekly_average",
+        "source": "S10@01:14",
+        "verdict": "supported",
+        "note": "Standardowa praktyka monitoringu; woda i glikogen maskują tłuszcz."
+      },
+      {
+        "claim": "check_neat_and_hidden_calories_on_plateau",
+        "source": "S10@08:32",
+        "verdict": "supported",
+        "note": "Adaptacyjna termogeneza zwykle ~100-180 kcal/d; spadek NEAT udokumentowany."
+      },
+      {
+        "claim": "whoosh_mechanism",
+        "source": "S10@08:32",
+        "verdict": "unsupported_mechanism",
+        "note": "Nagły spadek wagi realny, ale mechanizm tłuszczowo-wodny niepotwierdzony."
+      },
+      {
+        "claim": "diet_break_2_days_2_weeks",
+        "source": "S10@21:28",
+        "verdict": "partially_supported",
+        "note": "MATADOR pozytywny, ale metaanalizy nie potwierdzają wyższości; opcja adherencjna."
+      },
+      {
+        "claim": "recomp_possible_but_not_optimal",
+        "source": "S10@05:19",
+        "verdict": "partially_supported",
+        "note": "Możliwa u nowicjuszy, z nadwagą, powracających; rzadsza u lean advanced."
+      },
+      {
+        "claim": "maintain_not_cut_volume_on_a_cut",
+        "source": "S10@15:50",
+        "verdict": "supported",
+        "note": "Trening siłowy w deficycie utrzymuje FFM; pochopne cięcie objętości nie ma podstaw."
+      },
+      {
+        "claim": "one_third_volume_maintains_muscle",
+        "source": "S10@15:50",
+        "verdict": "partially_supported",
+        "note": "Bickel 2011: 1/3, a nawet 1/9 utrzymuje masę u młodych przy zachowanej intensywności; poza deficytem."
+      },
+      {
+        "claim": "reactive_local_deload",
+        "source": "S10@36:49",
+        "verdict": "supported",
+        "note": "Brak dowodów wyższości preplanowanego deloadu; 1 tydzień przerwy może lekko osłabić siłę."
+      },
+      {
+        "claim": "strength_as_imperfect_proxy",
+        "source": "S10@24:34",
+        "verdict": "supported",
+        "note": "Wewnątrzosobowo korelacja bardzo wysoka, międzyosobowo słaba."
+      },
+      {
+        "claim": "add_a_set_on_mass_plateau",
+        "source": "S10@29:22",
+        "verdict": "partially_supported",
+        "note": "Zgodne z dose-response objętości; konkret 4->5 serii niebadany."
+      },
+      {
+        "claim": "same_exercise_adaptation_is_goal",
+        "source": "S10@32:58",
+        "verdict": "partially_supported",
+        "note": "Nadmierna rotacja nie pomaga; systematyczna może pomagać regionalnie."
+      },
+      {
+        "claim": "strength_specificity_3_5_reps",
+        "source": "S10@43:51",
+        "verdict": "supported",
+        "note": ">=80% 1RM najlepiej buduje 1RM; hipertrofia nie wymaga tego zakresu."
+      },
+      {
+        "claim": "rir_miscalibration_and_logging",
+        "source": "S10@46:55",
+        "verdict": "supported",
+        "note": "Trening do upadku nie jest konieczny; nowicjusze źle szacują RIR."
+      },
+      {
+        "claim": "calories_always_count",
+        "source": "S10@50:58",
+        "verdict": "supported",
+        "note": "Bilans energii nadrzędny; kompensacja energetyczna ~30-50% przy aerobach."
+      },
+      {
+        "claim": "static_stretching_impairs_performance",
+        "source": "S10@41:48",
+        "verdict": "partially_supported",
+        "note": "Głównie >60 s na grupę; <60 s zwykle bez istotnego efektu."
+      },
+      {
+        "claim": "sleep_and_ots_are_secondary",
+        "source": "S10@32:32",
+        "verdict": "contradicted_partially",
+        "note": "Prawdziwy OTS rzadki, ale ograniczenie snu obniża MPS, testosteron i siłę."
+      },
+      {
+        "claim": "10_12_kg_first_year",
+        "source": "S10@28:57",
+        "verdict": "overstated",
+        "note": "Górna granica modelu; realnie 4-7 kg u młodych."
+      },
+      {
+        "claim": "250_kcal_surplus",
+        "source": "S10@31:03",
+        "verdict": "supported",
+        "note": "10-20% dla zaawansowanych = 250-500 kcal."
+      },
+      {
+        "claim": "500_kcal_surplus_mostly_fat",
+        "source": "S10@31:21",
+        "verdict": "partially_supported",
+        "note": "Większa nadwyżka zwiększa tłuszcz przy podobnym LBM; zależy od stażu."
+      },
+      {
+        "claim": "protein_2_3_g_per_kg",
+        "source": "S4@19:22",
+        "verdict": "partially_supported",
+        "note": "1.6 g/kg w surplusie; 1.9-2.4+ w deficycie u lean; liczyć względem FFM."
+      },
+      {
+        "claim": "rep_range_5_35",
+        "source": "S3@40:35",
+        "verdict": "supported",
+        "note": "Zakres ~5-30 realny przy wyrównanej objętości i wysiłku."
+      },
+      {
+        "claim": "rest_at_least_2_min",
+        "source": "S3@30:52",
+        "verdict": "supported",
+        "note": "Niewielka przewaga >60 s; powyżej ~90 s różnice się spłaszczają."
+      },
+      {
+        "claim": "10_sets_per_muscle_start",
+        "source": "S2@06:46",
+        "verdict": "supported",
+        "note": "Zgodne z progiem >=10 serii/tyg. i malejącymi korzyściami."
+      },
+      {
+        "claim": "cardio_not_main_fat_loss_tool",
+        "source": "S1@17:36",
+        "verdict": "supported",
+        "note": "Kompensacja energetyczna ~30-50%, większa przy aerobach i deficycie."
+      },
+      {
+        "claim": "soreness_not_hypertrophy_marker",
+        "source": "S3@47:43",
+        "verdict": "supported",
+        "note": "Uszkodzenie mięśni nie jest konieczne; DOMS słabo koreluje z adaptacją."
+      }
+    ]
+  },
   "response_template": ["observation", "interpretation", "recommendation", "monitor", "reassessment", "source"],
   "safety": [
     "Do not diagnose injury or disease.",

@@ -9,8 +9,11 @@ Skill powstał na prośbę użytkownika jako źródło wiedzy dla agenta nadzoru
 Na podstawie tych materiałów przygotowano:
 
 - `references/knowledge_base_hipertrofia.md` — tematyczną syntezę, zasady operacyjne, zastrzeżenia i odnośniki do fragmentów źródłowych;
-- `references/knowledge_base_hipertrofia.json` — ustrukturyzowaną wersję bazy do wyszukiwania i dopasowywania reguł;
+- `references/knowledge_base_hipertrofia.json` — ustrukturyzowaną wersję bazy do wyszukiwania i dopasowywania reguł, z blokiem `evidence_review`;
+- `references/weryfikacja_naukowa.md` — przegląd zgodności twierdzeń z aktualnymi syntezami i metaanalizami (stan: listopad 2026), z werdyktami i bibliografią;
 - `SKILL.md` — instrukcje określające, kiedy i jak agent ma korzystać z syntezy i źródeł.
+
+Weryfikacja naukowa rozdziela praktykę źródłową („Arkadiusz tak robi”) od praktyki popartej i od twierdzeń niepotwierdzonych. Najważniejsze korekty dotyczą snu i przetrenowania, dawki podtrzymującej 1/3 objętości, diet breaków, mechanizmu „whoosh”, progu dla stretchingu oraz skali przyrostu 10–12 kg w pierwszym roku.
 
 Synteza kładzie nacisk na monitorowanie trendów i zachowanie ciągłości procesu, zamiast pochopnego zmieniania całego planu po pojedynczym słabszym treningu. Zalecenia są ostrożnymi, indywidualizowanymi hipotezami do monitorowania. Skill uwzględnia też granice bezpieczeństwa: nie diagnozuje, nie zaleca dopingu ani leków i kieruje sygnały alarmowe do odpowiedniego specjalisty.
 
