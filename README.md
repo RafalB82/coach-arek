@@ -12,7 +12,7 @@ Na podstawie tych materiałów przygotowano:
 - `references/knowledge_base_hipertrofia.json` — ustrukturyzowaną wersję bazy do wyszukiwania i dopasowywania reguł, z blokiem `evidence_review`;
 - `references/weryfikacja_naukowa.md` — przegląd zgodności twierdzeń z aktualnymi syntezami i metaanalizami (stan: listopad 2026), z werdyktami i bibliografią;
 - `SKILL.md` — instrukcje określające, kiedy i jak agent ma korzystać z syntezy i źródeł;
-- `INSTALL.md` — instalacja w Codexie i Claude Code: wariant prosty oraz jedno źródło z symlinkami.
+- `INSTALL.md` — instalacja w Codexie i Claude Code: wariant prosty, jedno źródło z symlinkami oraz wersja tylko GUI (bez terminala).
 
 Synteza kładzie nacisk na monitorowanie trendów i zachowanie ciągłości procesu, zamiast pochopnego zmieniania całego planu po pojedynczym słabszym treningu. Zalecenia są ostrożnymi, indywidualizowanymi hipotezami do monitorowania. Skill uwzględnia też granice bezpieczeństwa: nie diagnozuje, nie zaleca dopingu ani leków i kieruje sygnały alarmowe do odpowiedniego specjalisty.
 
@@ -48,7 +48,7 @@ Codex — skill użytkownika:
 git clone https://github.com/RafalB82/coach-arek.git ~/.agents/skills/coach-arek
 ```
 
-Starsze buildy Codexa czytają `~/.codex/skills`; wtedy zainstaluj lub podlinkuj skill także tam. Pełna instrukcja, wariant z jednym checkoutem i symlinkami, weryfikacja i typowe problemy: **[INSTALL.md](INSTALL.md)**.
+Starsze buildy Codexa czytają `~/.codex/skills`; wtedy zainstaluj lub podlinkuj skill także tam. Pełna instrukcja, wariant z jednym checkoutem i symlinkami, wersja tylko GUI, weryfikacja i typowe problemy: **[INSTALL.md](INSTALL.md)**.
 
 ## Podstawa źródłowa
 
