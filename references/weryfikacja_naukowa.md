@@ -244,7 +244,9 @@ To najbardziej odporne twierdzenie w całym S10. Kompensacja energetyczna jest r
 
 ## 8. Co z tego wynika dla bazy `coach-arek`
 
-### 8.1. Korekty, które warto wprowadzić
+### 8.1. Korekty wprowadzone w bazie (od wersji 2.0)
+
+Poniższe osiem korekt jest **zastosowane** w `references/knowledge_base_hipertrofia.md` (wersja 2.0) i odzwierciedlone w bloku `evidence_review` pliku JSON. Przy kolejnej zmianie bazy sprawdź, czy korekta nie zniknęła z dokumentu kanonicznego — to on jest źródłem prawdy dla agenta, nie ten dokument.
 
 1. **Sen (P71, sekcja 6, granice wiedzy)** — rozdzielić „prawdziwy OTS jest rzadki” od „sen nie ma znaczenia”. Drugie jest sprzeczne z danymi. Dodać, że ograniczenie snu obniża MPS i siłę w ruchach złożonych.
 2. **1/3 objętości (P62)** — zmienić „skrajna praktyka” na „realistyczna dawka podtrzymująca u młodych, przy zachowanej intensywności; nie dawka na przyrost”. To poprawia zgodność z Bickelem 2011 i Spieringiem 2021.

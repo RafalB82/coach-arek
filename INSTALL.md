@@ -2,7 +2,7 @@
 
 Skill `coach-arek` działa w Codexie i Claude Code, bo oba czytają format [Agent Skills](https://agentskills.io): katalog z plikiem `SKILL.md` i opcjonalnymi materiałami w `references/`.
 
-Skill jest **tylko instrukcjami** — nie uruchamia skryptów, nie instaluje zależności i nie wymaga kluczy API. Cztery pliki w `references/` to baza wiedzy i weryfikacja naukowa; pełne transkrypcje nie są częścią publicznego repo, więc timestampy prowadzą do YouTube.
+Skill jest **tylko instrukcjami** — nie uruchamia skryptów, nie instaluje zależności i nie wymaga kluczy API. Trzy pliki w `references/` to baza wiedzy (w MD i JSON) oraz weryfikacja naukowa; pełne transkrypcje nie są częścią publicznego repo, więc timestampy prowadzą do YouTube.
 
 ## Wymagania
 
@@ -344,10 +344,11 @@ rm -rf ~/.local/share/coach-arek
 |---|---|
 | `SKILL.md` | instrukcje i reguły operacyjne agenta |
 | `references/knowledge_base_hipertrofia.md` | synteza źródeł, zasady, zastrzeżenia, timestampy |
-| `references/knowledge_base_hipertrofia.json` | wersja strukturalna z blokiem `evidence_review` |
+| `references/knowledge_base_hipertrofia.json` | wersja strukturalna z blokiem `evidence_review` i taksonomią `kind`/`confidence` |
 | `references/weryfikacja_naukowa.md` | weryfikacja twierdzeń względem aktualnych badań |
 | `README.md` | opis projektu i podstawy źródłowej |
 | `agents/openai.yaml` | opcjonalne metadane UI dla Codexa |
+| `scripts/check_consistency.py` | kontrola spójności bazy; uruchamia się w CI, nie jest częścią działania skilla |
 
 ## Bezpieczeństwo
 

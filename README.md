@@ -9,7 +9,7 @@ Skill powstał na prośbę użytkownika jako źródło wiedzy dla agenta nadzoru
 Na podstawie tych materiałów przygotowano:
 
 - `references/knowledge_base_hipertrofia.md` — tematyczną syntezę, zasady operacyjne, zastrzeżenia i odnośniki do fragmentów źródłowych;
-- `references/knowledge_base_hipertrofia.json` — ustrukturyzowaną wersję bazy do wyszukiwania i dopasowywania reguł, z blokiem `evidence_review`;
+- `references/knowledge_base_hipertrofia.json` — ustrukturyzowaną wersję bazy do wyszukiwania i dopasowywania reguł, z blokiem `evidence_review` i jawną taksonomią `kind` (pochodzenie wpisu) oraz `confidence` (status epistemiczny);
 - `references/weryfikacja_naukowa.md` — przegląd zgodności twierdzeń z aktualnymi syntezami i metaanalizami (stan: listopad 2026), z werdyktami i bibliografią;
 - `SKILL.md` — instrukcje określające, kiedy i jak agent ma korzystać z syntezy i źródeł;
 - `INSTALL.md` — instalacja w Codexie i Claude Code: wariant prosty, jedno źródło z symlinkami oraz wersja tylko GUI (bez terminala).
@@ -87,12 +87,21 @@ Repozytorium dokumentuje wiedzę przekazaną w wymienionych rozmowach. Warstwa w
 coach-arek/
 ├── SKILL.md
 ├── README.md
+├── INSTALL.md
 ├── .gitignore
+├── .github/
+│   └── workflows/
+│       └── check.yml
 ├── agents/
 │   └── openai.yaml
-└── references/
-    ├── knowledge_base_hipertrofia.json
-    └── knowledge_base_hipertrofia.md
+├── references/
+│   ├── knowledge_base_hipertrofia.json
+│   ├── knowledge_base_hipertrofia.md
+│   └── weryfikacja_naukowa.md
+├── repo-about.json
+└── scripts/
+    ├── check_consistency.py
+    └── set_repo_about.py
 ```
 
 Publiczna paczka to wyłącznie pliki powyżej. Nagrania źródłowe, wygenerowane transkrypcje i skrypty pipeline trzymane są lokalnie w katalogu `mlx_whisper/`, który jest świadomie pomijany przez git (`.gitignore`) — nie są potrzebne do użycia skilla.
@@ -107,7 +116,20 @@ Poniżej opisany katalog `mlx_whisper/` nie jest częścią repozytorium (patrz 
 
 ### Kontrola jakości bazy wiedzy
 
-Lokalny skrypt `mlx_whisper/check_citations.py` (poza repozytorium, razem z transkrypcjami) sprawdza, czy baza nadal jest spójna z transkrypcjami: każde cytowanie musi trafiać w blok transkrypcji i w odległości, którą da się odnaleźć w pliku, atrybucja mówcy w zasadach JSON musi zgadzać się z etykietą w transkrypcji, linki `?t=` muszą odpowiadać etykiecie czasu, pliki md i json muszą się zgadzać w zakresie cytowań, a tabela liczb, tabela osób i granice wiedzy muszą istnieć w obu formatach. Skrypt zwraca kod 1, gdy znajdzie niezgodność — warto uruchamiać go po każdej zmianie `references/`.
+Publiczny skrypt `scripts/check_consistency.py` sprawdza spójność repozytorium bez transkrypcji: zgodność wersji bazy, taksonomię `kind`/`confidence` (wraz z legendą w JSON i w MD), spójność MD ↔ JSON (cytowania, zasady, liczby, osoby, granice wiedzy), obecność każdej liczby użytej w treści w tabeli „Wszystkie liczby w bazie", zgodność offsetów `?t=` z etykietami czasu oraz wymagane pliki. Skrypt zwraca kod 1, gdy znajdzie niespójność, i jest uruchamiany w CI (`.github/workflows/check.yml`) przy każdym pushu i pull requestcie:
+
+```bash
+python3 scripts/check_consistency.py
+```
+
+Lokalny skrypt `mlx_whisper/check_citations.py` (poza repozytorium, razem z transkrypcjami) dodaje kontrole wymagające nagrań: każde cytowanie musi trafiać w blok transkrypcji i w odległości, którą da się odnaleźć w pliku, a atrybucja mówcy w zasadach JSON musi zgadzać się z etykietą w transkrypcji. Część wspólną (spójność md ↔ json) woła z `scripts/check_consistency.py`, więc oba skrypty mówią o jednej bazie. Dodaj `--no-transcripts`, aby sprawdzić spójność bez plików w `out/`:
+
+```bash
+python3 mlx_whisper/check_citations.py            # pełna kontrola
+python3 mlx_whisper/check_citations.py --no-transcripts
+```
+
+Skrypt zwraca kod 1, gdy znajdzie niespójność — warto uruchamiać go po każdej zmianie `references/`. Transkrypcje S9 i S10 nie są dostępne lokalnie, więc cytowania z tych źródeł nie są weryfikowane automatycznie (skrypt zgłasza to jako ostrzeżenie, nie błąd).
 
 Uwagi do konkretnych plików:
 
