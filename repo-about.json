@@ -1,5 +1,5 @@
 {
-  "description": "OpenCode skill for practical supervision of resistance-training hypertrophy: volume, progression, recovery, body-mass and calorie trends, grounded in Polish podcast sources with Arkadiusz Czerw.",
+  "description": "OpenCode/Codex skill for practical supervision of resistance-training hypertrophy, fat loss, recovery and calorie trends. Grounded in Polish podcast sources with Arkadiusz Czerw, with a claim-level evidence layer that cross-checks his advice against current research.",
   "homepage": "",
   "topics": [
     "opencode",
@@ -10,6 +10,17 @@
     "hypertrophy",
     "fitness",
     "health",
-    "polish"
+    "polish",
+    "claude",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "codex-skill",
+    "hermes-skill",
+    "openclaw-skills",
+    "evidence-based",
+    "fact-checking",
+    "knowledge-base",
+    "research"
   ]
 }

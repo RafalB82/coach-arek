@@ -13,9 +13,23 @@ Na podstawie tych materiałów przygotowano:
 - `references/weryfikacja_naukowa.md` — przegląd zgodności twierdzeń z aktualnymi syntezami i metaanalizami (stan: listopad 2026), z werdyktami i bibliografią;
 - `SKILL.md` — instrukcje określające, kiedy i jak agent ma korzystać z syntezy i źródeł.
 
-Weryfikacja naukowa rozdziela praktykę źródłową („Arkadiusz tak robi”) od praktyki popartej i od twierdzeń niepotwierdzonych. Najważniejsze korekty dotyczą snu i przetrenowania, dawki podtrzymującej 1/3 objętości, diet breaków, mechanizmu „whoosh”, progu dla stretchingu oraz skali przyrostu 10–12 kg w pierwszym roku.
-
 Synteza kładzie nacisk na monitorowanie trendów i zachowanie ciągłości procesu, zamiast pochopnego zmieniania całego planu po pojedynczym słabszym treningu. Zalecenia są ostrożnymi, indywidualizowanymi hipotezami do monitorowania. Skill uwzględnia też granice bezpieczeństwa: nie diagnozuje, nie zaleca dopingu ani leków i kieruje sygnały alarmowe do odpowiedniego specjalisty.
+
+## Weryfikacja naukowa
+
+Baza nie jest zbiorem niepodważalnych twierdzeń. Obok syntezy źródeł zawiera warstwę weryfikacji, która rozdziela trzy poziomy:
+
+- **praktykę źródłową** — „Arkadiusz tak robi”;
+- **praktykę popartą** — kierunek zgodny z aktualnymi syntezami i metaanalizami;
+- **twierdzenie weryfikowalne** — wymaga danych, których podcast nie dostarcza (np. mechanizm „whoosh”, tempo przyrostu 10–12 kg, częstość prawdziwego OTS).
+
+Warstwa składa się z:
+
+- `references/weryfikacja_naukowa.md` — 25 twierdzeń z werdyktami, uzasadnieniami i bibliografią (stan: listopad 2026);
+- bloku `evidence_review` w `references/knowledge_base_hipertrofia.json` — te same werdykty w formie do wyszukiwania, przypisane do źródeł i timestampów;
+- sekcji „Weryfikacja naukowa” w `references/knowledge_base_hipertrofia.md` — skrót najważniejszych korekt.
+
+Najważniejsze korekty dotyczą snu i przetrenowania, dawki podtrzymującej 1/3 objętości, diet breaków, mechanizmu „whoosh”, progu dla stretchingu oraz skali przyrostu 10–12 kg w pierwszym roku. Weryfikacja jest celowa, nie systematyczna: nie jest przeglądem całej literatury i nie zamienia poradnika trenerskiego w wytyczną medyczną.
 
 ## Podstawa źródłowa
 
@@ -46,7 +60,7 @@ Uwaga redakcyjna do S10: prowadzącym jest Paweł Albrecht, gościem Arkadiusz C
 
 ## Ważne ograniczenie
 
-Repozytorium dokumentuje wiedzę przekazaną w wymienionych rozmowach. Umieszczenie wypowiedzi w bazie nie oznacza, że zostały niezależnie sprawdzone w literaturze naukowej. Konkretne liczby, prognozy tempa zmian oraz szerokie twierdzenia fizjologiczne należy traktować jako wypowiedzi rozmówców lub praktyczne hipotezy, a nie gwarantowane prawa ani spersonalizowaną poradę medyczną.
+Repozytorium dokumentuje wiedzę przekazaną w wymienionych rozmowach. Warstwa weryfikacji oznacza, gdzie kierunek twierdzenia zgadza się z aktualnymi syntezami, a gdzie jest uproszczeniem lub opinią bez podstaw — ale nie jest systematycznym przeglądem całej literatury. Konkretne liczby, prognozy tempa zmian oraz szerokie twierdzenia fizjologiczne należy traktować jako wypowiedzi rozmówców lub praktyczne hipotezy, a nie gwarantowane prawa ani spersonalizowaną poradę medyczną.
 
 ## Zawartość
 
