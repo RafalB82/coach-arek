@@ -1,12 +1,12 @@
 # Źródło wiedzy: nadzór treningu hipertroficznego
 
-Wersja: 1.6
+Wersja: 1.8
 Zakres: trening siłowy, hipertrofia, masa, redukcja, kaloryczność  
-Źródła: siedem rozmów z Arkadiuszem Czerwem i jeden jego materiał treningowy
+Źródła: dziewięć rozmów z Arkadiuszem Czerwem i jeden jego materiał treningowy
 
 ## Zasada nadrzędna
 
-To redakcyjna zasada pracy agenta, a nie dosłowny wniosek z podcastu: monitoruj proces, sprawdzaj wykonanie i kontekst przed korektą oraz preferuj małe, mierzalne zmiany. Nie przypisuj rozmówcom reguły „nie zmieniaj planu po jednym słabszym treningu”.
+To redakcyjna zasada pracy agenta, a nie dosłowny wniosek z podcastu: monitoruj proces, sprawdzaj wykonanie i kontekst przed korektą oraz preferuj małe, mierzalne zmiany. Nie przypisuj rozmówcom sztywnej reguły „nie zmieniaj planu po jednym słabszym treningu”; S10 [40:18](https://youtu.be/Xs-YqL1bBII?t=2418) mówi o obserwacji trendu przez 3–4 tygodnie przy ocenie roztrenowania, ale to nie to samo co zakaz jakiejkolwiek reakcji po jednej sesji.
 
 ## Jak czytać tę bazę
 
@@ -20,12 +20,12 @@ To redakcyjna zasada pracy agenta, a nie dosłowny wniosek z podcastu: monitoruj
 
 | Osoba | Rola | Źródła | Kanał / nagranie | Jak się o nim mówi w nagraniach |
 |---|---|---|---|---|
-| Arkadiusz Czerw | trener i zawodnik kulturystyki, gość | S1–S9 | wszystkie | „Arek", „Arku" |
-| Paweł Albrecht | gospodarz rozmów z Arkadiuszem | S1–S4, S9 | własne nagrania („trenerów kopiuj w klej") | „Paweł" |
+| Arkadiusz Czerw | trener i zawodnik kulturystyki, gość | S1–S10 | wszystkie | „Arek", „Arku" |
+| Paweł Albrecht | gospodarz rozmów z Arkadiuszem | S1–S4, S9, S10 | własne nagrania („trenerów kopiuj w klej") | „Paweł" |
 | Dawid Olszewski | gospodarz rozmowy o programowaniu planu | S5 | HSS Podcast, kanał `@dawidolszewski` | „Dawid" |
 | Robuś Pasjonat | gospodarz rozmów dla portalu treningowego | S7, S8 | KFD.pl | „Robert", „Robuś" |
 
-Uwaga: **S5, S7 i S8 to trzy różne nagrania, ale tylko dwaj gospodarze** — S5 prowadzi Dawid Olszewski, S7 i S8 Robuś Pasjonat. Nie łącz rozmów z S5 z S7/S8 i nie przypisuj wypowiedzi z jednej rozmowy drugiemu gospodarzowi. Materiał S6 to monolog samego Arkadiusza (bez gospodarza).
+Uwaga: **S5, S7 i S8 to trzy różne nagrania, ale tylko dwaj gospodarze** — S5 prowadzi Dawid Olszewski, S7 i S8 Robuś Pasjonat. S9 i S10 prowadzi Paweł Albrecht. Nie łącz rozmów z S5 z S7/S8 i nie przypisuj wypowiedzi z jednej rozmowy drugiemu gospodarzowi. Materiał S6 to monolog samego Arkadiusza (bez gospodarza).
 
 ## Źródła
 
@@ -40,6 +40,7 @@ Uwaga: **S5, S7 i S8 to trzy różne nagrania, ale tylko dwaj gospodarze** — S
 | `S7` | programowanie treningu, wysiłek, przerwy, regeneracja i żywienie — rozmowa Arkadiusza Czerwa z Robusiem Pasjonatem | https://youtu.be/Xb2y18_B0QY |
 | `S8` | trening siłowy, redukcja tkanki tłuszczowej, cardio i autoregulacja — rozmowa Arkadiusza Czerwa z Robusiem Pasjonatem | https://youtu.be/54BCbUZaHo0 |
 | `S9` | stara i nowa szkoła kulturystyki, hipertrofia, pompa, przerwy i superserie — rozmowa Pawła Albrechta z Arkadiuszem Czerwem | https://youtu.be/U_shUYXSiHM |
+| `S10` | przełamywanie stagnacji w redukcji, budowaniu masy i sile — rozmowa Pawła Albrechta z Arkadiuszem Czerwem | https://youtu.be/Xs-YqL1bBII |
 
 Uwaga do `S5`: nagranie z kanału HSS (@dawidolszewski), gospodarz to Dawid Olszewski — to ta sama osoba, której Arkadiusz w rozmowie nazywa „Dawid”. W dołączonej transkrypcji etykiety mówców są poprawne.
 
@@ -48,6 +49,8 @@ Uwaga do `S7`: nagranie z kanału KFD.pl, gospodarz to Robuś Pasjonat. W dołą
 Uwaga do `S8`: nagranie z kanału KFD.pl, gospodarz to Robuś Pasjonat. Pierwsza minuta zawiera montaż zapowiedzi i reklamę — w dołączonej transkrypcji pozostawiony w całości, z poprawnymi etykietami (oryginał z globalnie zamienionymi etykietami nie jest w repozytorium). ASR miejscami skleja lub zniekształca wypowiedzi, więc liczby i szczegóły zdrowotne weryfikuj w nagraniu, a nieczytelnych fragmentów nie cytuj.
 
 Uwaga do `S9`: prowadzącym jest Paweł Albrecht, gościem Arkadiusz Czerw. Diarization skleił krótką odpowiedź Arkadiusza przy 00:53 z wypowiedzią Pawła; rozdzielono ją ręcznie w dołączonej transkrypcji. ASR może zniekształcać wypowiedzi, a twierdzenia rozmówców o literaturze nie zostały tu niezależnie zweryfikowane.
+
+Uwaga do `S10`: prowadzącym jest Paweł Albrecht, gościem Arkadiusz Czerw. Transkrypcję przygotowano lokalnie z MLX Whisper large-v3 i diaryzacji pyannote; etykiety mówców sprawdzono po treści (Paweł prowadzi i zadaje pytania, Arkadiusz odpowiada). ASR może zniekształcać pojedyncze słowa, a liczby i twierdzenia o literaturze weryfikuj w nagraniu. Materiał jest syntezą, nie niezależną walidacją naukową.
 
 ## Zasady operacyjne agenta
 
@@ -88,7 +91,8 @@ Uwaga do `S9`: prowadzącym jest Paweł Albrecht, gościem Arkadiusz Czerw. Diar
 
 ### E. Redukcja
 
-- Trend masy ciała jest istotny dla interpretacji kalorii. Średnia tygodniowa to praktyczna metoda operacyjna dodana przez autora skilla, nie zalecenie przypisane rozmówcom.
+- Trend masy ciała jest istotny dla interpretacji kalorii. W S10 Arkadiusz sam zaleca codzienne ważenie rano na czczo i średnią tygodniową; poza S10 średnia tygodniowa jest metodą operacyjną autora, nie cytatem rozmówców. (`S10` [01:14](https://youtu.be/Xs-YqL1bBII?t=74))
+- Przy zastoju redukcji najpierw sprawdź przyswajanie kalorii, weekendy, NEAT i aktualne zapotrzebowanie; diet break (zero kaloryczne na 2 dni–2 tygodnie) to opcja, nie automat. (`S10` [08:32](https://youtu.be/Xs-YqL1bBII?t=512), [21:28](https://youtu.be/Xs-YqL1bBII?t=1288))
 - W rozmowie pojawia się zakres około 0,5–1% masy ciała tygodniowo jako zdroworozsądkowy punkt odniesienia.
 - Arkadiusz Czerw wskazuje trening siłowy i odpowiednią podaż białka jako warunki ograniczające ryzyko utraty mięśni; to parafraza jego wypowiedzi, nie gwarancja. (`S1` [02:23](https://youtu.be/bpSubkCA168?t=143))
 - Zbyt agresywny deficyt grozi utratą masy mięśniowej (przy niedostatecznej podaży białka) oraz pogorszeniem przestrzegania planu; to wypowiedź Pawła Albrechta, nie Arkadiusza. Regeneracji źródła nie poruszają.
@@ -109,6 +113,7 @@ Poniższe punkty opisują treść rozmów. Liczby i uogólnienia rozmówców nie
 - Ćwiczenie kontrolne nie oznacza testowania maksa co tydzień. Zaawansowany użytkownik może progresować wolniej; brak cotygodniowego wzrostu ciężaru sam w sobie nie dowodzi, że plan nie działa. (`S2` [22:53](https://youtu.be/XLTbnKL_fwk?t=1373))
 - Arkadiusz opisuje programowanie jako planowane manipulowanie zmiennymi treningu w celu zarządzania zmęczeniem i wspierania adaptacji; periodyzację odróżnia jako planowanie w szerszej perspektywie czasu. To jego rama pojęciowa, nie jedyna obowiązująca definicja. (`S5` [02:46](https://youtu.be/h2Vj5ai9Ang?t=166))
 - Nie zmieniaj planu wyłącznie dlatego, że minął arbitralny cykl. Arkadiusz opisuje utrzymywanie ćwiczeń bazowych przez lata, jeśli pozwalają trenować i monitorować postępy; zmiany wprowadza m.in. z powodu monotonii. To jego praktyka, nie nakaz utrzymania każdego planu bez końca. (`S5` [40:39](https://youtu.be/h2Vj5ai9Ang?t=2439), [43:42](https://youtu.be/h2Vj5ai9Ang?t=2622))
+- S10 rozwija zasadę ciągłości: adaptacja do tego samego ćwiczenia jest celem, a nie problemem. Arkadiusz twierdzi, że gdy ciężar przestaje rosnąć, ćwiczenie dopiero zaczyna być efektywne, a zbyt częsta zmiana resetuje adaptację. To jego model; nie usprawiedliwia ignorowania bólu, techniki ani braku progresu. (`S10` [32:58](https://youtu.be/Xs-YqL1bBII?t=1978), [34:28](https://youtu.be/Xs-YqL1bBII?t=2068))
 - S6 przedstawia powrót Arkadiusza po drobnym wypadku, na tyle poważnym, że przez pierwszy tydzień–dwa nie mógł trenować: najpierw rehabilitacja, utrwalanie wzorców ruchowych i stabilizacja, potem stopniowe dokładanie ćwiczeń. To opis jego indywidualnego przypadku, a nie gotowy protokół leczenia ani zalecenie do samodzielnej rehabilitacji. (`S6` [01:11](https://youtu.be/blaB3aBrf1o?t=71), [01:31](https://youtu.be/blaB3aBrf1o?t=91), [01:48](https://youtu.be/blaB3aBrf1o?t=108))
 - S8 wyraźniej rozdziela osobę początkującą z otyłością, której plan trzeba dopasować do czasu i możliwości, od osoby zaawansowanej robiącej redukcję sylwetkową, u której punktem wyjścia jest poprzedni plan i wytrenowana tolerancja. To rama do indywidualizacji, nie odrębne prawa treningowe dla kategorii osób. (`S8` [01:25](https://youtu.be/54BCbUZaHo0?t=85), [01:56](https://youtu.be/54BCbUZaHo0?t=116), [02:45](https://youtu.be/54BCbUZaHo0?t=165))
 - Wspólny wątek S8 i S7: plan ma być możliwy do wykonania, a krótka lub częściowa sesja może być lepsza niż opuszczenie treningu z powodu perfekcjonizmu. W S8 przykład klienta, który po opóźnieniu wykonał tylko część planu, opisuje Robuś Pasjonat (1:07:58), a Arkadiusz kwituje to „Done is better than perfect" (1:08:58) i wcześniej „zrób to zmęczony" (1:06:14); traktuj to jako strategię przestrzegania planu, nie obowiązek trenowania mimo choroby, bólu czy niebezpiecznego przemęczenia. (`S8` [1:07:58](https://youtu.be/54BCbUZaHo0?t=4078), [1:08:58](https://youtu.be/54BCbUZaHo0?t=4138))
@@ -124,6 +129,7 @@ Poniższe punkty opisują treść rozmów. Liczby i uogólnienia rozmówców nie
 - Przerwa zależy od ćwiczenia i gotowości do kolejnej jakościowej serii. W S3 pada co najmniej 2 minuty jako punkt odniesienia, a w S7 Arkadiusz Czerw opowiada się za minimum 2 minutami także przy izolacjach. To zbieżny punkt odniesienia, nie sztywna norma dla każdego. (dodatek autora: nie skracaj odpoczynku kosztem celu serii.) (`S3` [30:52](https://youtu.be/IIi8e4i6pZE?t=1852), [32:48](https://youtu.be/IIi8e4i6pZE?t=1968); `S7` [46:19](https://youtu.be/Xb2y18_B0QY?t=2779), [46:27](https://youtu.be/Xb2y18_B0QY?t=2787) — potwierdzenie „także przy izolacjach")
 - Waga na maszynie nie zawsze jest porównywalna między sprzętami lub siłowniami. Śledź wynik w tym samym ćwiczeniu, na tym samym urządzeniu i przy podobnej technice. (`S4` [56:02](https://youtu.be/ySgq9XysjD0?t=3362))
 - Arkadiusz opisuje technikę i dobór ćwiczenia z uwzględnieniem ograniczeń własnego ciała; w jego przykładzie ustawienie nóg na ławce ograniczało pogłębianie lordozy i możliwy dyskomfort. To modyfikacja konkretnej osoby, nie standardowa technika wyciskania. Przy bólu lub urazie nie kopiuj jej bez oceny specjalisty. (`S6` [04:05](https://youtu.be/blaB3aBrf1o?t=245))
+- Arkadiusz nie śledzi bieżącej literatury o rozciąganiu; jest pewien, że statyczny stretching bezpośrednio przed treningiem siłowym obniża zdolności wysiłkowe. Nie przedstawiaj tego jako pełnej oceny rozciągania w hipertrofii ani jako protokołu. (`S10` [41:48](https://youtu.be/Xs-YqL1bBII?t=2508), [42:03](https://youtu.be/Xs-YqL1bBII?t=2523))
 
 ### 3. Objętość, wysiłek i progresja
 
@@ -133,6 +139,11 @@ Poniższe punkty opisują treść rozmów. Liczby i uogólnienia rozmówców nie
 - S9 ponownie uznaje szeroki zakres powtórzeń za możliwy przy zbliżeniu do upadku, ale Arkadiusz osobiście preferuje umiarkowane/niższe zakresy ze względu na koszt zmęczenia i pompy; wysokie dopuszcza m.in. gdy cięższe obciążenie jest niewygodne. To preferencja, nie limit hipertrofii ani uniwersalna ocena ryzyka kontuzji. (`S9` [20:08](https://youtu.be/U_shUYXSiHM?t=1208), [21:44](https://youtu.be/U_shUYXSiHM?t=1304), [22:28](https://youtu.be/U_shUYXSiHM?t=1348), [22:42](https://youtu.be/U_shUYXSiHM?t=1362))
 - S9 podaje około 2 sekund jako wystarczające, kontrolowane opuszczanie ciężaru i odradza celowe bardzo długie ekscentryki. To punkt widzenia rozmówcy, nie obowiązkowe tempo ani protokół rehabilitacyjny. (`S9` [14:51](https://youtu.be/U_shUYXSiHM?t=891))
 - W S9 Arkadiusz podkreśla objętość, wysiłek blisko niepowodzenia i progresywne przeciążenie jako ważne zmienne treningowe; w żywieniu wyróżnia kaloryczność i białko. To hierarchia z rozmowy, nie pełny ani niezależnie zweryfikowany model żywienia. (`S9` [39:46](https://youtu.be/U_shUYXSiHM?t=2386))
+- S10: przy braku progresu siłowego przez dłuższy czas rozważ zwiększenie liczby serii roboczych dla zastoju grupy (np. z 4 do 5) i oceniaj po około 4 tygodniach, nie po jednym treningu. (`S10` [29:22](https://youtu.be/Xs-YqL1bBII?t=1762))
+- S10: upewnij się, że jest mała nadwyżka kaloryczna i trend masy rośnie w skali około 4 tygodni. Jeśli masa rośnie, a wyniki nie, to według Arkadiusza sygnał zbyt małej objętości; zwiększ serię roboczą dla zastoju grupy. (`S10` [30:38](https://youtu.be/Xs-YqL1bBII?t=1838), [31:03](https://youtu.be/Xs-YqL1bBII?t=1863))
+- S10: progres siłowy jest praktycznym, ale niedoskonałym wskaźnikiem hipertrofii. Można być silniejszym bez przyrostu masy; na wyższym poziomie brak cotygodniowego wzrostu ciężaru nie dowodzi stagnacji. Używaj dziennika, czucia mięśniowego i techniki jako uzupełnienia. (`S10` [24:34](https://youtu.be/Xs-YqL1bBII?t=1474), [25:38](https://youtu.be/Xs-YqL1bBII?t=1538), [28:11](https://youtu.be/Xs-YqL1bBII?t=1691))
+- S10: nie planuj roztrenowania z góry; stosuj je lokalnie, gdy wyniki spadają przez 3–4 tygodnie i nie poprzedza tego zwiększona objętość, po sprawdzeniu snu, kalorii i regeneracji. Redukuj objętość, intensywność albo oba. (`S10` [36:49](https://youtu.be/Xs-YqL1bBII?t=2209), [40:18](https://youtu.be/Xs-YqL1bBII?t=2418))
+- S10: do najczęstszych błędów Arkadiusz zalicza błędną ocenę bliskości upadku (zwłaszcza w ćwiczeniach złożonych), zbyt częste zmiany planu i ćwiczeń, przedwczesne wnioski oraz trening bez zapisu. Sugeruje okresowe doprowadzenie serii do rzeczywistego upadku z asekuracją, aby skalibrować odczucie; nie rób z tego obowiązku na każdym treningu. (`S10` [46:55](https://youtu.be/Xs-YqL1bBII?t=2815))
 
 - Objętość można opisywać na różne sposoby; dla praktycznego monitorowania rozmówca wskazuje tygodniowe serie robocze, a nie sam tonaż. Zapisuj serie osobno dla grup mięśniowych; o ćwiczeniach wielostawowych mówi Arkadiusz w `S6` [08:52](https://youtu.be/blaB3aBrf1o?t=532) — triceps i przednia część deltoidów pracują razem z klatką, ale to klatka jest czynnikiem limitującym. (`S3` [03:00](https://youtu.be/IIi8e4i6pZE?t=180))
 - W S6 Arkadiusz opisuje własną metodę przypisywania serii wielostawowych: za główną serię dla danej partii uznaje ją wtedy, gdy ta partia jest czynnikiem limitującym; samo współuczestnictwo mięśnia pomocniczego nie oznacza równoważnej serii bezpośredniej. To praktyczny model liczenia, nie uniwersalny sposób wyceny każdej serii. (`S6` [08:10](https://youtu.be/blaB3aBrf1o?t=490), [08:52](https://youtu.be/blaB3aBrf1o?t=532))
@@ -173,6 +184,12 @@ Poniższe punkty opisują treść rozmów. Liczby i uogólnienia rozmówców nie
 - S8 przedstawia cardio jako możliwe narzędzie dla zdrowia i zwiększania wydatku, ale nie jako obowiązkowy ani główny sposób redukcji. Arkadiusz wskazuje, że jego nadmierna intensywność może pośrednio obniżyć jakość treningu siłowego; nie podaje bezpiecznego „maksimum” cardio. Przykłady HIIT, czasu rozdzielenia cardio i siłowni ([28:53](https://youtu.be/54BCbUZaHo0?t=1733), wypowiedź Robusia Pasjonata) oraz bardzo niskiej podaży kalorii są wypowiedziami rozmówców, nie zaleceniami skilla; szczególnie nie wyprowadzaj z nich limitu kalorii ani protokołu cardio. (`S8` [25:03](https://youtu.be/54BCbUZaHo0?t=1503), [28:00](https://youtu.be/54BCbUZaHo0?t=1680), [28:53](https://youtu.be/54BCbUZaHo0?t=1733), [35:42](https://youtu.be/54BCbUZaHo0?t=2142))
 - Dla osoby początkującej z ograniczonym czasem S8 omawia full body przy 2–3 sesjach tygodniowo i większą gęstość treningu, w tym serie łączone albo aktywny odpoczynek. Są to warianty do rozważenia w określonym kontekście, nie powód do skracania przerw kosztem jakości każdej serii hipertroficznej. (`S8` [10:27](https://youtu.be/54BCbUZaHo0?t=627) (Robuś Pasjonat o osobach z otyłością), [46:27](https://youtu.be/54BCbUZaHo0?t=2787) (Arkadiusz o objętości), [47:24](https://youtu.be/54BCbUZaHo0?t=2844) (Robuś Pasjonat o krótkich przerwach), [1:09:07](https://youtu.be/54BCbUZaHo0?t=4147) (Robuś Pasjonat w podsumowaniu))
 - W S8 pojawiają się dwie praktyki korekty zastoju: Arkadiusz mówi o skompensowaniu brakującego wydatku przez dietę albo aktywność, a Robuś opisuje zwiększenie kroków o ok. 20% przed zmianą kalorii. Nie są to zgodne, uniwersalne protokoły; przed korektą sprawdź trend i realizację planu, a przykładu procentowego nie stosuj automatycznie po jednym tygodniu. (`S8` [55:57](https://youtu.be/54BCbUZaHo0?t=3357), [56:39](https://youtu.be/54BCbUZaHo0?t=3399), [57:17](https://youtu.be/54BCbUZaHo0?t=3437))
+- S10: stagnacji redukcji nie oceniaj po jednym pomiarze. Arkadiusz zaleca codzienne ważenie rano na czczo, średnią tygodniową i trend w skali tygodni do miesiąca; przy wyższym stażu i dłuższym deficycie wydłuż skalę. Woda, glikogen, sód i treść pokarmowa mogą maskować utratę tłuszczu. (`S10` [01:14](https://youtu.be/Xs-YqL1bBII?t=74), [03:33](https://youtu.be/Xs-YqL1bBII?t=213))
+- S10: przed pogłębieniem deficytu sprawdź nieświadome kalorie (weekendy, warzywa, porcje), spadek NEAT i aktualne zapotrzebowanie po utracie masy. Efekt whoosh po zwiększeniu kalorii Arkadiusz opisuje jako praktyczne zjawisko, ale sam mówi, że nie jest dobrze zdefiniowane. (`S10` [08:32](https://youtu.be/Xs-YqL1bBII?t=512), [50:27](https://youtu.be/Xs-YqL1bBII?t=3027), [52:02](https://youtu.be/Xs-YqL1bBII?t=3122))
+- S10: diet break to wejście na zero kaloryczne na 2 dni–2 tygodnie, a nie dowolne objadanie się. Arkadiusz stosuje go przy zastoju lub na życzenie klienta; nadwyżka ponad zapotrzebowanie odkłada się w tkance tłuszczowej. (`S10` [21:28](https://youtu.be/Xs-YqL1bBII?t=1288), [23:28](https://youtu.be/Xs-YqL1bBII?t=1408), [12:23](https://youtu.be/Xs-YqL1bBII?t=743))
+- S10: na redukcji celem jest utrzymanie mięśni, nie budowanie masy. Arkadiusz nie zaczyna od cięcia objętości: najpierw rozważa mniejszą złożoność ćwiczeń, niższy zakres powtórzeń, większy zapas (1–2 powtórzenia) i elastyczniejszą częstotliwość; objętość zmniejsza dopiero przy utrzymującym się spadku wyników. Jego stwierdzenie, że do utrzymania może wystarczyć 1/3 objętości z masy, jest skrajną praktyką, nie uniwersalną receptą. (`S10` [15:50](https://youtu.be/Xs-YqL1bBII?t=950), [17:02](https://youtu.be/Xs-YqL1bBII?t=1022), [19:27](https://youtu.be/Xs-YqL1bBII?t=1167))
+- S10: spadek siły na redukcji może wynikać z glikogenu, wody i ogólnego zmęczenia, nie z utraty mięśni; podciąganie może się nawet poprawić, bo masa ciała spada. (`S10` [19:45](https://youtu.be/Xs-YqL1bBII?t=1185), [20:51](https://youtu.be/Xs-YqL1bBII?t=1251), [43:16](https://youtu.be/Xs-YqL1bBII?t=2596))
+- S10: rekompozycja jest możliwa, ale zdaniem Arkadiusza nie warto w nią celować; jej skala zależy od stażu, procentu tłuszczu i głębokości deficytu, a głębszy deficyt obniża prawdopodobieństwo przyrostu mięśni. Ukierunkowanie na jeden cel jest bardziej efektywne. (`S10` [05:19](https://youtu.be/Xs-YqL1bBII?t=319), [15:10](https://youtu.be/Xs-YqL1bBII?t=910))
 
 ### 5. Kalorie, makroskładniki i zachowania żywieniowe
 
@@ -188,6 +205,10 @@ Poniższe punkty opisują treść rozmów. Liczby i uogólnienia rozmówców nie
 - Jeśli deklarowane spożycie i trend masy nie pasują, sprawdź jakość pomiaru, porcje, dodatki, napoje i kompletność zapisu bez oskarżania użytkownika. Arkadiusz omawia „misreporting” jako często nieświadome pomijanie. Wagę kuchenną i dokładne ważenie zaleca Paweł, nie Arkadiusz. (`S4` [51:45](https://youtu.be/ySgq9XysjD0?t=3105), [54:16](https://youtu.be/ySgq9XysjD0?t=3256))
 - Nie klasyfikuj produktów wyłącznie jako „dobre/złe”. Rozmówca akcentuje całkowite spożycie i nadmierną masę ciała, ale jego szerokie twierdzenia zdrowotne są streszczeniem wypowiedzi, nie indywidualną poradą medyczną. (`S4` [44:56](https://youtu.be/ySgq9XysjD0?t=2696), [45:52](https://youtu.be/ySgq9XysjD0?t=2752))
 - Rozmówca proponuje na wakacjach elastyczność i przerwę od ścisłego liczenia, a w podróży logistyczne przygotowanie jedzenia. To opcje, nie nakaz; zależą od celu, historii użytkownika i relacji z jedzeniem. (`S4` [57:03](https://youtu.be/ySgq9XysjD0?t=3423), [58:19](https://youtu.be/ySgq9XysjD0?t=3499))
+- S10: Arkadiusz zwraca uwagę na nieświadome przyswajanie kalorii (weekendy, warzywa, porcje), spadek NEAT i konieczność ponownego oszacowania zera po utracie 20–30 kg. (`S10` [08:32](https://youtu.be/Xs-YqL1bBII?t=512))
+- S10: nadwyżka ponad zapotrzebowanie odkłada się w adipocytach; przy nadwyżce około 500 kcal większość przyrostu może stanowić tkanka tłuszczowa. To twierdzenie rozmówcy o literaturze, nie niezależna walidacja. (`S10` [12:23](https://youtu.be/Xs-YqL1bBII?t=743), [31:21](https://youtu.be/Xs-YqL1bBII?t=1881))
+- S10: Arkadiusz nie używa procentów; praktycznie trzyma około 250 kcal nadwyżki nad zerem. Pytanie Pawła o 10–15% nie jest rekomendacją Arkadiusza; przy 4500 kcal 10% to 450 kcal. (`S10` [30:58](https://youtu.be/Xs-YqL1bBII?t=1858), [31:03](https://youtu.be/Xs-YqL1bBII?t=1863), [31:21](https://youtu.be/Xs-YqL1bBII?t=1881))
+- S10: Paweł podkreśla, że bez znania wydatku i spożycia nie da się kontrolować progresu; Arkadiusz cytuje za anonimowym naukowcem: „Nie musisz liczyć kalorii, ale kalorie zawsze będą się liczyć”. Warzywa też mają kalorie (przykład kalarepy), a weekendy mogą znieść deficyt. (`S10` [50:58](https://youtu.be/Xs-YqL1bBII?t=3058), [51:51](https://youtu.be/Xs-YqL1bBII?t=3111), [52:02](https://youtu.be/Xs-YqL1bBII?t=3122))
 
 ### 6. Twierdzenia wymagające szczególnej ostrożności
 
@@ -197,6 +218,11 @@ Poniższe punkty opisują treść rozmów. Liczby i uogólnienia rozmówców nie
 - W rozmowach pojawia się doping i środki farmakologiczne. Agent nie ma przekładać tych fragmentów na rekomendacje, dawkowanie ani optymalizację użycia. Kieruje pytania o leki do lekarza.
 - S9 zawiera twierdzenia o uszkodzeniach mięśni, stresie metabolicznym, pompie, mleczanie i badaniach nad superseriami. Przedstawiaj je jako wypowiedzi Arkadiusza, a nie wynik niezależnego przeglądu literatury; nie używaj ich do diagnozy ani protokołu rehabilitacji. (`S9` [08:08](https://youtu.be/U_shUYXSiHM?t=488), [23:26](https://youtu.be/U_shUYXSiHM?t=1406), [26:19](https://youtu.be/U_shUYXSiHM?t=1579), [29:27](https://youtu.be/U_shUYXSiHM?t=1767))
 - S9 omawia wybór trenera i krytykę cherry-pickingu. Przyjmij to jako wskazówkę do krytycznej oceny źródeł, ale nie powtarzaj uogólnień o wiedzy konkretnych trenerów na podstawie samego wyglądu. (`S9` [38:36](https://youtu.be/U_shUYXSiHM?t=2316), [39:46](https://youtu.be/U_shUYXSiHM?t=2386))
+- S10: efekt whoosh jest opisany jako praktyczne zjawisko, ale sam Arkadiusz mówi, że nie jest dobrze zdefiniowane; nie traktuj go jako dowodu ani gwarancji. (`S10` [08:32](https://youtu.be/Xs-YqL1bBII?t=512))
+- S10: twierdzenie, że do utrzymania mięśni na redukcji wystarczy 1/3 objętości z masy, jest skrajne i niepoparte protokołem; nie stosuj go jako uniwersalnego targetu. (`S10` [15:50](https://youtu.be/Xs-YqL1bBII?t=950))
+- S10: 10–12 kg masy mięśniowej w pierwszym roku to „bardzo optymistyczny” scenariusz; każdego kolejnego roku połowa, a po czterech latach wyniki są niemierzalne. To uogólnienie, nie prognoza. (`S10` [28:57](https://youtu.be/Xs-YqL1bBII?t=1737))
+- S10: w tym fragmencie Arkadiusz odsuwa sen i regenerację na dalszy plan jako wyjaśnienie braku progresu i mówi, że syndrom przetrenowania jest bardzo trudny do uzyskania. To jego opinia; nie odrzucaj snu, bólu ani sygnałów bezpieczeństwa. (`S10` [32:32](https://youtu.be/Xs-YqL1bBII?t=1952))
+- S10: statyczny stretching bezpośrednio przed treningiem siłowym może obniżać zdolności wysiłkowe; Arkadiusz nie śledzi bieżącej literatury o rozciąganiu, więc nie rozszerzaj tego na całą strategię hipertrofii. (`S10` [41:48](https://youtu.be/Xs-YqL1bBII?t=2508), [42:03](https://youtu.be/Xs-YqL1bBII?t=2523))
 
 ## Wszystkie liczby w bazie
 
@@ -206,7 +232,11 @@ Każda liczba występująca w tej bazie, z kontekstem i ryzykiem nadużycia. Pod
 
 | Wartość | Co oznacza | Warunki | Źródło | Ryzyko nadużycia |
 |---|---|---|---|---|
-| 250–300 kcal | nadwyżka nad „zerem kalorycznym" | hipoteza praktyczna do indywidualnej obserwacji | `S2` [01:08](https://youtu.be/XLTbnKL_fwk?t=68) | traktowanie jako uniwersalnej recepty |
+| 250–300 kcal | nadwyżka nad „zerem kalorycznym" | hipoteza praktyczna do indywidualnej obserwacji; S10 podaje ~250 kcal jako własną praktykę | `S2` [01:08](https://youtu.be/XLTbnKL_fwk?t=68), `S10` [31:03](https://youtu.be/Xs-YqL1bBII?t=1863) | traktowanie jako uniwersalnej recepty |
+| 10–15% | pytanie Pawła o nadwyżkę procentową, nie rekomendacja Arkadiusza | Arkadiusz nie używa procentów; przy 4500 kcal 10% to 450 kcal | `S10` [30:58](https://youtu.be/Xs-YqL1bBII?t=1858) | przypisywanie tej wartości Arkadiuszowi |
+| ~500 kcal | nadwyżka, przy której według Arkadiusza większość przyrostu to tkanka tłuszczowa | twierdzenie o literaturze, nie niezależna walidacja | `S10` [31:21](https://youtu.be/Xs-YqL1bBII?t=1881) | traktowanie jako dokładnego progu |
+| 2 dni–2 tygodnie | czas diet breaku na zero kaloryczne | indywidualnie; nie dowolne objadanie się | `S10` [23:28](https://youtu.be/Xs-YqL1bBII?t=1408) | sztywny protokół dla każdego |
+| 3 kg | anegdota Arkadiusza o spadku wagi po whoosh | przykład z doświadczenia; woda i glikogen, nie tłuszcz | `S10` [08:32](https://youtu.be/Xs-YqL1bBII?t=512) | traktowanie jako typowej reakcji |
 | 2–3 g/kg m.c. | białko; wyższy zakres przy głębszej redukcji | do weryfikacji względem aktualnych wytycznych, składu ciała i rodzaju masy użytej do przeliczenia | `S4` [19:22](https://youtu.be/ySgq9XysjD0?t=1162), `S7` [59:46](https://youtu.be/Xb2y18_B0QY?t=3586) | podanie jako indywidualnego celu |
 | 0,5–1 g/kg m.c. | tłuszcz; reszta kalorii na węglowodany | propozycja rozmówcy, nie cel makro | `S4` [19:22](https://youtu.be/ySgq9XysjD0?t=1162) | jak wyżej |
 | 0,5–1% m.c./tydz. | zakres tempa redukcji | „rozsądny punkt wyjściowy", nie norma bezpieczeństwa | `S1` [06:14](https://youtu.be/bpSubkCA168?t=374), `S4` [08:52](https://youtu.be/ySgq9XysjD0?t=532) | uniwersalizowanie procentu |
@@ -223,7 +253,12 @@ Każda liczba występująca w tej bazie, z kontekstem i ryzykiem nadużycia. Pod
 | 10 serii na jednej sesji | granica „efektywnej objętości" wg rozmówcy | twierdzenie do weryfikacji, nie limit | `S6` [09:40](https://youtu.be/blaB3aBrf1o?t=580) | pomylenie z tygodniowym punktem startowym |
 | 5 serii | w S7 przywołane jako połowa objętości 10 serii | porównanie, nie osobna norma | `S7` [20:02](https://youtu.be/Xb2y18_B0QY?t=1202) | traktowanie jako minimum |
 | 5–35 powtórzeń | szeroki zakres przy zbliżaniu do upadku | koszt zmęczenia rośnie wraz z liczbą powtórzeń | `S3` [40:35](https://youtu.be/IIi8e4i6pZE?t=2435) | czytanie jako normy |
+| 10–12 kg | optymistyczny przyrost masy mięśniowej w pierwszym roku treningu | „bardzo optymistyczny” scenariusz; każdego roku połowa, po czterech latach wyniki niemierzalne | `S10` [28:57](https://youtu.be/Xs-YqL1bBII?t=1737) | traktowanie jako prognozy dla konkretnej osoby |
 | 6–8 / ~10 / 12 powtórzeń | punkty startowe zależnie od złożoności ćwiczenia | złożone z wolnym ciężarem / maszyny / izolacje | `S3` [43:32](https://youtu.be/IIi8e4i6pZE?t=2612) | traktowanie jako sztywnych limitów |
+| 1/3 objętości | obserwacja Arkadiusza, że do utrzymania mięśni na redukcji może wystarczyć 1/3 objętości z masy | skrajna praktyka; źródło nie podaje protokołu | `S10` [15:50](https://youtu.be/Xs-YqL1bBII?t=950) | uniwersalny target |
+| 1–2 powtórzenia w zapasie | dodatkowy zapas, który Arkadiusz rozważa na redukcji | względem etapu budowania masy; nie sztywna reguła | `S10` [17:02](https://youtu.be/Xs-YqL1bBII?t=1022) | narzucanie każdemu |
+| 3–5 powtórzeń | typowy zakres treningu siłowego według Arkadiusza | wyższy procent 1RM; nie zakres hipertrofii | `S10` [43:51](https://youtu.be/Xs-YqL1bBII?t=2631) | stosowanie jako uniwersalnego planu na masę |
+| ~4 tygodnie | skala obserwacji zastoju masy i roztrenowania | S10 podaje 3–4 tygodnie; nie sztywne okno dla każdej decyzji | `S10` [29:22](https://youtu.be/Xs-YqL1bBII?t=1762), [40:18](https://youtu.be/Xs-YqL1bBII?t=2418) | mylenie z autorskim oknem 2–4 tygodni |
 | 6 powtórzeń | może wystarczyć do uznania serii za efektywną | wypowiedź S2 o innej ramie niż S3 | `S2` [29:30](https://youtu.be/XLTbnKL_fwk?t=1770) | wyprowadzanie limitu z krótkiego fragmentu |
 | do 10 powtórzeń | osobista preferencja Arkadiusza w S7 | dostosowywana do przypadku (klient po urazie tylnej części uda) | `S7` [31:27](https://youtu.be/Xb2y18_B0QY?t=1887), [32:14](https://youtu.be/Xb2y18_B0QY?t=1934) | ogłaszanie górnego limitu hipertrofii |
 | do 12 powtórzeń | osobista preferencja Arkadiusza w S5; w S9 także punkt startowy ograniczający pompę | wynika z jego odczuwanego kosztu zmęczenia, nie jest granicą hipertrofii | `S5` [1:06:45](https://youtu.be/h2Vj5ai9Ang?t=4005), `S9` [25:35](https://youtu.be/U_shUYXSiHM?t=1535) | ogłaszanie górnego limitu hipertrofii |
@@ -243,7 +278,7 @@ Każda liczba występująca w tej bazie, z kontekstem i ryzykiem nadużycia. Pod
 | 4–5 treningów/tydz. | dla początkującego, który ma czas | aspiracja, nie plan do wykonania | `S8` [39:08](https://youtu.be/54BCbUZaHo0?t=2348) | jak wyżej |
 | 2–3 treningi/tydz. | dla osób odchudzających się | zalecenie Robusia w S8; podobnie w podsumowaniu | `S8` [40:45](https://youtu.be/54BCbUZaHo0?t=2445), [1:09:07](https://youtu.be/54BCbUZaHo0?t=4147) | mylenie z powyższym |
 | 6 dni (3 góra + 3 dół) | indywidualny przypadek powrotu po przerwie i dysproporcji | nie jest to plan ogólny | `S6` [02:30](https://youtu.be/blaB3aBrf1o?t=150) | kopiowanie jako szablonu |
-| 7 dni mikrocyklu | mikrocykl nie musi pokrywać się z tygodniem kalendarzowym | można rozłożyć na 8–10 dni | `S3` [09:15](https://youtu.be/IIi8e4i6pZE?t=555) | — |
+| 7 dni mikrocyklu | mikrocykl nie musi pokrywać się z tygodniem kalendarzowym | można rozłożyć na 8–10 dni; S10 podaje 8 dni na redukcji | `S3` [09:15](https://youtu.be/IIi8e4i6pZE?t=555), `S10` [17:02](https://youtu.be/Xs-YqL1bBII?t=1022) | — |
 
 ### Ćwiczenia i odpoczynek
 
@@ -274,7 +309,7 @@ Każda liczba występująca w tej bazie, z kontekstem i ryzykiem nadużycia. Pod
 
 ### Co tydzień
 
-- obserwuj trend masy; średnia tygodniowa może ograniczyć wpływ pojedynczych wahań, ale jest to metoda operacyjna dodana przez autora, nie zasada przypisana rozmówcom;
+- obserwuj trend masy; średnia tygodniowa ogranicza wpływ pojedynczych wahań. W S10 Arkadiusz sam ją zaleca; poza S10 to metoda operacyjna autora, nie zasada przypisana rozmówcom;
 - sprawdź trend obciążenia/powtórzeń;
 - sprawdź wykonanie zaplanowanych serii;
 - oceń sen, regenerację, głód i trudność utrzymania kalorii;
@@ -326,7 +361,7 @@ Ponowna ocena: konkretny termin lub liczba treningów.
 
 ### Granice wiedzy (czego źródła nie poruszają)
 
-Poniższych obszarów **nie ma** w dziewięciu nagraniach. Nie uzupełniaj ich własnymi wnioskami ani nie przedstawiaj ich jako ustaleń rozmówców — odpowiedz wprost, że źródła tego nie mówią, i odsyłaj do aktualnej wiedzy klinicznej lub specjalisty.
+Poniższych obszarów **nie ma** w dziesięciu nagraniach. Nie uzupełniaj ich własnymi wnioskami ani nie przedstawiaj ich jako ustaleń rozmówców — odpowiedz wprost, że źródła tego nie mówią, i odsyłaj do aktualnej wiedzy klinicznej lub specjalisty.
 
 - dawki i skuteczność suplementów poza białkiem (kreatyna, BCAA, przedtreningówki) — jedyne wzmianki to oznaczenia produktów w reklamach;
 - protokoły rehabilitacji, zakres ruchu w rehabilitacji, powrót po operacjach — S6 to opis indywidualnego przypadku Arkadiusza, nie protokół;
@@ -339,7 +374,9 @@ Poniższych obszarów **nie ma** w dziewięciu nagraniach. Nie uzupełniaj ich w
 - rozkład jazdy w treningu oporowym, trening izometryczny w dużym obciążeniu, kontuzje ścięgien;
 - wpływ posiłku na tempo przyrostu masy w badaniach — jedyne liczby to szacunki rozmówców, nie wyniki badań;
 - bezpieczne tempo redukcji u osób z otyłością olbrzymią, po leczeniu farmakologicznym otyłości, po otyłości chirurgicznej;
-- rola snu w adaptacji — źródła wskazują go jako ważny element regeneracji (`S2` [46:59](https://youtu.be/XLTbnKL_fwk?t=2819)), ale nie podają zaleceń.
+- rola snu w adaptacji — źródła wskazują go jako ważny element regeneracji (`S2` [46:59](https://youtu.be/XLTbnKL_fwk?t=2819)), ale nie podają zaleceń; S10 dodatkowo bagatelizuje sen jako wyjaśnienie braku progresu, co jest opinią rozmówcy, nie ustaleniem;
+- pełny wpływ rozciągania na hipertrofię i siłę — S10 [41:48](https://youtu.be/Xs-YqL1bBII?t=2508) podaje tylko opinię o statycznym stretchingu przed treningiem; brak protokołu;
+- szczegółowe protokoły diet breaków i wpływu leptyny — S10 [23:28](https://youtu.be/Xs-YqL1bBII?t=1408) podaje praktykę 2 dni–2 tygodni, ale nie jest to przegląd literatury.
 
 Ogólna zasada: te nagrania to **wypowiedzi praktyków**, nie przegląd literatury. Gdy użytkownik prosi o rozstrzygnięcie naukowe, powiedz, że materiał tego nie dostarcza, i wskaż kierunek poszukiwań.
 
@@ -360,3 +397,7 @@ Najważniejsze różnice, których nie należy wygładzać:
 - Zakres powtórzeń: szerokie możliwości omawiane w S3 [40:35](https://youtu.be/IIi8e4i6pZE?t=2435) współistnieją z osobistą preferencją Arkadiusza, by zwykle nie programować sobie powyżej 12 powtórzeń w S5 [1:06:45](https://youtu.be/h2Vj5ai9Ang?t=4005). Nie przedstawiaj jego osobistej preferencji jako górnego limitu hipertrofii.
 - Redukcja i objętość: S5 [47:01](https://youtu.be/h2Vj5ai9Ang?t=2821) odradza automatyczne zwiększanie objętości i opisuje jej stopniowe obniżanie w miarę ograniczeń energetycznych; S8 [04:50](https://youtu.be/54BCbUZaHo0?t=290) oraz [14:15](https://youtu.be/54BCbUZaHo0?t=855) przedstawia objętość jako późniejszą dźwignię, po korekcie kosztu zmęczeniowego i wysiłku. To różne poziomy szczegółowości, nie sprzeczność.
 - Cardio na redukcji: S1 [17:36](https://youtu.be/bpSubkCA168?t=1056) i Arkadiusz w S8 [25:03](https://youtu.be/54BCbUZaHo0?t=1503) nie traktują treningu siłowego/cardio jako automatycznego narzędzia spalania; S8 jednocześnie dopuszcza cardio dla zdrowia lub zwiększenia wydatku i ostrzega przed wpływem wysokiej intensywności na jakość sesji siłowej ([28:00](https://youtu.be/54BCbUZaHo0?t=1680)). Nie zamieniaj tych opinii w uniwersalny zakaz ani obowiązek cardio.
+- Ocena stagnacji: S10 [01:14](https://youtu.be/Xs-YqL1bBII?t=74) i [40:18](https://youtu.be/Xs-YqL1bBII?t=2418) mówią o trendzie i skali 3–4 tygodni; nie jest to ta sama reguła co autorskie okno 2–4 tygodni. Nie przypisuj S10 sztywnego zakazu reakcji po jednej sesji.
+- Objętość na redukcji: S10 [15:50](https://youtu.be/Xs-YqL1bBII?t=950) mówi, że do utrzymania może wystarczyć 1/3 objętości z masy, ale [17:02](https://youtu.be/Xs-YqL1bBII?t=1022) zaleca nie zaczynać od cięcia objętości. To praktyczna wypowiedź, nie algorytm; zestaw ją z S5 [46:07](https://youtu.be/h2Vj5ai9Ang?t=2767) i S8 [14:15](https://youtu.be/54BCbUZaHo0?t=855).
+- Roztrenowanie: S10 [36:49](https://youtu.be/Xs-YqL1bBII?t=2209) odradza planowanie z góry i preferuje lokalny deload po 3–4 tygodniach; S7 [50:19](https://youtu.be/Xb2y18_B0QY?t=3019) opisuje reaktywny deload. Nie mieszaj tego z przerwami od siłowni.
+- Diet break: S10 [21:28](https://youtu.be/Xs-YqL1bBII?t=1288) definiuje go jako zero kaloryczne na 2 dni–2 tygodnie; to nie cheat day ani dowolna nadwyżka.

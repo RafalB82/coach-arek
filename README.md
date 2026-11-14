@@ -4,7 +4,7 @@ Skill Codex do praktycznego nadzoru procesu treningowego, ze szczególnym nacisk
 
 ## Jak powstał
 
-Skill powstał na prośbę użytkownika jako źródło wiedzy dla agenta nadzorującego trening. Punktem wyjścia było osiem polskojęzycznych materiałów z Arkadiuszem Czerwem: siedem rozmów (z Pawłem Albrechtem, Dawidem Olszewskim lub Robusiem Pasjonatem) oraz jeden materiał treningowy. Transkrypcje przygotowano wcześniej z nagrań za pomocą lokalnego workflow MLX Whisper, poprawiono redakcyjnie i uzupełniono o przypisanie mówców. Pełne transkrypcje nie są dołączone do tego publicznego repozytorium; repo zawiera syntezę tematyczną, identyfikatory źródeł, linki i timestampy.
+Skill powstał na prośbę użytkownika jako źródło wiedzy dla agenta nadzorującego trening. Punktem wyjścia było dziesięć polskojęzycznych materiałów z Arkadiuszem Czerwem: dziewięć rozmów (z Pawłem Albrechtem, Dawidem Olszewskim lub Robusiem Pasjonatem) oraz jeden materiał treningowy. Transkrypcje przygotowano wcześniej z nagrań za pomocą lokalnego workflow MLX Whisper, poprawiono redakcyjnie i uzupełniono o przypisanie mówców. Pełne transkrypcje nie są dołączone do tego publicznego repozytorium; repo zawiera syntezę tematyczną, identyfikatory źródeł, linki i timestampy.
 
 Na podstawie tych materiałów przygotowano:
 
@@ -16,7 +16,7 @@ Synteza kładzie nacisk na monitorowanie trendów i zachowanie ciągłości proc
 
 ## Podstawa źródłowa
 
-Linki prowadzą do materiałów pierwotnych. S1–S4 to rozmowy Pawła Albrechta z Arkadiuszem Czerwem, S5 to rozmowa Dawida Olszewskiego z Arkadiuszem, S6 to materiał treningowy Arkadiusza, a S7–S8 to rozmowy Arkadiusza z Robusiem Pasjonatem. Pełne transkrypcje nie są publikowane w tym repozytorium.
+Linki prowadzą do materiałów pierwotnych. S1–S4, S9 i S10 to rozmowy Pawła Albrechta z Arkadiuszem Czerwem, S5 to rozmowa Dawida Olszewskiego z Arkadiuszem, S6 to materiał treningowy Arkadiusza, a S7–S8 to rozmowy Arkadiusza z Robusiem Pasjonatem. Pełne transkrypcje nie są publikowane w tym repozytorium.
 
 | ID | Temat | Nagranie |
 |---|---|---|
@@ -28,12 +28,18 @@ Linki prowadzą do materiałów pierwotnych. S1–S4 to rozmowy Pawła Albrechta
 | S6 | Praktyczny trening, progresja i objętość — Arkadiusz Czerw | [YouTube](https://youtu.be/blaB3aBrf1o) |
 | S7 | Programowanie treningu, wysiłek, przerwy, regeneracja i żywienie — Arkadiusz Czerw i Robuś Pasjonat | [YouTube](https://youtu.be/Xb2y18_B0QY) |
 | S8 | Trening siłowy, redukcja tkanki tłuszczowej, cardio i autoregulacja — Arkadiusz Czerw i Robuś Pasjonat | [YouTube](https://youtu.be/54BCbUZaHo0) |
+| S9 | Stara i nowa szkoła kulturystyki, hipertrofia, pompa, przerwy i superserie — Paweł Albrecht i Arkadiusz Czerw | [YouTube](https://youtu.be/U_shUYXSiHM) |
+| S10 | Przełamywanie stagnacji w redukcji, budowaniu masy i sile — Paweł Albrecht i Arkadiusz Czerw | [YouTube](https://youtu.be/Xs-YqL1bBII) |
 
 Synteza wskazuje identyfikatory źródeł i znaczniki czasu, aby można było sprawdzić kontekst konkretnej wypowiedzi w nagraniu. Gdy potrzebny jest dokładny cytat, szerszy kontekst albo porównanie wypowiedzi, należy sprawdzić oryginalne nagranie.
 
 Uwaga redakcyjna do S7: nagranie z kanału KFD.pl, gospodarz to Robuś Pasjonat. W kopii transkrypcji dołączonej do skilla etykiety mówców są poprawne (oryginał z globalnie zamienionymi etykietami nie jest w pakiecie). Z nagrania usunięto klauzulę kanałową, reklamę w intro i promocyjną przyśpiewkę na outro.
 
 Uwaga redakcyjna do S8: nagranie z kanału KFD.pl, gospodarz to Robuś Pasjonat. W kopii transkrypcji dołączonej do skilla etykiety mówców są poprawne; montaż i reklama w pierwszej minucie pozostają w pliku.
+
+Uwaga redakcyjna do S9: prowadzącym jest Paweł Albrecht, gościem Arkadiusz Czerw. Diarization skleił krótką odpowiedź Arkadiusza przy 00:53 z wypowiedzią Pawła; w lokalnej transkrypcji rozdzielono ją ręcznie. Twierdzenia o literaturze nie są tu niezależnie zweryfikowane.
+
+Uwaga redakcyjna do S10: prowadzącym jest Paweł Albrecht, gościem Arkadiusz Czerw. Transkrypcja powstała lokalnie z MLX Whisper large-v3 i diaryzacji pyannote; etykiety mówców sprawdzono po treści. ASR może zniekształcać pojedyncze słowa, a liczby i twierdzenia o literaturze weryfikuj w nagraniu.
 
 ## Ważne ograniczenie
 
