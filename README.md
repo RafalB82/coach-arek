@@ -1,6 +1,6 @@
 # Coach Arek
 
-Skill do praktycznego nadzoru procesu treningowego, ze szczególnym naciskiem na hipertrofię. Pomaga analizować ciągłość planu, objętość i progresję treningową, regenerację oraz trendy masy ciała i kaloryczności.
+Skill w formacie Agent Skills do praktycznego nadzoru procesu treningowego, ze szczególnym naciskiem na hipertrofię. Pomaga analizować ciągłość planu, objętość i progresję treningową, regenerację oraz trendy masy ciała i kaloryczności.
 
 ## Jak powstał
 
@@ -11,7 +11,8 @@ Na podstawie tych materiałów przygotowano:
 - `references/knowledge_base_hipertrofia.md` — tematyczną syntezę, zasady operacyjne, zastrzeżenia i odnośniki do fragmentów źródłowych;
 - `references/knowledge_base_hipertrofia.json` — ustrukturyzowaną wersję bazy do wyszukiwania i dopasowywania reguł, z blokiem `evidence_review`;
 - `references/weryfikacja_naukowa.md` — przegląd zgodności twierdzeń z aktualnymi syntezami i metaanalizami (stan: listopad 2026), z werdyktami i bibliografią;
-- `SKILL.md` — instrukcje określające, kiedy i jak agent ma korzystać z syntezy i źródeł.
+- `SKILL.md` — instrukcje określające, kiedy i jak agent ma korzystać z syntezy i źródeł;
+- `INSTALL.md` — instalacja w Codexie i Claude Code: wariant prosty oraz jedno źródło z symlinkami.
 
 Synteza kładzie nacisk na monitorowanie trendów i zachowanie ciągłości procesu, zamiast pochopnego zmieniania całego planu po pojedynczym słabszym treningu. Zalecenia są ostrożnymi, indywidualizowanymi hipotezami do monitorowania. Skill uwzględnia też granice bezpieczeństwa: nie diagnozuje, nie zaleca dopingu ani leków i kieruje sygnały alarmowe do odpowiedniego specjalisty.
 
@@ -30,6 +31,24 @@ Warstwa składa się z:
 - sekcji „Weryfikacja naukowa” w `references/knowledge_base_hipertrofia.md` — skrót najważniejszych korekt.
 
 Najważniejsze korekty dotyczą snu i przetrenowania, dawki podtrzymującej 1/3 objętości, diet breaków, mechanizmu „whoosh”, progu dla stretchingu oraz skali przyrostu 10–12 kg w pierwszym roku. Weryfikacja jest celowa, nie systematyczna: nie jest przeglądem całej literatury i nie zamienia poradnika trenerskiego w wytyczną medyczną.
+
+## Instalacja
+
+Skill działa w Codexie i Claude Code, bo oba czytają format Agent Skills: katalog z `SKILL.md` i materiałami w `references/`. Nie wymaga Pythona, Node ani MCP.
+
+Claude Code — skill osobisty:
+
+```bash
+git clone https://github.com/RafalB82/coach-arek.git ~/.claude/skills/coach-arek
+```
+
+Codex — skill użytkownika:
+
+```bash
+git clone https://github.com/RafalB82/coach-arek.git ~/.agents/skills/coach-arek
+```
+
+Starsze buildy Codexa czytają `~/.codex/skills`; wtedy zainstaluj lub podlinkuj skill także tam. Pełna instrukcja, wariant z jednym checkoutem i symlinkami, weryfikacja i typowe problemy: **[INSTALL.md](INSTALL.md)**.
 
 ## Podstawa źródłowa
 

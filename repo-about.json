@@ -1,5 +1,5 @@
 {
-  "description": "OpenCode/Codex skill for practical supervision of resistance-training hypertrophy, fat loss, recovery and calorie trends. Grounded in Polish podcast sources with Arkadiusz Czerw, with a claim-level evidence layer that cross-checks his advice against current research.",
+  "description": "Agent skill for practical supervision of resistance-training hypertrophy, fat loss, recovery and calorie trends. Works in Codex and Claude Code; grounded in Polish podcast sources with Arkadiusz Czerw and cross-checked against current research.",
   "homepage": "",
   "topics": [
     "opencode",
