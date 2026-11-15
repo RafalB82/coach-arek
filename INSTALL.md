@@ -349,9 +349,8 @@ rm -rf ~/.local/share/coach-arek
 | `README.md` | opis projektu i podstawy źródłowej |
 | `agents/openai.yaml` | opcjonalne metadane UI dla Codexa |
 | `scripts/check_consistency.py` | kontrola spójności bazy; uruchamia się w CI, nie jest częścią działania skilla |
+| `LICENSE` / `LICENSE-CONTENT` | licencje: MIT dla kodu, CC BY 4.0 dla treści |
 
 ## Bezpieczeństwo
 
-Skill nie zawiera porad medycznych, nie diagnozuje i nie zaleca dopingu ani leków. Przy bólu, urazie, zaburzeniach odżywiania lub chorobie kieruje do specjalisty. Weryfikacja naukowa jest celowa, nie systematyczna — nie zastępuje indywidualnej konsultacji.
-
-To nie jest porada medyczna. Przy bólu, urazie, chorobie lub zaburzeniach odżywiania skieruj sprawę do specjalisty. Nie wklejaj danych, których nie chcesz przekazywać dostawcy modelu. Skill nie uruchamia skryptów; plik `scripts/set_repo_about.py` służy wyłącznie do metadanych repozytorium i nie jest częścią działania skilla.
+To nie jest porada medyczna. Skill nie diagnozuje, nie zaleca dopingu ani leków i nie zastępuje indywidualnej konsultacji: przy bólu, urazie, chorobie lub zaburzeniach odżywiania skieruj sprawę do specjalisty. Weryfikacja naukowa w `references/weryfikacja_naukowa.md` jest celowa, nie systematyczna. Nie wklejaj danych, których nie chcesz przekazywać dostawcy modelu. Skill nie uruchamia skryptów; plik `scripts/set_repo_about.py` służy wyłącznie do metadanych repozytorium i nie jest częścią działania skilla.

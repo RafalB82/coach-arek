@@ -253,7 +253,8 @@ Każda liczba występująca w tej bazie, z kontekstem i ryzykiem nadużycia. Pod
 | Wartość | Co oznacza | Warunki | Źródło | Ryzyko nadużycia |
 |---|---|---|---|---|
 | 250–300 kcal | nadwyżka nad „zerem kalorycznym" | hipoteza praktyczna do indywidualnej obserwacji; S10 podaje ~250 kcal jako własną praktykę | `S2` [01:08](https://youtu.be/XLTbnKL_fwk?t=68), `S10` [31:03](https://youtu.be/Xs-YqL1bBII?t=1863) | traktowanie jako uniwersalnej recepty |
-| 10–15% | pytanie Pawła o nadwyżkę procentową, nie rekomendacja Arkadiusza | Arkadiusz nie używa procentów; przy 4500 kcal 10% to 450 kcal | `S10` [30:58](https://youtu.be/Xs-YqL1bBII?t=1858) | przypisywanie tej wartości Arkadiuszowi |
+| 10–15% | pytanie Pawła o nadwyżkę procentową, nie rekomendacja Arkadiusza | Arkadiusz nie używa procentów | `S10` [30:58](https://youtu.be/Xs-YqL1bBII?t=1858) | przypisywanie tej wartości Arkadiuszowi |
+| 450 kcal | 10% z 4500 kcal — ilustracja Pawła, nie rekomendacja | wyliczenie dla przykładu; zależy od kaloryczności, nie jest celem | `S10` [31:21](https://youtu.be/Xs-YqL1bBII?t=1881) | traktowanie jako docelowej nadwyżki |
 | ~500 kcal | nadwyżka, przy której według Arkadiusza większość przyrostu to tkanka tłuszczowa | twierdzenie o literaturze, nie niezależna walidacja | `S10` [31:21](https://youtu.be/Xs-YqL1bBII?t=1881) | traktowanie jako dokładnego progu |
 | 2 dni–2 tygodnie | czas diet breaku na zero kaloryczne | indywidualnie; nie dowolne objadanie się | `S10` [23:28](https://youtu.be/Xs-YqL1bBII?t=1408) | sztywny protokół dla każdego |
 | 3 kg | anegdota Arkadiusza o spadku wagi po whoosh | przykład z doświadczenia; woda i glikogen, nie tłuszcz; mechanizm whoosh niepotwierdzony | `S10` [08:32](https://youtu.be/Xs-YqL1bBII?t=512) | traktowanie jako typowej reakcji |
@@ -278,18 +279,21 @@ Każda liczba występująca w tej bazie, z kontekstem i ryzykiem nadużycia. Pod
 | 10 serii na jednej sesji | granica „efektywnej objętości" wg rozmówcy | twierdzenie do weryfikacji, nie limit | `S6` [09:40](https://youtu.be/blaB3aBrf1o?t=580) | pomylenie z tygodniowym punktem startowym |
 | 5 serii | w S7 przywołane jako połowa objętości 10 serii | porównanie, nie osobna norma | `S7` [20:02](https://youtu.be/Xb2y18_B0QY?t=1202) | traktowanie jako minimum |
 | 5–35 powtórzeń | szeroki zakres przy zbliżaniu do upadku | koszt zmęczenia rośnie wraz z liczbą powtórzeń | `S3` [40:35](https://youtu.be/IIi8e4i6pZE?t=2435) | czytanie jako normy |
-| 10–12 kg | górna granica optymistycznego modelu przyrostu w pierwszym roku treningu | „bardzo optymistyczny” scenariusz; dane empiryczne raczej 4–7 kg u młodych; każdego roku mniej | `S10` [28:57](https://youtu.be/Xs-YqL1bBII?t=1737) | traktowanie jako prognozy dla konkretnej osoby |
+| 10–12 kg | górna granica optymistycznego modelu przyrostu w pierwszym roku treningu | „bardzo optymistyczny” scenariusz; każdego roku mniej | `S10` [28:57](https://youtu.be/Xs-YqL1bBII?t=1737) | traktowanie jako prognozy dla konkretnej osoby |
+| 4–7 kg | realistyczny przedział przyrostu masy w pierwszym roku u młodego mężczyzny | ekstrapolacja z ~1,5 kg FFM na 8–16 tygodni przy malejącej krzywej; nie wynik jednego badania | weryfikacja: Benito 2017, Van Every 2025 | podawanie jako gwarancji |
 | 6–8 / ~10 / 12 powtórzeń | punkty startowe zależnie od złożoności ćwiczenia | złożone z wolnym ciężarem / maszyny / izolacje | `S3` [43:32](https://youtu.be/IIi8e4i6pZE?t=2612) | traktowanie jako sztywnych limitów |
 | 1/3 objętości | obserwacja Arkadiusza, że do utrzymania mięśni na redukcji może wystarczyć 1/3 objętości z masy | częściowo poparte (Bickel 2011): dawka podtrzymująca u młodych przy zachowanej intensywności, nie dawka na przyrost | `S10` [15:50](https://youtu.be/Xs-YqL1bBII?t=950) | uniwersalny target |
+| 32 tygodnie | czas trwania badania Bickela (utrzymanie masy na 1/3 i 1/9 objętości) | młodzi dorośli, po pierwszym bloku treningowym, poza deficytem | weryfikacja: Bickel 2011 | przenoszenie na zaawansowanych w długim deficycie |
 | 1–2 powtórzenia w zapasie | dodatkowy zapas, który Arkadiusz rozważa na redukcji | względem etapu budowania masy; nie sztywna reguła | `S10` [17:02](https://youtu.be/Xs-YqL1bBII?t=1022) | narzucanie każdemu |
-| 3–5 powtórzeń | typowy zakres treningu siłowego według Arkadiusza | wyższy procent 1RM; nie zakres hipertrofii | `S10` [43:51](https://youtu.be/Xs-YqL1bBII?t=2631) | stosowanie jako uniwersalnego planu na masę |
-| ~4 tygodnie | skala obserwacji zastoju masy i roztrenowania | S10 podaje 3–4 tygodnie; nie sztywne okno dla każdej decyzji | `S10` [29:22](https://youtu.be/Xs-YqL1bBII?t=1762), [40:18](https://youtu.be/Xs-YqL1bBII?t=2418) | mylenie z autorskim oknem 2–4 tygodni |
+| 3–5 powtórzeń | zakres, który Arkadiusz przypisuje treningowi trójboistów; sam mówi, że do niego nie schodzi | wyższy procent 1RM; nie zakres hipertrofii i nie praktyka autora (jego własny zakres to zwykle 6–8 i wyżej) | `S10` [43:51](https://youtu.be/Xs-YqL1bBII?t=2631) | stosowanie jako uniwersalnego planu na masę |
+| 3–4 tygodnie | skala obserwacji zastoju masy i roztrenowania | nie sztywne okno dla każdej decyzji; autor nie narzuca domyślnego interwału | `S10` [29:22](https://youtu.be/Xs-YqL1bBII?t=1762), [40:18](https://youtu.be/Xs-YqL1bBII?t=2418) | mylenie z autorskim oknem 2–4 tygodni |
 | 6 powtórzeń | może wystarczyć do uznania serii za efektywną | wypowiedź S2 o innej ramie niż S3 | `S2` [29:30](https://youtu.be/XLTbnKL_fwk?t=1770) | wyprowadzanie limitu z krótkiego fragmentu |
 | do 10 powtórzeń | osobista preferencja Arkadiusza w S7 | dostosowywana do przypadku (klient po urazie tylnej części uda) | `S7` [31:27](https://youtu.be/Xb2y18_B0QY?t=1887), [32:14](https://youtu.be/Xb2y18_B0QY?t=1934) | ogłaszanie górnego limitu hipertrofii |
 | do 12 powtórzeń | osobista preferencja Arkadiusza w S5; w S9 także punkt startowy ograniczający pompę | wynika z jego odczuwanego kosztu zmęczenia, nie jest granicą hipertrofii | `S5` [1:06:45](https://youtu.be/h2Vj5ai9Ang?t=4005), `S9` [25:35](https://youtu.be/U_shUYXSiHM?t=1535) | ogłaszanie górnego limitu hipertrofii |
 | 1–6 / 8–12 powtórzeń | historyczne uproszczenie „siła” vs „masa”, krytykowane w S9 | nie jest aktualną rekomendacją źródeł | `S9` [21:18](https://youtu.be/U_shUYXSiHM?t=1278) | powtarzanie jako zasady doboru zakresu |
 | około 2 s | kontrolowane opuszczanie ciężaru w przykładzie Arkadiusza | jego praktyczna sugestia, nie uniwersalne tempo | `S9` [14:51](https://youtu.be/U_shUYXSiHM?t=891) | narzucanie dokładnego tempa |
 | 60 s vs 2 min | twierdzenie o podobnej akumulacji mleczanu; rozmówca łączy dłuższą przerwę z większą objętością | wypowiedź z podcastu, niezweryfikowana tu niezależnie | `S9` [26:19](https://youtu.be/U_shUYXSiHM?t=1579) | traktowanie jako pewnego wyniku naukowego |
+| >60 s (stretching) | próg, od którego statyczny stretching przed treningiem istotnie obniża zdolności wysiłkowe | dotyczy długiego stretchingu na grupę mięśniową przed maksymalnym wysiłkiem; krótszy zwykle bez istotnego efektu | weryfikacja: Simic 2013, Warneke 2024 | rozciąganie tego progu na całą strategię hipertrofii |
 | 0,25 kg | mikroobciążenie | ułatwia stopniowe zwiększanie ciężaru | `S3` [58:12](https://youtu.be/IIi8e4i6pZE?t=3492) | — |
 | 4–6 tygodni | horyzont bez postępu, po którym S2 proponuje dołożyć serię | sam rozmówca prosi, by nie przywiązywać wagi do tego czasu | `S2` [24:58](https://youtu.be/XLTbnKL_fwk?t=1498) | sztywny próg zastoju |
 | 2–4 tygodnie | okno ponownej oceny | **dodatek autora skilla, nie wypowiedź rozmówcy** | — | traktowanie jako reguły źródeł |
@@ -299,7 +303,7 @@ Każda liczba występująca w tej bazie, z kontekstem i ryzykiem nadużycia. Pod
 | Wartość | Co oznacza | Warunki | Źródło | Ryzyko nadużycia |
 |---|---|---|---|---|
 | 2×/tydz. na grupę | mocna rekomendacja przy optymalizacji | S2 mówi, że 2× nie jest obligatoryjne, jeśli ogranicza czas | `S3` [07:20](https://youtu.be/IIi8e4i6pZE?t=440), `S2` [14:22](https://youtu.be/XLTbnKL_fwk?t=862) | wygładzanie konfliktu źródeł |
-| 3–5 treningów/tydz. | praktyka Arkadiusza w S7 | kierowanie się sumaryczną objętością i jej rozkładem | `S7` [12:27](https://youtu.be/Xb2y18_B0QY?t=747), [12:42](https://youtu.be/Xb2y18_B0QY?t=762), [12:46](https://youtu.be/Xb2y18_B0QY?t=766) | uniwersalizowanie częstotliwości |
+| 3 treningi/tydz. (lub rzadziej) | praktyka Arkadiusza w S7 | potwierdza, że tak się przygotowywał; „Czasami nawet rzadziej"; górna granica 5 pochodzi z S8, nie z S7 | `S7` [12:27](https://youtu.be/Xb2y18_B0QY?t=747), [12:42](https://youtu.be/Xb2y18_B0QY?t=762), [12:46](https://youtu.be/Xb2y18_B0QY?t=766) | uniwersalizowanie częstotliwości |
 | 4–5 treningów/tydz. | dla początkującego, który ma czas | aspiracja, nie plan do wykonania | `S8` [39:08](https://youtu.be/54BCbUZaHo0?t=2348) | jak wyżej |
 | 2–3 treningi/tydz. | dla osób odchudzających się | zalecenie Robusia w S8; podobnie w podsumowaniu | `S8` [40:45](https://youtu.be/54BCbUZaHo0?t=2445), [1:09:07](https://youtu.be/54BCbUZaHo0?t=4147) | mylenie z powyższym |
 | 6 dni (3 góra + 3 dół) | indywidualny przypadek powrotu po przerwie i dysproporcji | nie jest to plan ogólny | `S6` [02:30](https://youtu.be/blaB3aBrf1o?t=150) | kopiowanie jako szablonu |
@@ -310,7 +314,7 @@ Każda liczba występująca w tej bazie, z kontekstem i ryzykiem nadużycia. Pod
 | Wartość | Co oznacza | Warunki | Źródło | Ryzyko nadużycia |
 |---|---|---|---|---|
 | ≥2 min | punkt odniesienia dla przerwy | zależna od ćwiczenia i jakości kolejnej serii; S9 podaje ją też w kontekście ograniczania pompy | `S3` [30:52](https://youtu.be/IIi8e4i6pZE?t=1852), `S7` [46:19](https://youtu.be/Xb2y18_B0QY?t=2779), `S9` [25:35](https://youtu.be/U_shUYXSiHM?t=1535) | traktowanie jako sztywnego minimum dla każdego |
-| 6–12 miesięcy | niezmienianie ćwiczenia kontrolnego | w S5; w S2 mówi „w skali całego roku" | `S5` [43:42](https://youtu.be/h2Vj5ai9Ang?t=2622), `S2` [21:14](https://youtu.be/XLTbnKL_fwk?t=1274) | nakładanie sztywnego cyklu |
+| 6–12 miesięcy | jak długo Arkadiusz trzyma jedno ćwiczenie kontrolne | fraza „od 6 do 12 miesięcy" pada w S7; S5 mówi o minimum 6 tygodni i planie „na cały rok", S2 o skali roku | `S7` [33:50](https://youtu.be/Xb2y18_B0QY?t=2030), `S5` [43:42](https://youtu.be/h2Vj5ai9Ang?t=2622), `S2` [21:14](https://youtu.be/XLTbnKL_fwk?t=1274) | nakładanie sztywnego cyklu |
 | 9 lat | jak długo Arkadiusz sam nie zmienia ćwiczeń bazowych | opis jego praktyki, nie zalecenie | `S5` [40:39](https://youtu.be/h2Vj5ai9Ang?t=2439) | jak wyżej |
 | 4, 6, 12 tygodni | okresy, po których zmiana ćwiczenia znosi punkt odniesienia | kontekst rozmowy o utrzymaniu ćwiczenia kontrolnego | `S7` [33:50](https://youtu.be/Xb2y18_B0QY?t=2030) | — |
 
@@ -422,7 +426,7 @@ Agent powinien rozróżniać: praktykę źródłową („Arkadiusz tak robi”),
 
 ## Pochodzenie reguł i napięcia między źródłami
 
-Wiedza źródłowa powinna być odróżniana od procedur dodanych przez autora skilla. W JSON reguły z podcastów mają `kind: podcast_paraphrase` oraz autora wypowiedzi (`speaker`); ostrożnościowe procedury agenta są osobno oznaczone jako `author_addition`. Nie przypisuj tych drugich rozmówcom.
+Wiedza źródłowa powinna być odróżniana od procedur dodanych przez autora skilla. W JSON reguły z podcastów mają `kind: speaker_statement` oraz autora wypowiedzi (`speaker`); ostrożnościowe procedury agenta są osobno oznaczone jako `author_addition`. Nie przypisuj tych drugich rozmówcom.
 
 W transkrypcjach zdarzają się sklejone lub urwane segmenty ASR. Atrybucję rób na podstawie pełnego sąsiedniego kontekstu, a gdy mówcy nie da się ustalić, wpisz `speaker: uncertain` zamiast zgadywać. Cytuj pełniejszy kontekst, nie pojedynczy urwany fragment.
 

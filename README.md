@@ -26,7 +26,7 @@ Baza nie jest zbiorem niepodważalnych twierdzeń. Obok syntezy źródeł zawier
 
 Warstwa składa się z:
 
-- `references/weryfikacja_naukowa.md` — 25 twierdzeń z werdyktami, uzasadnieniami i bibliografią (stan: listopad 2026);
+- `references/weryfikacja_naukowa.md` — 26 twierdzeń z werdyktami, uzasadnieniami i bibliografią (stan: listopad 2026);
 - bloku `evidence_review` w `references/knowledge_base_hipertrofia.json` — te same werdykty w formie do wyszukiwania, przypisane do źródeł i timestampów;
 - sekcji „Weryfikacja naukowa” w `references/knowledge_base_hipertrofia.md` — skrót najważniejszych korekt.
 
@@ -88,6 +88,8 @@ coach-arek/
 ├── SKILL.md
 ├── README.md
 ├── INSTALL.md
+├── LICENSE
+├── LICENSE-CONTENT
 ├── .gitignore
 ├── .github/
 │   └── workflows/
@@ -104,39 +106,49 @@ coach-arek/
     └── set_repo_about.py
 ```
 
-Publiczna paczka to wyłącznie pliki powyżej. Nagrania źródłowe, wygenerowane transkrypcje i skrypty pipeline trzymane są lokalnie w katalogu `mlx_whisper/`, który jest świadomie pomijany przez git (`.gitignore`) — nie są potrzebne do użycia skilla.
+Publiczna paczka to wyłącznie pliki powyżej. Nagrania źródłowe, wygenerowane transkrypcje i skrypty pipeline trzymane są lokalnie, poza repozytorium — nie są potrzebne do użycia skilla.
 
 ## Poza repozytorium: lokalne źródła i pipeline
 
-Poniżej opisany katalog `mlx_whisper/` nie jest częścią repozytorium (patrz `.gitignore`) — to lokalne źródła, pipeline i transkrypcje. Opisuję go, bo transkrypcje są źródłem cytowań w `references/`: każdy plik `.md` ma w nagłówku linię `Pipeline:` z użytymi ustawieniami (źródło etykiet, cięcia redakcyjne, podział bloków), więc plik opisuje sam siebie.
+Pipeline nie jest częścią repozytorium i nie ma go w tym katalogu. Żyje w `~/transkrypcja/`:
 
-- **Przebudowa bez modelu** (deterministyczna, ~2 s dla ośmiu nagrań): `cd mlx_whisper && ./transkrypcja.sh --rebuild` — bierze czasy słów z gotowego JSON-a, a etykiety mówców z istniejącego Markdowna, i odtwarza pliki `.md` (dla S5–S8 bajt w bajt; S1–S4 różnią się drobną redakcją ASR i kolejnością mówców w nagłówku, bo ich pliki `.md` powstały z wcześniejszej wersji JSON-a).
-- **Pełny przebieg** wymaga `yt-dlp`, `mlx_whisper` i środowiska z `pyannote.audio` (`DIAR_PY`, domyślnie `~/diar311/bin/python`): `cd mlx_whisper && ./transkrypcja.sh`.
-- Ustawienia per nagranie (mapa nazw mówców, liczba mówców, cięcia, podział bloków) są w skrypcie i można je nadpisać zmiennymi `NAMES_<id>`, `SPEAKERS_<id>`, `DROP_WORDS_<id>`, `MAX_BLOCK_<id>`, `SOURCE_URL_<id>`, `RENAME_<id>`.
+- `bin/transkrypcja.sh` — kolejka nagrań: `yt-dlp` → `mlx_whisper` (large-v3, word timestamps) → `bin/merge.py`;
+- `bin/merge.py` — diaryzacja `pyannote` + scalanie słów w Markdown z blokami mówców;
+- `out/` — wynikowe `.json` i `.md`; `audio/` — nagrania źródłowe.
+
+Bez argumentów skrypt przetwarza cztery odcinki z zakodowanej listy, a z podanymi plikami audio działa w trybie ogólnym. Dostępne opcje to `--speakers N`, `--names "SPEAKER_00=Imię,SPEAKER_01=Imię"` i `--source-url URL`. Nie ma flagi przebudowy ani zmiennych per nagranie: jedyne nadpisanie dla pojedynczego odcinka to `NAMES_<id>` (mapa etykiet mówców), resztę ustawia się globalnie (`MODEL`, `LANGUAGE`, `SPEAKERS`, `MIN_SPEAKERS`, `MAX_SPEAKERS`, `OUT`, `AUDIO_DIR`, `DIAR_MODEL`, `DIAR_PY`, `PROMPT`, `YTDLP`).
+
+Pełny przebieg wymaga `yt-dlp`, `mlx_whisper` w `PATH` i środowiska z `pyannote.audio` (`DIAR_PY`, domyślnie `~/diar311/bin/python`):
+
+```bash
+cd ~/transkrypcja && ./bin/transkrypcja.sh
+```
+
+Transkrypcje są artefaktem lokalnym: publiczne repo ich nie zawiera, a `references/transcripts/` w instalacji lokalnej to kopia z `~/transkrypcja/out/`. Wszystkie dziesięć nagrań jest dostępnych lokalnie — także S9 i S10.
 
 ### Kontrola jakości bazy wiedzy
 
-Publiczny skrypt `scripts/check_consistency.py` sprawdza spójność repozytorium bez transkrypcji: zgodność wersji bazy, taksonomię `kind`/`confidence` (wraz z legendą w JSON i w MD), spójność MD ↔ JSON (cytowania, zasady, liczby, osoby, granice wiedzy), obecność każdej liczby użytej w treści w tabeli „Wszystkie liczby w bazie", zgodność offsetów `?t=` z etykietami czasu oraz wymagane pliki. Skrypt zwraca kod 1, gdy znajdzie niespójność, i jest uruchamiany w CI (`.github/workflows/check.yml`) przy każdym pushu i pull requestcie:
+Publiczny skrypt `scripts/check_consistency.py` sprawdza spójność repozytorium bez transkrypcji: zgodność wersji bazy, taksonomię `kind`/`confidence` (wraz z legendą w JSON i w MD), spójność MD ↔ JSON (cytowania, zasady, liczby, osoby, granice wiedzy), to, czy każda liczba z treści ma wiersz w kolumnie „Wartość" tabeli „Wszystkie liczby w bazie" (i odwrotnie), zgodność tabeli werdyktów z `evidence_review.verdicts`, przypisanie każdego źródła do co najmniej jednej osoby oraz zgodność offsetów `?t=` z etykietami czasu. Skrypt zwraca kod 1, gdy znajdzie niespójność, i jest uruchamiany w CI (`.github/workflows/check.yml`) przy każdym pushu i pull requeście:
 
 ```bash
 python3 scripts/check_consistency.py
 ```
 
-Lokalny skrypt `mlx_whisper/check_citations.py` (poza repozytorium, razem z transkrypcjami) dodaje kontrole wymagające nagrań: każde cytowanie musi trafiać w blok transkrypcji i w odległości, którą da się odnaleźć w pliku, a atrybucja mówcy w zasadach JSON musi zgadzać się z etykietą w transkrypcji. Część wspólną (spójność md ↔ json) woła z `scripts/check_consistency.py`, więc oba skrypty mówią o jednej bazie. Dodaj `--no-transcripts`, aby sprawdzić spójność bez plików w `out/`:
-
-```bash
-python3 mlx_whisper/check_citations.py            # pełna kontrola
-python3 mlx_whisper/check_citations.py --no-transcripts
-```
-
-Skrypt zwraca kod 1, gdy znajdzie niespójność — warto uruchamiać go po każdej zmianie `references/`. Transkrypcje S9 i S10 nie są dostępne lokalnie, więc cytowania z tych źródeł nie są weryfikowane automatycznie (skrypt zgłasza to jako ostrzeżenie, nie błąd).
+Cytowania wobec samych transkrypcji (trafienie w blok, atrybucja mówcy) nie są częścią CI, bo transkrypcje nie są publikowane. Sprawdzaj je lokalnie, porównując `references/transcripts/<id>.md` z kotwicą w bazie; przy rozbieżności popraw kotwicę, nie tekst.
 
 Uwagi do konkretnych plików:
 
 - **S5** (`h2Vj5ai9Ang`) to nagranie z kanału HSS (`@dawidolszewski`); gospodarz to **Dawid Olszewski** — ta sama osoba, której Arkadiusz w rozmowie nazywa „Dawid". To nie jest gospodarz z S7/S8.
-- **S6** (`blaB3aBrf1o`) to monolog Arkadiusza; plik `.md` dzieli go na bloki ~25 s na granicach segmentów Whispera, bo model diarization nie dzieli nagrania jednogłosowego.
-- **S7** (`Xb2y18_B0QY`) pozbawiono klauzuli kanałowej (0:00–0:25), reklamy w intro (1:05–1:19) i promocyjnej przyśpiewki na outro (1:08:39–1:08:59) — te fragmenty nie są ani wypowiedzią gospodarza, ani gościa. Zakresy cięć zapisuje linia `Pipeline:` w nagłówku pliku.
+- **S6** (`blaB3aBrf1o`) to monolog Arkadiusza. Diaryzacja nie dzieli nagrania jednogłosowego, więc plik `.md` w instalacji lokalnej jest ręcznie podzielony na bloki w miejscach cytowanych w bazie: 00:28, 01:11, 02:30, 04:05, 06:08, 08:10, 08:52, 09:40. Podział nie zmienia tekstu — przy regeneracji z `out/` trzeba go odtworzyć.
+- **S7** (`Xb2y18_B0QY`) zachowuje klauzulę kanałową (0:00–0:05), a wycięto z niego reklamę w intro (0:05–1:19) i promocyjną przyśpiewkę na outro (po 1:08:09). Pozostałe cięcia redakcyjne nie są zapisywane w pliku.
 
 ## Korzystanie ze skilla
 
 Folder `coach-arek/` jest kompletnym publicznym skillem Codex opartym na syntezie źródeł. Instrukcje działania znajdują się w `SKILL.md`, synteza MD/JSON w katalogu `references/`, a metadane interfejsu w `agents/openai.yaml`. Pełne transkrypcje nie są częścią publicznej paczki.
+
+## Licencja
+
+- **Kod** (`scripts/*.py`, `.github/workflows/check.yml`, `.gitignore`) — licencja **MIT**, pełny tekst w pliku [LICENSE](LICENSE).
+- **Treść i dokumentacja** (`SKILL.md`, `README.md`, `INSTALL.md`, `agents/openai.yaml`, `references/*`, `repo-about.json`) — licencja **CC BY 4.0**, szczegóły i sugerowane oznaczenie autorstwa w pliku [LICENSE-CONTENT](LICENSE-CONTENT).
+
+Repozytorium nie zawiera nagrań źródłowych ani pełnych transkrypcji podcastów; licencja dotyczy opracowania, nie cudzych wypowiedzi.

@@ -23,6 +23,8 @@ Skala werdyktów:
 
 Ograniczenia: dobór źródeł jest celowy, nie systematyczny; część badań to małe próby i krótkie interwencje; „brak dowodów” nie znaczy „dowód przeciw”. Przy każdym werdykcie podaję, na czym opiera się ocena.
 
+Te same werdykty w `references/knowledge_base_hipertrofia.json` (`evidence_review.verdicts`): ✅ = `supported`, 🟡 = `partially_supported`, 🟠 = `overstated`, 🔴 = `unsupported_mechanism`, ⛔ = `contradicted_partially`. Tabela §1 i lista werdyktów w JSON mają tę samą liczbę pozycji i tę samą kolejność — sprawdza to `scripts/check_consistency.py`.
+
 ---
 
 ## 1. Tabela zbiorcza
@@ -31,29 +33,30 @@ Ograniczenia: dobór źródeł jest celowy, nie systematyczny; część badań t
 |---|---|---|---|
 | 1 | Codzienne ważenie na czczo + średnia tygodniowa (S10) | ✅ | Standardowa praktyka monitoringu; woda i glikogen realnie maskują tłuszcz. |
 | 2 | Spadek NEAT i nieświadome kalorie przy zastoju (S10) | ✅ | Adaptacyjna termogeneza i spadek aktywności pozatreningowej są udokumentowane. |
-| 3 | Diet break = zero kaloryczne na 2 dni–2 tygodnie (S10) | 🟡 | Opcja, nie narzędzie o udowodnionej wyższości; przeglądy nie potwierdzają przewagi nad ciągłym deficytem. |
-| 4 | Rekompozycja możliwa, ale nie warto w nią celować (S10) | 🟡 | Możliwa u nowicjuszy, osób z nadwagą i powracających; rzadsza u lean advanced. |
-| 5 | Na redukcji celem jest utrzymanie mięśni, nie cięcie objętości na starcie (S10) | ✅ | Trening siłowy w deficycie utrzymuje FFM; pochopne cięcie objętości nie ma podstaw. |
-| 6 | Do utrzymania może wystarczyć 1/3 objętości z masy (S10) | 🟡 | Lepiej poparte, niż baza zakładała: 1/3 (a nawet 1/9) utrzymuje masę u młodych — ale poza deficytem i przy zachowanej intensywności. |
-| 7 | Deload reaktywny, nie planowany z góry (S10) | ✅ | Brak dowodów wyższości preplanowanego deloadu; 1 tydzień przerwy może lekko osłabić przyrost siły. |
-| 8 | Progres siłowy to niedoskonałe proxy hipertrofii (S10) | ✅ | Wewnątrzosobowo korelacja jest bardzo wysoka, międzyosobowo słaba. |
-| 9 | Zastój masy → dodaj serię i oceniaj po ~4 tygodniach (S10) | 🟡 | Kierunek zgodny z dose–response objętości; konkret „4→5 serii” nie był testowany. |
-| 10 | Adaptacja do tego samego ćwiczenia jest celem (S10) | 🟡 | Częsta rotacja nie jest lepsza, ale systematyczna zmiana może pomagać regionalnie. |
-| 11 | Siła jest specyficzna; 3–5 powtórzeń na siłę (S10) | ✅ | ≥80% 1RM najlepiej buduje 1RM; hipertrofia nie wymaga takiego zakresu. |
-| 12 | Najczęstsze błędy: zła ocena RIR, rotacja, brak zapisu (S10) | ✅ | Kalibracja RIR i logowanie mają praktyczne uzasadnienie. |
-| 13 | Kalorie zawsze się liczą; weekendy i warzywa też (S10) | ✅ | Bilans energii pozostaje nadrzędny; „zdrowe” nie znaczy „bezkaloryczne”. |
-| 14 | Stretching statyczny przed treningiem obniża zdolności wysiłkowe (S10) | 🟡 | Prawda dla >60 s na grupę mięśniową; <60 s zwykle bez istotnego efektu. |
-| 15 | Sen i regeneracja to drugorzędne wyjaśnienie braku progresu; OTS bardzo trudny (S10) | ⛔/🟠 | Sen ma udokumentowany wpływ na MPS i siłę; prawdziwy OTS jest rzadki, ale przeciążenie — częste. |
-| 16 | 10–12 kg mięśni w pierwszym roku (S10) | 🟠 | Górna granica modelu Aragon/McDonald, nie typowy wynik; z danych empirycznych wynika raczej kilka kg, nie 10–12. |
-| 17 | ~250 kcal nadwyżki (S10) | ✅ | 10–20% powyżej utrzymania dla zaawansowanych to 250–500 kcal. |
-| 18 | ~500 kcal nadwyżki → większość przyrostu to tłuszcz (S10) | 🟡 | Większa nadwyżka zwiększa tłuszcz przy podobnym LBM; „większość” zależy od stażu. |
-| 19 | 2–3 g białka/kg (S4, S7) | 🟡 | 1,6 g/kg w surplusie; 1,9–2,4+ g/kg w deficycie u lean. 2–3 to górna, obroniona praktyka, nie uniwersalny cel. |
-| 20 | 5–35 powtórzeń przy zbliżeniu do upadku (S3, S9) | ✅ | Zakres ~5–30 jest realny, jeśli objętość i wysiłek są wyrównane. |
-| 21 | Minimum 2 minuty przerwy (S3, S7) | ✅ | Przerwy >60 s mają niewielką przewagę; powyżej ~90 s różnice się spłaszczają. |
-| 22 | 10 serii/tydzień na grupę jako start (S2, S5) | ✅ | Zgodne z progiem ≥10 serii/tyg. i krzywą malejących korzyści. |
-| 23 | Cardio nie jest głównym narzędziem spalania (S1, S8) | ✅ | Kompensacja energetyczna zjada ok. 30–50% wydatku; przy aerobach i deficycie więcej. |
-| 24 | Można być silniejszym bez przyrostu masy i odwrotnie (S10) | ✅ | Dysocjacja siły i rozmiaru jest dobrze udokumentowana. |
-| 25 | Zakwasy nie są miarą hipertrofii (S3, S10) | ✅ | Uszkodzenie mięśni nie jest konieczne do przyrostu; DOMS słabo koreluje z adaptacją. |
+| 3 | „Whoosh”: skokowy spadek wagi po przerwie (S10) | 🔴 | Zjawisko na wadze jest realne, ale mechanizm „adipocyty wymieniają tłuszcz na wodę” nie ma podstaw. |
+| 4 | Diet break = zero kaloryczne na 2 dni–2 tygodnie (S10) | 🟡 | Opcja, nie narzędzie o udowodnionej wyższości; przeglądy nie potwierdzają przewagi nad ciągłym deficytem. |
+| 5 | Rekompozycja możliwa, ale nie warto w nią celować (S10) | 🟡 | Możliwa u nowicjuszy, osób z nadwagą i powracających; rzadsza u lean advanced. |
+| 6 | Na redukcji celem jest utrzymanie mięśni, nie cięcie objętości na starcie (S10) | ✅ | Trening siłowy w deficycie utrzymuje FFM; pochopne cięcie objętości nie ma podstaw. |
+| 7 | Do utrzymania może wystarczyć 1/3 objętości z masy (S10) | 🟡 | Lepiej poparte, niż baza zakładała: 1/3 (a nawet 1/9) utrzymuje masę u młodych — ale poza deficytem i przy zachowanej intensywności. |
+| 8 | Deload reaktywny, nie planowany z góry (S10) | ✅ | Brak dowodów wyższości preplanowanego deloadu; 1 tydzień przerwy może lekko osłabić przyrost siły. |
+| 9 | Progres siłowy to niedoskonałe proxy hipertrofii (S10) | ✅ | Wewnątrzosobowo korelacja jest bardzo wysoka, międzyosobowo słaba. |
+| 10 | Zastój masy → dodaj serię i oceniaj po ~4 tygodniach (S10) | 🟡 | Kierunek zgodny z dose–response objętości; konkret „4→5 serii” nie był testowany. |
+| 11 | Adaptacja do tego samego ćwiczenia jest celem (S10) | 🟡 | Częsta rotacja nie jest lepsza, ale systematyczna zmiana może pomagać regionalnie. |
+| 12 | Siła jest specyficzna; 3–5 powtórzeń na siłę (S10) | ✅ | ≥80% 1RM najlepiej buduje 1RM; hipertrofia nie wymaga takiego zakresu. |
+| 13 | Najczęstsze błędy: zła ocena RIR, rotacja, brak zapisu (S10) | ✅ | Kalibracja RIR i logowanie mają praktyczne uzasadnienie. |
+| 14 | Kalorie zawsze się liczą; weekendy i warzywa też (S10) | ✅ | Bilans energii pozostaje nadrzędny; „zdrowe” nie znaczy „bezkaloryczne”. |
+| 15 | Stretching statyczny przed treningiem obniża zdolności wysiłkowe (S10) | 🟡 | Prawda dla >60 s na grupę mięśniową; <60 s zwykle bez istotnego efektu. |
+| 16 | Sen i regeneracja to drugorzędne wyjaśnienie braku progresu; OTS bardzo trudny (S10) | ⛔ | Sen ma udokumentowany wpływ na MPS i siłę; prawdziwy OTS jest rzadki, ale przeciążenie — częste. |
+| 17 | 10–12 kg mięśni w pierwszym roku (S10) | 🟠 | Górna granica modelu Aragon/McDonald, nie typowy wynik; z danych empirycznych wynika raczej kilka kg, nie 10–12. |
+| 18 | ~250 kcal nadwyżki (S10) | ✅ | 10–20% powyżej utrzymania dla zaawansowanych to 250–500 kcal. |
+| 19 | ~500 kcal nadwyżki → większość przyrostu to tłuszcz (S10) | 🟡 | Większa nadwyżka zwiększa tłuszcz przy podobnym LBM; „większość” zależy od stażu. |
+| 20 | 2–3 g białka/kg (S4, S7) | 🟡 | 1,6 g/kg w surplusie; 1,9–2,4+ g/kg w deficycie u lean. 2–3 to górna, obroniona praktyka, nie uniwersalny cel. |
+| 21 | 5–35 powtórzeń przy zbliżeniu do upadku (S3, S9) | ✅ | Zakres ~5–30 jest realny, jeśli objętość i wysiłek są wyrównane. |
+| 22 | Minimum 2 minuty przerwy (S3, S7) | ✅ | Przerwy >60 s mają niewielką przewagę; powyżej ~90 s różnice się spłaszczają. |
+| 23 | 10 serii/tydzień na grupę jako start (S2, S5) | ✅ | Zgodne z progiem ≥10 serii/tyg. i krzywą malejących korzyści. |
+| 24 | Cardio nie jest głównym narzędziem spalania (S1, S8) | ✅ | Kompensacja energetyczna zjada ok. 30–50% wydatku; przy aerobach i deficycie więcej. |
+| 25 | Można być silniejszym bez przyrostu masy i odwrotnie (S10) | ✅ | Dysocjacja siły i rozmiaru jest dobrze udokumentowana. |
+| 26 | Zakwasy nie są miarą hipertrofii (S3, S10) | ✅ | Uszkodzenie mięśni nie jest konieczne do przyrostu; DOMS słabo koreluje z adaptacją. |
 
 ---
 
@@ -67,7 +70,7 @@ Ważne: średnia tygodniowa nie jest dowodem, że każda zmiana masy odzwiercied
 
 ### 2.2. Zastój redukcji: NEAT, kalorie, „whoosh” — ✅ / 🔴 (mechanizm)
 
-Kierunek jest poprawny. Adaptacyjna termogeneza jest realna, choć jej magnitude jest umiarkowana i zmienna: w kontrolowanych badaniach to rząd **~100–180 kcal/dzień** (Müller 2013; badanie 6-tygodniowe: −178 ± 137 kcal/d), a nie „zatrzymany metabolizm”. Spadek NEAT i spontanicznej aktywności jest jednym z najlepiej udokumentowanych mechanizmów kompensacji przy deficycie (Trexler 2014). Po utracie 20–30 kg ponowne oszacowanie zapotrzebowania jest więc uzasadnione.
+Kierunek jest poprawny. Adaptacyjna termogeneza jest realna, choć jej magnitude jest umiarkowana i zmienna: w kontrolowanych badaniach to rząd **~100–180 kcal/dzień** (Müller i Bosy-Westphal 2013; w 6-tygodniowym badaniu Heinitza i in. 2020: −178 ± 137 kcal/d), a nie „zatrzymany metabolizm”. Spadek NEAT i spontanicznej aktywności jest jednym z najlepiej udokumentowanych mechanizmów kompensacji przy deficycie (Trexler 2014). Po utracie 20–30 kg ponowne oszacowanie zapotrzebowania jest więc uzasadnione.
 
 Natomiast **mechanizm „whoosh” nie istnieje w takiej formie, w jakiej krąży w internecie**. Nie ma danych, że adipocyty wymieniają tłuszcz na wodę i „wylewają” ją po odblokowaniu. Badania nad uwodnieniem tkanki tłuszczowej pokazują, że woda w tkance tłuszczowej faktycznie rośnie w trakcie odchudzania — ale powoli, przez tygodnie, i utrzymuje się po roku; nie ma „eventu” do wyzwolenia. To, co ludzie opisują jako whoosh, to najczęściej warstwa wody i glikogenu, która przez jakiś czas maskowała rzeczywistą, powolną utratę tłuszczu.
 
@@ -103,7 +106,7 @@ Jest natomiast mało prawdopodobna u lean, zaawansowanych zawodników w głębok
 
 ### 3.1. Cel: utrzymanie, nie cięcie objętości na starcie — ✅
 
-To jedno z najlepiej popartych twierdzeń S10. Trening siłowy w deficycie utrzymuje FFM (Sardeli i in.; przegląd Deller 2026: trening + deficyt vs deficyt sam → +0,87 kg FFM na korzyść treningu). Nie ma danych, że rutynowe cięcie objętości na początku redukcji jest konieczne; w badaniu Rotha (2023) 12 vs 20 serii na czworogłowy przez 6 tygodni deficytu nie różniło się pod względem utrzymania grubości mięśnia. Kolejność Arkadiusza — najpierw uproszczenie ćwiczeń, niższy zakres, większy zapas, elastyczna częstotliwość, a objętość dopiero przy utrzymującym się spadku — jest praktycznie sensowna i nie koliduje z danymi.
+To jedno z najlepiej popartych twierdzeń S10. Trening siłowy w deficycie utrzymuje FFM (Sardeli i in., otyli seniorzy; przegląd Deller 2026: trening + deficyt vs deficyt sam → +0,87 kg FFM na korzyść treningu). Nie ma danych, że rutynowe cięcie objętości na początku redukcji jest konieczne; w badaniu Rotha (2023) 12 vs 20 serii na czworogłowy przez 6 tygodni deficytu nie różniło się pod względem utrzymania grubości mięśnia. Kolejność Arkadiusza — najpierw uproszczenie ćwiczeń, niższy zakres, większy zapas, elastyczna częstotliwość, a objętość dopiero przy utrzymującym się spadku — jest praktycznie sensowna i nie koliduje z danymi.
 
 ### 3.2. „1/3 objętości wystarczy do utrzymania” — 🟡 (korekta wcześniejszej oceny)
 
@@ -278,57 +281,67 @@ Nie należy przedstawiać 🟠 i 🔴 jako „wiedzy naukowej”, nawet jeśli b
 ### Redukcja, dieta, energia
 
 1. Byrne NM, Sainsbury A, King NA, Hills AP, Wood RE. Intermittent energy restriction improves weight loss efficiency in obese men: the MATADOR study. *Int J Obes.* 2018;42:129–138. doi:10.1038/ijo.2017.206
-2. Peos JJ i in. Effect of planned pauses versus continuous energy restriction on weight loss and attrition: a systematic review. 2024. PMC11423418.
-3. Effects of intermittent dieting with break periods on body composition and metabolic adaptation: a systematic review and meta-analysis. *Nutrition Reviews.* 2025;83(1):59.
+2. Wren GM, Koutoukidis DA, Scragg J, Tsompanaki E, Hobson A, Jebb SA. Effect of planned pauses versus continuous energy restriction on weight loss and attrition: a systematic review. *Obesity.* 2024;32(3):454–465. doi:10.1002/oby.23976 (PMC11423418)
+3. Zheng C, Wong SHS. Effects of intermittent dieting with break periods on body composition and metabolic adaptation: a systematic review and meta-analysis. *Nutrition Reviews.* 2025;83(1):59–71. doi:10.1093/nutrit/nuad168
 4. The effects of intermittent diet breaks during 25% energy restriction in resistance-trained females. 2023. PMC10170537.
 5. Trexler ET, Smith-Ryan AE, Norton LE. Metabolic adaptation to weight loss: implications for the athlete. *J Int Soc Sports Nutr.* 2014;11:7. doi:10.1186/1550-2783-11-7
-6. Müller MJ i in. Changes in body composition and homeostatic control of resting energy expenditure during dietary weight loss. *Obesity.* 2023. doi:10.1002/oby.23703
-7. Pontzer H. The evidence for constrained total energy expenditure in humans and other animals. *Current Biology.* 2026. doi:10.1016/j.cub.2026.01.025
+6. Müller MJ, Bosy-Westphal A, Heymsfield SB. Changes in body composition and homeostatic control of resting energy expenditure during dietary weight loss. *Obesity.* 2023;31(4):892–895. doi:10.1002/oby.23703
+7. Müller MJ, Bosy-Westphal A. Adaptive thermogenesis with weight loss in humans. *Obesity.* 2013;21(2):218–228. doi:10.1002/oby.20027
+8. Heinitz S, Hollstein T, Ando T, Walter M, Basolo A, Krakoff J, Votruba SB, Piaggi P. Early adaptive thermogenesis is a determinant of weight loss after six weeks of caloric restriction in overweight subjects. *Metabolism.* 2020;110:154303. doi:10.1016/j.metabol.2020.154303 (PMC7484122)
+9. Pontzer H, Trexler ET. The evidence for constrained total energy expenditure in humans and other animals. *Current Biology.* 2026;36(4):1013–1025.e4. doi:10.1016/j.cub.2026.01.025
 
 ### Masa, nadwyżka, białko
 
-8. Iraki J, Fitschen P, Espinar S, Helms E. Magnitude and composition of the energy surplus for maximizing muscle hypertrophy. *Strength Cond J.* 2020;42(5).
-9. Nunes EA i in. Effect of small and large energy surpluses on strength, muscle, and skinfold thickness in resistance-trained individuals. 2023. PMC10620361.
-10. Morton RW i in. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. *Br J Sports Med.* 2018;52:376–384. doi:10.1136/bjsports-2017-097608
-11. Helms ER, Aragon AA, Fitschen PJ. Evidence-based recommendations for natural bodybuilding contest preparation: nutrition and supplementation. *J Int Soc Sports Nutr.* 2014;11:20. doi:10.1186/1550-2783-11-20
-12. Nunes EA i in. Systematic review and meta-analysis of protein intake to support muscle mass and function in healthy adults. *J Cachexia Sarcopenia Muscle.* 2022. doi:10.1002/jcsm.12922
-13. Load-induced human skeletal muscle hypertrophy: mechanisms, myths, and misconceptions. 2025. PMC12927080.
+10. Iraki J, Fitschen P, Espinar S, Helms E. Magnitude and composition of the energy surplus for maximizing muscle hypertrophy. *Strength Cond J.* 2020;42(5).
+11. Nunes EA i in. Effect of small and large energy surpluses on strength, muscle, and skinfold thickness in resistance-trained individuals. *Sports Med Open.* 2023;9:102. doi:10.1186/s40798-023-00651-y (PMC10620361)
+12. Garthe I, Raastad T, Refsnes PE, Sundgot-Borgen J. Effect of nutritional intervention on body composition and performance in elite athletes. *Eur J Sport Sci.* 2013;13(3):295–303. doi:10.1080/17461391.2011.643923
+13. Morton RW i in. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. *Br J Sports Med.* 2018;52:376–384. doi:10.1136/bjsports-2017-097608
+14. Helms ER, Aragon AA, Fitschen PJ. Evidence-based recommendations for natural bodybuilding contest preparation: nutrition and supplementation. *J Int Soc Sports Nutr.* 2014;11:20. doi:10.1186/1550-2783-11-20
+15. Nunes EA i in. Systematic review and meta-analysis of protein intake to support muscle mass and function in healthy adults. *J Cachexia Sarcopenia Muscle.* 2022. doi:10.1002/jcsm.12922
+16. Hector AJ, Phillips SM. Protein recommendations for weight loss in elite athletes: a focus on body composition and performance. *Int J Sport Nutr Exerc Metab.* 2018;28(2):170–177. doi:10.1123/ijsnem.2017-0273
+17. Nunes EA i in. Effect of dietary protein on fat-free mass in energy-restricted, resistance-trained individuals: a systematic review and meta-regression. *Strength Cond J.* 2025. doi:10.1519/SSC.0000000000000888
+18. Van Every DW i in. Load-induced human skeletal muscle hypertrophy: mechanisms, myths, and misconceptions. *J Sport Health Sci.* 2025;15:101104. doi:10.1016/j.jshs.2025.101104 (PMC12927080)
+19. Benito PJ, Cupeiro R, Ramos-Campo DJ, Alcaraz PE, Rubio-Arias JÁ. A systematic review with meta-analysis of the effect of resistance training on whole-body muscle growth in healthy adult males. *Sports Med.* 2017;47:929–941 (wersja open access: *Int J Environ Res Public Health.* 2020;17(4):1285, PMC7068252)
+20. Model praktyczny Aragon/McDonald (materiał nieecenzowany, nie badanie): heurystyka „10–12 kg masy mięśniowej w pierwszym roku” dla 75 kg mężczyzny. W bazie służy wyłącznie jako górna granica optymizmu.
 
 ### Objętość, obciążenie, wysiłek
 
-14. Carvalho L i in. Muscle hypertrophy and strength gains after resistance training with different volume-matched loads: a systematic review and meta-analysis. *Appl Physiol Nutr Metab.* 2022;47:349–358. doi:10.1139/apnm-2021-0515
-15. Lopez P i in. Resistance training load effects on muscle hypertrophy and strength gain: systematic review and network meta-analysis. *J Sports Sci.* 2021;39:1745–1757. doi:10.1080/02640414.2021.1898094
-16. Schoenfeld BJ i in. Loading recommendations for muscle strength, hypertrophy, and local endurance: a re-examination of the repetition continuum. *Sports.* 2021. PMC7927075.
-17. Refalo MC, Helms ER, Trexler ET, Hamilton DL, Fyfe JJ. Influence of resistance training proximity-to-failure on skeletal muscle hypertrophy: a systematic review with meta-analysis. *Sports Med.* 2023;53:649–665. doi:10.1007/s40279-022-01784-y
-18. Robinson ZP i in. Exploring the dose–response relationship between estimated resistance training proximity to failure, strength gain, and muscle hypertrophy: a series of meta-regressions. *Sports Med.* 2024. doi:10.1007/s40279-024-02069-2
-19. Pelland JC i in. The resistance training dose response: meta-regressions exploring weekly volume and frequency. *Sports Med.* 2025. doi:10.1007/s40279-025-02344-w
-20. American College of Sports Medicine position stand: resistance training prescription for muscle function, hypertrophy, and physical performance in healthy adults: an overview of reviews. 2026. PMC12965823.
+21. Carvalho L i in. Muscle hypertrophy and strength gains after resistance training with different volume-matched loads: a systematic review and meta-analysis. *Appl Physiol Nutr Metab.* 2022;47:349–358. doi:10.1139/apnm-2021-0515
+22. Lopez P i in. Resistance training load effects on muscle hypertrophy and strength gain: systematic review and network meta-analysis. *J Sports Sci.* 2021;39:1745–1757. doi:10.1080/02640414.2021.1898094
+23. Schoenfeld BJ, Grgic J, Van Every DW, Plotkin DL. Loading recommendations for muscle strength, hypertrophy, and local endurance: a re-examination of the repetition continuum. *Sports.* 2021;9(2):32. doi:10.3390/sports9020032 (PMC7927075)
+24. Refalo MC, Helms ER, Trexler ET, Hamilton DL, Fyfe JJ. Influence of resistance training proximity-to-failure on skeletal muscle hypertrophy: a systematic review with meta-analysis. *Sports Med.* 2023;53:649–665. doi:10.1007/s40279-022-01784-y
+25. Robinson ZP i in. Exploring the dose–response relationship between estimated resistance training proximity to failure, strength gain, and muscle hypertrophy: a series of meta-regressions. *Sports Med.* 2024. doi:10.1007/s40279-024-02069-2
+26. Pelland JC i in. The resistance training dose response: meta-regressions exploring weekly volume and frequency. *Sports Med.* 2025. doi:10.1007/s40279-025-02344-w
+27. Lasevicius T i in. Muscle failure promotes greater muscle hypertrophy in low-load but not in high-load resistance training. *J Strength Cond Res.* 2022;36(2):346–351. doi:10.1519/JSC.0000000000003454
+28. American College of Sports Medicine position stand: resistance training prescription for muscle function, hypertrophy, and physical performance in healthy adults: an overview of reviews. *Med Sci Sports Exerc.* 2026;58(4):851–872 (PMC12965823)
 
 ### Utrzymanie masy, detrening, deload
 
-21. Bickel CS, Cross JM, Bamman MM. Exercise dosing to retain resistance training adaptations in young and older adults. *Med Sci Sports Exerc.* 2011;43:1177–1187. doi:10.1249/MSS.0b013e318207c15d
-22. Spiering BA i in. Maintaining physical performance: the minimal dose of exercise needed to preserve endurance and strength. *J Strength Cond Res.* 2021.
-23. Roth C i in. Resistance training volume does not influence lean mass preservation during energy restriction in trained males. *Scand J Med Sci Sports.* 2023. doi:10.1111/sms.14237
-24. Murphy C, Koehler K. Energy deficiency impairs resistance training gains in lean mass but not strength: a meta-analysis and meta-regression. *Scand J Med Sci Sports.* 2022. doi:10.1111/sms.14075
-25. Effects of periodization on strength and muscle hypertrophy in volume-equated resistance training programs: a systematic review and meta-analysis. *Sports Med.* 2022. doi:10.1007/s40279-021-01636-1
-26. Integrating deloading into strength and physique sports training programmes: an international Delphi consensus approach. *Sports Med Open.* 2023. doi:10.1186/s40798-023-00633-0
+29. Bickel CS, Cross JM, Bamman MM. Exercise dosing to retain resistance training adaptations in young and older adults. *Med Sci Sports Exerc.* 2011;43:1177–1187. doi:10.1249/MSS.0b013e318207c15d
+30. Spiering BA i in. Maintaining physical performance: the minimal dose of exercise needed to preserve endurance and strength. *J Strength Cond Res.* 2021;35(5):1449–1458. doi:10.1519/JSC.0000000000003964
+31. Roth C i in. Resistance training volume does not influence lean mass preservation during energy restriction in trained males. *Scand J Med Sci Sports.* 2023. doi:10.1111/sms.14237
+32. Murphy C, Koehler K. Energy deficiency impairs resistance training gains in lean mass but not strength: a meta-analysis and meta-regression. *Scand J Med Sci Sports.* 2022. doi:10.1111/sms.14075
+33. Moesgaard L, Beck MM, Christiansen L, Aagaard P, Lundbye-Jensen J. Effects of periodization on strength and muscle hypertrophy in volume-equated resistance training programs: a systematic review and meta-analysis. *Sports Med.* 2022;52:1647–1666. doi:10.1007/s40279-021-01636-1
+34. Integrating deloading into strength and physique sports training programmes: an international Delphi consensus approach. *Sports Med Open.* 2023. doi:10.1186/s40798-023-00633-0
+35. Deller S i in. Effects of calorie restriction with and without strength, endurance or mixed training on fat-free and skeletal muscle mass in overweight or obese individuals: a systematic review with pairwise and network meta-analysis. *Diabetes Obes Metab.* 2026;28(8):6810–6823. doi:10.1111/dom.70873
+36. Sardeli AV, Komatsu TR, Mori MA, Gáspari AF, Chacon-Mikahil MPT. Resistance training prevents muscle loss induced by caloric restriction in obese elderly individuals: a systematic review and meta-analysis. *Nutrients.* 2018;10(4):423. doi:10.3390/nu10040423
 
 ### Sen, przetrenowanie, stretching, uszkodzenie mięśni
 
-27. Saner NJ i in. The effect of sleep restriction, with or without high-intensity interval exercise, on myofibrillar protein synthesis in healthy young men. *J Physiol.* 2020. doi:10.1113/JP278828
-28. Knowles OE i in. Inadequate sleep and muscle strength: implications for resistance training. *J Sci Med Sport.* 2018.
-29. Grandou C i in. Overtraining in resistance exercise: an exploratory systematic review and methodological appraisal of the literature. *Sports Med.* 2019. doi:10.1007/s40279-019-01242-2
-30. Bell L i in. Overreaching and overtraining syndrome in strength and power athletes. *Int J Sports Physiol Perform.* 2022;17:675–681.
-31. Warneke K i in. Revisiting the stretch-induced force deficit: a systematic review with multilevel meta-analysis of acute effects. *J Sport Health Sci.* 2024.
-32. Simic L, Sarabon N, Markovic G. Does pre-exercise static stretching inhibit maximal muscular performance? A meta-analytical review. *Scand J Med Sci Sports.* 2013;23:131–148. doi:10.1111/j.1600-0838.2012.01444.x
-33. Damas F i in. Resistance training-induced changes in integrated myofibrillar protein synthesis are related to hypertrophy only after attenuation of muscle damage. *J Physiol.* 2016. doi:10.1113/JP272472
-34. Schoenfeld BJ, Contreras B. Is postexercise muscle soreness a valid indicator of muscular adaptations? *Strength Cond J.* 2013;35:16–21.
+37. Saner NJ i in. The effect of sleep restriction, with or without high-intensity interval exercise, on myofibrillar protein synthesis in healthy young men. *J Physiol.* 2020. doi:10.1113/JP278828
+38. Knowles OE i in. Inadequate sleep and muscle strength: implications for resistance training. *J Sci Med Sport.* 2018.
+39. Grandou C i in. Overtraining in resistance exercise: an exploratory systematic review and methodological appraisal of the literature. *Sports Med.* 2019. doi:10.1007/s40279-019-01242-2
+40. Bell L i in. Overreaching and overtraining syndrome in strength and power athletes. *Int J Sports Physiol Perform.* 2022;17:675–681.
+41. Warneke K i in. Revisiting the stretch-induced force deficit: a systematic review with multilevel meta-analysis of acute effects. *J Sport Health Sci.* 2024;13(6):805–819.
+42. Simic L, Sarabon N, Markovic G. Does pre-exercise static stretching inhibit maximal muscular performance? A meta-analytical review. *Scand J Med Sci Sports.* 2013;23:131–148. doi:10.1111/j.1600-0838.2012.01444.x
+43. Damas F i in. Resistance training-induced changes in integrated myofibrillar protein synthesis are related to hypertrophy only after attenuation of muscle damage. *J Physiol.* 2016. doi:10.1113/JP272472
+44. Schoenfeld BJ, Contreras B. Is postexercise muscle soreness a valid indicator of muscular adaptations? *Strength Cond J.* 2013;35:16–21.
 
 ### Ćwiczenia, przerwy, siła
 
-35. Kassiano W i in. Does varying resistance exercises promote superior muscle hypertrophy and strength gains? A systematic review. *J Strength Cond Res.* 2022;36:1753–1762.
-36. Baz-Valle E i in. The effects of exercise variation in muscle thickness, maximal strength and motivation in resistance trained men. *PLoS One.* 2019;14:e0226989. doi:10.1371/journal.pone.0226989
-37. Singer A i in. Give it a rest: a systematic review with Bayesian meta-analysis on the effect of inter-set rest interval duration on muscle hypertrophy. *Front Sports Act Living.* 2024;6:1429789. doi:10.3389/fspor.2024.1429789
-38. Schoenfeld BJ i in. Longer interset rest periods enhance muscle strength and hypertrophy in resistance-trained men. *J Strength Cond Res.* 2016;30:1805–1812.
-39. Exercise-induced myofibrillar hypertrophy is a contributory cause of gains in muscle strength. *Sports Med.* 2019. doi:10.1007/s40279-019-01107-8
-40. Muscle growth is very strongly correlated with strength gains after lower body resistance training: new insight from within-participant associations. 2025. PMID 40680785.
+45. Kassiano W i in. Does varying resistance exercises promote superior muscle hypertrophy and strength gains? A systematic review. *J Strength Cond Res.* 2022;36:1753–1762.
+46. Baz-Valle E i in. The effects of exercise variation in muscle thickness, maximal strength and motivation in resistance trained men. *PLoS One.* 2019;14:e0226989. doi:10.1371/journal.pone.0226989
+47. Singer A i in. Give it a rest: a systematic review with Bayesian meta-analysis on the effect of inter-set rest interval duration on muscle hypertrophy. *Front Sports Act Living.* 2024;6:1429789. doi:10.3389/fspor.2024.1429789
+48. Schoenfeld BJ i in. Longer interset rest periods enhance muscle strength and hypertrophy in resistance-trained men. *J Strength Cond Res.* 2016;30:1805–1812.
+49. Taber CB, Vigotsky A, Nuckols G, Haun CT. Exercise-induced myofibrillar hypertrophy is a contributory cause of gains in muscle strength. *Sports Med.* 2019;49:993–997. doi:10.1007/s40279-019-01107-8
+50. Marques EAM i in. Muscle growth is very strongly correlated with strength gains after lower body resistance training: new insight from within-participant associations. *Med Sci Sports Exerc.* 2025;57(12):2838–2845. PMID 40680785.

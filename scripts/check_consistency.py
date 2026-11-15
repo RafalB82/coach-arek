@@ -6,9 +6,9 @@ pliki w repozytorium (SKILL.md, README.md, INSTALL.md, references/*.md|json).
 Dzięki temu działa w CI publicznego repozytorium, gdzie pełne transkrypcje
 nie są publikowane.
 
-Kontrola cytowań wobec transkrypcji (Atrybucja mówcy, trafienie w blok
-transkrypcji) żyje w lokalnym skrypcie `mlx_whisper/check_citations.py`; ten
-plik wykonuje część wspólną (spójność md <-> json) przez `run_checks()`.
+Kontrola cytowań wobec samych transkrypcji (trafienie w blok, atrybucja
+mówcy) nie jest częścią CI, bo transkrypcje nie są publikowane; wykonuj ją
+lokalnie, porównując `references/transcripts/<id>.md` z kotwicą w bazie.
 
 Użycie:
     python scripts/check_consistency.py [--repo .] [--quiet]
@@ -50,6 +50,8 @@ REQUIRED_FILES = (
     "SKILL.md",
     "README.md",
     "INSTALL.md",
+    "LICENSE",
+    "LICENSE-CONTENT",
     "agents/openai.yaml",
     "repo-about.json",
     "references/knowledge_base_hipertrofia.md",
@@ -61,7 +63,18 @@ FORBIDDEN_PHRASES = (
     "etykiety zostały odwrócone",
     "etykiety odwrócono",
     "kopia skilla ma je odwrócone",
+    "podcast_paraphrase",
+    "check_citations.py",
 )
+
+# Symbole w tabeli zbiorczej `weryfikacja_naukowa.md` §1 <-> werdykty JSON.
+SYMBOL_TO_VERDICT = {
+    "✅": "supported",
+    "🟡": "partially_supported",
+    "🟠": "overstated",
+    "🔴": "unsupported_mechanism",
+    "⛔": "contradicted_partially",
+}
 
 # Jednostki, dla których liczba w treści musi znaleźć się w tabeli liczb.
 # Świadomie pominięte: MB (rozmiar repo), liczby plików i nagrań, liczby twierdzeń.
@@ -229,13 +242,24 @@ def check(md: str, kb: dict, files: dict[str, str]) -> tuple[list[str], list[str
         problem("brak sekcji 'Wszystkie liczby w bazie' w pliku md")
         table = ""
     md_values = table_values(table)
+    md_value_set = set(md_values)
+    json_values = [q.get("value", "") for q in kb.get("quantitative_claims", [])]
+    json_value_set = set(json_values)
+
+    for value in md_values:
+        if md_values.count(value) > 1:
+            problem(f"liczba {value!r} występuje w tabeli więcej niż raz")
+
     for q in kb.get("quantitative_claims", []):
         value = q.get("value", "")
         if not value:
             problem("liczba bez wartości w quantitative_claims")
             continue
-        if value not in table:
-            problem(f"liczba {value!r} jest w JSON, ale nie ma jej w tabeli 'Wszystkie liczby w bazie'")
+        if value not in md_value_set:
+            problem(
+                f"liczba {value!r} jest w JSON, ale nie ma wiersza w kolumnie "
+                f"'Wartość' tabeli 'Wszystkie liczby w bazie'"
+            )
         kind = q.get("kind")
         if kind is not None and kind not in KIND_LEGEND:
             problem(f"liczba {value!r}: nieznany kind {kind!r}")
@@ -247,9 +271,12 @@ def check(md: str, kb: dict, files: dict[str, str]) -> tuple[list[str], list[str
             if ts and ts not in table:
                 problem(f"liczba {value!r}: kotwica {src} nie występuje w tabeli liczb")
     for value in md_values:
-        if not any(value == v or value in v or v in value for v in
-                   (q.get("value", "") for q in kb.get("quantitative_claims", []))):
-            warn(f"liczba {value!r} jest w tabeli md, ale brak jej w quantitative_claims (JSON)")
+        if value not in json_value_set:
+            problem(f"wiersz {value!r} jest w tabeli md, ale brak go w quantitative_claims (JSON)")
+
+    duplicates = sorted({v for v in json_values if v and json_values.count(v) > 1})
+    for value in duplicates:
+        problem(f"zduplikowana liczba w quantitative_claims: {value!r}")
 
     # --- 5. każda liczba z treści ma być w tabeli liczb ------------------------
     sections = md_sections(md)
@@ -259,9 +286,21 @@ def check(md: str, kb: dict, files: dict[str, str]) -> tuple[list[str], list[str
     )
     body = re.sub(r"\[\d{1,2}:\d{2}(?::\d{2})?\]\([^)]*\)", " ", body)   # znaczniki czasu
     body = re.sub(r"§\s?\d+(\.\d+)?", " ", body)                        # numery sekcji
-    missing_cores = sorted(c for c in numeric_cores(body) if c not in table)
+    value_cores = numeric_cores(" ".join(md_values))
+    value_text = " ".join(md_values)
+
+    def covered(core: str) -> bool:
+        if core in value_cores:
+            return True
+        # liczba może być podzakresem wiersza, np. 250 w "250–300 kcal"
+        return re.search(rf"(?<![\d.,]){re.escape(core)}(?![\d.,])", value_text) is not None
+
+    missing_cores = sorted(c for c in numeric_cores(body) if not covered(c))
     for core in missing_cores:
-        problem(f"liczba {core!r} pojawia się w treści, ale nie ma jej w tabeli 'Wszystkie liczby w bazie'")
+        problem(
+            f"liczba {core!r} pojawia się w treści, ale nie ma wiersza w kolumnie "
+            f"'Wartość' tabeli 'Wszystkie liczby w bazie'"
+        )
 
     # --- 6. cytowania md <-> json ---------------------------------------------
     url_to_sid = {s["url"].rstrip("/").split("/")[-1]: s["id"] for s in kb.get("sources", [])}
@@ -329,6 +368,10 @@ def check(md: str, kb: dict, files: dict[str, str]) -> tuple[list[str], list[str
     for person in people:
         if person.get("name") and person["name"] not in md_people_section:
             warn(f"osoba {person['name']!r} nie występuje w sekcji 'Kto jest kim'")
+    attributed = {sid for person in people for sid in person.get("sources", [])}
+    for sid in sorted(source_ids):
+        if sid not in attributed:
+            problem(f"źródło {sid} nie jest przypisane do żadnej osoby w tablicy people")
 
     # --- 9. granice wiedzy ----------------------------------------------------
     limits = kb.get("knowledge_limits", [])
@@ -354,8 +397,37 @@ def check(md: str, kb: dict, files: dict[str, str]) -> tuple[list[str], list[str
     # --- 10. warstwa weryfikacji ----------------------------------------------
     review = kb.get("evidence_review", {})
     verdicts = review.get("verdicts", [])
-    if len(verdicts) != 25:
-        warn(f"warstwa weryfikacji ma {len(verdicts)} werdyktów (dokument opisuje 25)")
+    review_doc = files.get("references/weryfikacja_naukowa.md", "")
+    md_rows = []
+    if "## 1. Tabela zbiorcza" in review_doc:
+        chunk = review_doc.split("## 1. Tabela zbiorcza", 1)[1].split("\n---", 1)[0]
+        for line in chunk.splitlines():
+            if not re.match(r"^\|\s*\d+\s*\|", line):
+                continue
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            if len(cells) < 4:
+                problem(f"wiersz tabeli zbiorczej bez 4 kolumn: {line[:60]!r}")
+                continue
+            md_rows.append((int(cells[0]), cells[1], cells[2]))
+    else:
+        problem("brak sekcji '## 1. Tabela zbiorcza' w references/weryfikacja_naukowa.md")
+    if len(md_rows) != len(verdicts):
+        problem(
+            f"tabela zbiorcza ma {len(md_rows)} wierszy, a evidence_review.verdicts "
+            f"{len(verdicts)} werdyktów — muszą być 1:1"
+        )
+    for (num, claim, symbol), verdict in zip(md_rows, verdicts):
+        expected = SYMBOL_TO_VERDICT.get(symbol)
+        if expected is None:
+            problem(
+                f"tabela zbiorcza #{num}: symbol {symbol!r} spoza skali "
+                f"{sorted(SYMBOL_TO_VERDICT)}"
+            )
+        elif expected != verdict.get("verdict"):
+            problem(
+                f"tabela zbiorcza #{num} ({claim[:40]!r}): symbol {symbol} oznacza "
+                f"{expected!r}, a werdykt JSON to {verdict.get('verdict')!r}"
+            )
     for key, meaning in review.get("legend", {}).items():
         if key not in VERDICTS:
             problem(f"evidence_review.legend ma nieznany werdykt {key!r}")
@@ -397,7 +469,20 @@ def check(md: str, kb: dict, files: dict[str, str]) -> tuple[list[str], list[str
         if rel not in readme:
             warn(f"README.md nie wymienia pliku {rel}")
 
-    # --- 13. zakazane sformułowania ------------------------------------------
+    # --- 13. taksonomia wspomniana w treści -----------------------------------
+    for name, text in files.items():
+        if not name.endswith(".md"):
+            continue
+        for match in re.finditer(r"`kind`\s*[:=]\s*`([a-z_]+)`|kind:\s*`([a-z_]+)`", text):
+            value = match.group(1) or match.group(2)
+            if value not in KIND_LEGEND:
+                problem(f"{name}: nieaktualna wartość kind {value!r} w treści")
+        for match in re.finditer(r"`confidence`\s*[:=]\s*`([a-z_]+)`|confidence:\s*`([a-z_]+)`", text):
+            value = match.group(1) or match.group(2)
+            if value not in CONFIDENCE_LEGEND:
+                problem(f"{name}: nieaktualna wartość confidence {value!r} w treści")
+
+    # --- 14. zakazane sformułowania ------------------------------------------
     for name, text in files.items():
         if not name.endswith((".md", ".json", ".yaml")):
             continue
@@ -415,13 +500,16 @@ def run_checks(repo: Path) -> tuple[list[str], list[str]]:
         if not path.is_file():
             continue
         rel = path.relative_to(repo).as_posix()
-        if rel.startswith((".git/", "mlx_whisper/")) or "/.git/" in rel:
+        if rel.startswith(".git/") or "/.git/" in rel:
             continue
         if path.suffix in (".md", ".json", ".yaml"):
             try:
                 files[rel] = path.read_text(encoding="utf-8")
             except UnicodeDecodeError:
-                continue
+                files[rel] = ""
+        else:
+            # pliki bez analizowanej treści (np. LICENSE) rejestrujemy jako istniejące
+            files[rel] = ""
     md = files.get("references/knowledge_base_hipertrofia.md", "")
     json_path = repo / "references" / "knowledge_base_hipertrofia.json"
     try:
