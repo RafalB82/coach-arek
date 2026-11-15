@@ -1,7 +1,6 @@
-# Lokalny pipeline MLX Whisper: nagrania źródłowe (ok. 880 MB), wygenerowane
-# transkrypcje i skrypty. Trzymane lokalnie — nie wchodzą do publicznej paczki
-# skilla, bo nie są potrzebne do jego użycia.
-mlx_whisper/
+# Pipeline transkrypcji i nagrania źródłowe są trzymane lokalnie, poza
+# repozytorium (domyślnie ~/transkrypcja/). Ten plik nie zawiera ich kopii,
+# więc nie ma tu reguły dla katalogu pipeline'u.
 
 # Python
 __pycache__/
