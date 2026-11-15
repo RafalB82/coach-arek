@@ -1,0 +1,32 @@
+Licencja treści: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Rafal Bielawski
+
+Dokumentacja i treść bazy wiedzy w tym repozytorium — w szczególności
+`SKILL.md`, `README.md`, `INSTALL.md`, `agents/openai.yaml`,
+`references/knowledge_base_hipertrofia.md`,
+`references/knowledge_base_hipertrofia.json`,
+`references/weryfikacja_naukowa.md` oraz `repo-about.json` — są udostępniane
+na licencji Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+Możesz udostępniać i adaptować ten materiał do dowolnego celu, także
+komercyjnego, pod warunkiem:
+
+- podania odpowiedniego oznaczenia autorstwa,
+- podania linku do licencji,
+- wskazania, czy wprowadzono zmiany.
+
+Pełny tekst prawny licencji:
+https://creativecommons.org/licenses/by/4.0/legalcode.pl
+
+Sugerowane oznaczenie autorstwa:
+
+  „Coach Arek — agent skill, Rafal Bielawski,
+   https://github.com/RafalB82/coach-arek, licencja CC BY 4.0.”
+
+Kod (pliki `scripts/*.py`, `.github/workflows/check.yml`, `.gitignore`) jest
+objęty licencją MIT — patrz plik `LICENSE`.
+
+Zakres: repozytorium nie zawiera nagrań źródłowych ani pełnych transkrypcji
+podcastów. Cytaty i parafrazy wypowiedzi rozmówców pozostają przypisane ich
+autorom; niniejsza licencja dotyczy opracowania, nie cudzych wypowiedzi.

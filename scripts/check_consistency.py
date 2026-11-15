@@ -50,6 +50,8 @@ REQUIRED_FILES = (
     "SKILL.md",
     "README.md",
     "INSTALL.md",
+    "LICENSE",
+    "LICENSE-CONTENT",
     "agents/openai.yaml",
     "repo-about.json",
     "references/knowledge_base_hipertrofia.md",
@@ -504,7 +506,10 @@ def run_checks(repo: Path) -> tuple[list[str], list[str]]:
             try:
                 files[rel] = path.read_text(encoding="utf-8")
             except UnicodeDecodeError:
-                continue
+                files[rel] = ""
+        else:
+            # pliki bez analizowanej treści (np. LICENSE) rejestrujemy jako istniejące
+            files[rel] = ""
     md = files.get("references/knowledge_base_hipertrofia.md", "")
     json_path = repo / "references" / "knowledge_base_hipertrofia.json"
     try:

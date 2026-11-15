@@ -349,6 +349,7 @@ rm -rf ~/.local/share/coach-arek
 | `README.md` | opis projektu i podstawy źródłowej |
 | `agents/openai.yaml` | opcjonalne metadane UI dla Codexa |
 | `scripts/check_consistency.py` | kontrola spójności bazy; uruchamia się w CI, nie jest częścią działania skilla |
+| `LICENSE` / `LICENSE-CONTENT` | licencje: MIT dla kodu, CC BY 4.0 dla treści |
 
 ## Bezpieczeństwo
 

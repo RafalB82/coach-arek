@@ -88,6 +88,8 @@ coach-arek/
 ├── SKILL.md
 ├── README.md
 ├── INSTALL.md
+├── LICENSE
+├── LICENSE-CONTENT
 ├── .gitignore
 ├── .github/
 │   └── workflows/
@@ -137,9 +139,16 @@ Cytowania wobec samych transkrypcji (trafienie w blok, atrybucja mówcy) nie są
 Uwagi do konkretnych plików:
 
 - **S5** (`h2Vj5ai9Ang`) to nagranie z kanału HSS (`@dawidolszewski`); gospodarz to **Dawid Olszewski** — ta sama osoba, której Arkadiusz w rozmowie nazywa „Dawid". To nie jest gospodarz z S7/S8.
-- **S6** (`blaB3aBrf1o`) to monolog Arkadiusza. Plik `.md` w instalacji lokalnej ma **jeden blok od 00:28** — diaryzacja nie dzieli nagrania jednogłosowego, więc kotwice 01:11, 02:30, 04:05, 06:08, 08:10, 08:52 i 09:40 z bazy trzeba weryfikować w `out/blaB3aBrf1o.json` (czasy słów), nie w pliku `.md`.
+- **S6** (`blaB3aBrf1o`) to monolog Arkadiusza. Diaryzacja nie dzieli nagrania jednogłosowego, więc plik `.md` w instalacji lokalnej jest ręcznie podzielony na bloki w miejscach cytowanych w bazie: 00:28, 01:11, 02:30, 04:05, 06:08, 08:10, 08:52, 09:40. Podział nie zmienia tekstu — przy regeneracji z `out/` trzeba go odtworzyć.
 - **S7** (`Xb2y18_B0QY`) zachowuje klauzulę kanałową (0:00–0:05), a wycięto z niego reklamę w intro (0:05–1:19) i promocyjną przyśpiewkę na outro (po 1:08:09). Pozostałe cięcia redakcyjne nie są zapisywane w pliku.
 
 ## Korzystanie ze skilla
 
 Folder `coach-arek/` jest kompletnym publicznym skillem Codex opartym na syntezie źródeł. Instrukcje działania znajdują się w `SKILL.md`, synteza MD/JSON w katalogu `references/`, a metadane interfejsu w `agents/openai.yaml`. Pełne transkrypcje nie są częścią publicznej paczki.
+
+## Licencja
+
+- **Kod** (`scripts/*.py`, `.github/workflows/check.yml`, `.gitignore`) — licencja **MIT**, pełny tekst w pliku [LICENSE](LICENSE).
+- **Treść i dokumentacja** (`SKILL.md`, `README.md`, `INSTALL.md`, `agents/openai.yaml`, `references/*`, `repo-about.json`) — licencja **CC BY 4.0**, szczegóły i sugerowane oznaczenie autorstwa w pliku [LICENSE-CONTENT](LICENSE-CONTENT).
+
+Repozytorium nie zawiera nagrań źródłowych ani pełnych transkrypcji podcastów; licencja dotyczy opracowania, nie cudzych wypowiedzi.
